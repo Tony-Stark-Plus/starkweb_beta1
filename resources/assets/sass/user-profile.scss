@@ -1,0 +1,51 @@
+#form{
+    form{
+        padding:0;
+        background: #fff;
+        box-shadow: 0 3px 8px rgba(0,0,0,.5);
+        padding:10px 10px;
+        .form-group{
+            input:focus {
+                outline: none;
+                border-color: #15b983;
+                box-shadow: 0 0 5px rgba(21, 185, 131, 0.4);
+                border-radius: 5px;
+            }
+            .control-label{
+                margin-bottom: 2px;
+                color: #747474;
+                font-weight: 600;
+                font-size: 13px;
+                font-family:myFont,Microsoft YaHei,sans-serif!important;
+            }
+            .btn-control{
+                width:100%;
+                border-color: #747474;
+                background:linear-gradient(180deg,#9e1f1f,rgb(64, 97, 243));
+                color: #fff;
+            }
+            .text-muted{
+                font-size:13px;
+                margin-top:10px;
+                margin-left:10px;
+
+            }
+            .link{
+                margin-top:5px;
+                a{
+                    font-size:13px;
+                    color:#15b983;
+                }
+                .pull-right{
+                    text-align: right;
+                }
+            }
+            .agreement{
+                font-size:13px;
+                a{
+                    color:#15b983; 
+                }
+            }
+        }
+    }
+}

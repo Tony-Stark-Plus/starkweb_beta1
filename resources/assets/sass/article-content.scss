@@ -1,0 +1,98 @@
+.main-content{
+    padding:0;
+    background: #fff;
+    box-shadow: 0 3px 8px rgba(0,0,0,.5);
+    margin-bottom:15px;
+    position:relative;
+    article{
+        padding:1em 2em;
+        .articleContent{
+            font-family: myFont, Microsoft YaHei, sans-serif;
+            word-wrap:break-word;
+            code{
+                background:#062c33;
+                padding: 5px;
+                font-size:.8em;
+                border-width:1px 1px 1px 5px;
+                border-color:#5bbcdd;
+                line-height:2em;
+                color:#fff;
+                border-radius: 5px;
+                margin:5px 0;
+                display: block;
+                overflow-x: auto;
+            }
+            blockquote{
+                background-color:#b3d7ff;
+                padding: 5px;
+                font-size:.8em;
+                border-width:1px 1px 1px 5px;
+                border-color:#5bbcdd;
+                line-height:2em;
+                color:#fff;
+                border-radius: 1px;
+                margin:5px 0;
+                display: block;
+            }
+            p{
+                margin:.5em 0;
+                font-size:15px;
+                img{
+                    width:100%;
+                    border:1px solid #0b0b0b;
+                    padding:1px 1px;
+                }
+            }
+            h1,h2,h3,h4,h5,h6{
+                margin:1em 0 .5em 0;
+            }
+        }
+    }
+}
+.arrow-nav{
+    margin-top:18px;
+    ul{
+        padding:0;
+        display:flex;
+        justify-content:space-between;
+
+        li{
+            list-style-type: none;
+            a{
+                color:#171a1d;
+            }
+        }
+    }
+}
+.show_img{
+    h3{
+        color:#fff;
+        margin:2em auto;
+        text-align:center;
+    }
+    position:fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background-color:#000;
+    opacity: .98;
+    display:none;
+    .img_wrap{
+        position:absolute;
+        top: 40%;
+        margin-left:-35%;
+        left: 50%;
+        width: 70%;
+        img{
+            width:100%;
+        }
+        @media(max-width:760px){
+            margin-left:-50%;
+            width:100%;
+            img{
+                width:100%;
+            }
+        }
+    }
+}

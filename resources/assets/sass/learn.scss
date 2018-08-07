@@ -1,0 +1,45 @@
+.learn{
+  font-family: myFont, Microsoft YaHei, sans-serif;
+  .row{
+    .wrap{
+      padding:0;
+       .row{
+         .item{
+           color:#fff;
+            i{
+              padding-top:10px;
+              font-size:50px;
+            }
+            p{
+                padding-top:10px;
+                text-align:center;
+                padding-bottom:20px;
+            }
+         }
+         div{
+           border-radius:1%;
+         }
+         .learn_area{
+           transition: width .5s , height 1s;
+           width:96%;
+           margin:0 auto;
+           height:80%;
+         }
+
+         .javascript{
+           background:linear-gradient(180deg,#36495D,#47B784);
+         }
+         .laravel{
+           background:linear-gradient(90deg,#F17370,#F56663);
+         }
+         .appstore{
+           background:linear-gradient(180deg,#31DCFD,#2971E7);
+         }
+         .docker{
+           background-color: #0066CC;
+         }
+       }
+    }
+  }
+
+}

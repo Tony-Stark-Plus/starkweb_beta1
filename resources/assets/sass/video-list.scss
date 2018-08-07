@@ -1,0 +1,89 @@
+.video-list{
+    .pagination{
+        position:absolute;
+        right:16.7%;
+        li {
+            .page-link {
+                color: #15b982;
+            }
+        }
+        .active{
+            span{
+                color: #fff;
+                background-color: #15b982;
+                border-color:#15b982;
+            }
+        }
+
+    }
+}
+.video-list-items{
+    padding:0;
+    width:100%;
+    font-family: myFont;
+    .video-list-item{
+        list-style-type: none;
+        width:100%;
+        border-bottom: 1px solid #f2f2f2;
+        height:60px;
+        .row{
+            .item-front{
+                padding:15px 0;
+                font-size:20px;
+                line-height: 30px;
+                .select-like{
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+                    .fa-heart{
+                        color:red;
+                    }
+                }
+            }
+            .item-main{  
+                padding:15px 8px 15px 0;
+                font-size:17px;
+                line-height: 30px;
+                a{
+                    color:#3a3a3a;
+                    font-family: myFont;
+                }
+                .camera{
+                    .fa-video-camera{
+                        color:#3a3a3a;
+                        
+                    }
+                }
+                .video-name{
+                    padding-left:5px;
+                }
+                .duihao{
+                    padding-left:8px;
+                    .fa-check-square{
+                        color:#23CC8C;
+                    }
+                }
+            }
+            .item-behind{
+                padding:15px 0;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 30px;
+            }
+        }
+    }
+}
+@media(max-width:767px){
+    .un-watch{
+        display: none;
+    }
+    .item-main-mobile-adjust{
+        .camera{
+            padding-left: 15px;
+        }
+    }
+    .mobile-adjust{
+        width:90%;
+        margin:0 auto;
+    }
+}

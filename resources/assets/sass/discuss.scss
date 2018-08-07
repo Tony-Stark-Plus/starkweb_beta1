@@ -1,0 +1,152 @@
+
+.img-circle{
+  width:60px;
+  height:60px;
+}
+//select2插件样式控制
+.select2-container--default {
+  .select2-results__option--highlighted[aria-selected]{
+    background-color: #15b982;
+    color: #fff;
+    font-weight: 700;
+  }
+  .select2-results__option[aria-selected="true"]{
+    background-color: #e7f2ed;
+    color: #15b982;
+    font-weight: 700;
+  }
+  .select2-selection--multiple
+  {
+    .select2-selection__choice{
+      color:#fff;
+      span{
+        color:#fff;
+      }
+    }
+    .select2-selection__choice[title="php"]{
+      background-color: #636b6f;
+    }
+    .select2-selection__choice[title="laravel"]{
+      background-color: #c82333;
+    }
+    .select2-selection__choice[title="vue"]{
+      background-color:#1e7e34;
+    }
+    .select2-selection__choice[title="html"]{
+      background-color:#c69500;
+    }
+    .select2-selection__choice[title="js"]{
+      background-color: #6f42c1;
+    }
+  }
+}
+//头像无限旋转
+.spin {
+  animation: rotate 10s linear 0s infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+//
+.discussion_list{
+  .item{
+    .item-left{
+
+    }
+    .item-right{
+      width:100%;
+      color:#111111;
+      ul{
+        width:100%;
+        li{
+          list-style-type: none;
+          h6{
+            font-family: myFont, Microsoft YaHei, sans-serif;
+          }
+        }
+        .mes,.sub_content{
+          font-size:10px;
+        }
+        .mes{
+          color: #7089a9;
+          font-weight: 900;
+        }
+        .sub_content{
+          color:#9ba6b5;
+          font-weight:100;
+        }
+        .tags{
+          float:right;
+          @media (max-width:750px){
+            float:none;
+          }
+          .tag{
+            background-color: #921c24;
+            color:#fff;
+            padding:.2em .5em;
+            border-radius: .3em;
+            line-height:1em;
+            opacity: .9;
+            @media (max-width:750px){
+              font-size:13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//discussion_content
+.discussion_content{
+  .d_title{
+    height:3em;
+    line-height:3em;
+    padding:1em .2em;
+    margin-bottom:1.5em;
+  }
+  .d_sub{
+    display:flex;
+    justify-content:flex-start;
+    padding-top:2em;
+    padding-right:.2em;
+    .d_sub_img{
+      border:2px solid #fff;
+      border-radius: 5%;
+      width:60px;
+      height:60px;
+      img{
+        width:56px;
+      }
+    }
+    .d_sub_content{
+      ul{
+        display:flex;
+        padding-left:2em;
+        li{
+          justify-content:flex-start;
+          list-style-type: none;
+        }
+      }
+      .d_sub_content_main{
+        padding-left:1em;
+      }
+    }
+  }
+}
+//@media(max-width:750px) {
+//  .discussion_list{
+//    .item{
+//      .item-right {
+//        ul .tags{
+//          float:none;
+//        }
+//      }
+//    }
+//  }
+//}

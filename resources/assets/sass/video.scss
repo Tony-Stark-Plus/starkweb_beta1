@@ -1,0 +1,54 @@
+.side{
+    height:300px;
+    
+}
+.padding-change{
+    padding:0;
+}
+.video{
+    max-width:2000px;
+    .row{
+        width:100%;
+        margin:0;
+    }
+        background-color: black;
+        padding:0;
+        margin:0;
+}
+.vjs-paused .vjs-big-play-button,
+.vjs-paused.vjs-has-started .vjs-big-play-button {
+    display: block;
+}
+
+.video-part{
+    .change-lesson{
+        position: absolute;
+        background: #01d18b;
+        padding: 8px 15px;
+        color: #fff;
+        z-index: 2;
+        font-size: 20px;
+        width:50px;
+        height:50px;
+        border-radius: 5px;
+        text-align: center;
+        display:none;
+    }
+    .next{
+        top:40%;
+        right:0;
+    }
+    .previous{
+        top:40%;
+        left:0;
+    }
+}
+//进度条显示当前时间
+.video-js .vjs-time-control{display:block;}
+.video-js .vjs-remaining-time{display: none;}
+//移动端点击屏幕播放/暂停取消
+@media(max-width:767px){
+    .video-js.vjs-playing .vjs-tech {
+        pointer-events: none;
+    }
+}
