@@ -20,7 +20,7 @@
     <div class="row">
         <div class="offset-md-2 col-md-8">
             <form method="POST" action="/discuss_community/store">
-                @if(count(Session('create_errors'))!=0)
+                @if(Session('create_errors')!=null)
                     @foreach(Session('create_errors') as $item)
                         <div class="alert alert-danger">
                             <a class="close" data-dismiss="alert">×</a>
