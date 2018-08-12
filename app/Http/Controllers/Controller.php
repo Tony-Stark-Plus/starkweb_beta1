@@ -16,7 +16,8 @@ class Controller extends BaseController
         $data['cookie']['user_id'] = Cookie::get('user_id');
         $data['cookie']['imgUrl']= Cookie::get('imgUrl');
     }
-    public function time_gap_format(&$time_gap){
+    public function time_gap_format(&$time){
+        $time_gap=time()-strtotime($time);
         $t=$time_gap;
         if($t<60){
             $time_gap=floor($t)."秒";
@@ -38,7 +39,6 @@ class Controller extends BaseController
         }
         return $time_gap;
     }
-
 
 }
 

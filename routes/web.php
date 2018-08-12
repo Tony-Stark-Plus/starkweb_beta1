@@ -28,7 +28,7 @@ Route::post('/user/login','UsersController@login');
 
 
 
-Route::get('/video','webController@video');
+Route::get('/video/{discussion_id}','webController@video');
 Route::get('/video-list','webController@videoList');
 
 Route::get('/article-content/{id}','webController@articleContent');
@@ -46,3 +46,6 @@ Route::get('/discuss_community','webController@discuss_community');
 Route::get('/discuss_community/create','webController@discuss_create');
 Route::post('/discuss_community/store','DicussionController@store');
 Route::get('/discuss_community/content/{discussion_id}','webController@discuss_content');
+
+Route::get('/comment/store','commentController@store');
+Route::get('/comment/reply','commentController@reply');

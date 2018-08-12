@@ -225,8 +225,8 @@
                 <div class="col-md-2 mobile pad">
                     <h5 class="posControl">服务提供商</h5>
                     <a href="https://www.aliyun.com/">
-                        <img src="img/ali-logo.svg" alt="" class="ali-logo">
-                        <img src="img/ali-font.svg" alt="" class="ali-font">
+                        <img src="" alt="" class="ali-logo">
+                        <img src="" alt="" class="ali-font">
                     </a>
                 </div>
             </div>

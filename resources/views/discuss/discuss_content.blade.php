@@ -10,7 +10,7 @@
                     </a>
                     <div class="d_sub_content">
                         <ul class="d_person_mes">
-                           <li style="color:#15b982;">{{$data['discussion']->user->uname}}&nbsp;</li>
+                            <li style="color:#15b982;">{{$data['discussion']->user->uname}}&nbsp;</li>
                             <li style="font-size:15px;">发表于<strong>{{$data['discussion']->str_gap}}</strong>前</li>
                             <li></li>
                         </ul>
@@ -19,5 +19,7 @@
                 </div>
             </div>
         </div>
+        @include('layouts.comments')
     </div>
-    @endsection
+@endsection
+

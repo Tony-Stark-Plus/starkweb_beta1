@@ -14,6 +14,7 @@
 @import "user-profile";
 @import "learn";
 @import "discuss";
+@import "comment";
 
 .navbar-laravel {
   background-color: white;
@@ -170,6 +171,9 @@ body{
     width: 100%;
     padding-bottom: 25px;
     margin: 0;
+    @media(max-width:990px){
+        padding:0;
+    }
   }
   .head-title{
     width:100%;

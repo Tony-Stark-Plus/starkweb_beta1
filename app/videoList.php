@@ -9,4 +9,8 @@ class videoList extends Model
     //
     protected $table = 'videoList';
     public $timestamps = true;
+    protected  $fillable=['id','vname'];
+    public function comment(){
+        return $this->hasMany(comments::class,'discussion_id','id');//$discussion->comment
+    }
 }

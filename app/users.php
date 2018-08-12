@@ -10,9 +10,10 @@ class users extends Model
     protected $table = 'users';
     public $timestamps = true;
     protected $fillable=['uname','email','password','imgUrl'];
-    public function discussions(){
-        return $this->hasMany(discussions::class);//$users->discussions
+    public function discussion(){
+        return $this->hasMany(discussions::class);//$users->discussion
     }
-    // const CREATED_AT = 'login_date';
-    // const UPDATED_AT = 'last_update';
+    public function comment(){
+        return $this->hasMany(comments::class,'user_id','id');//$users->comment
+    }
 }

@@ -29,6 +29,7 @@
             <div class="col-md-2 mobile side padding-change"></div>
        </div>
     </div>
+    @include('layouts.comments')
 @endsection
 @section('script')
 {{--  <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/6.7.3/video.js"></script>  --}}

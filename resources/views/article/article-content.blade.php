@@ -53,7 +53,7 @@
 
         </div>
     </div>
-    <div id="gitalk-container"></div>
+    @include('layouts.comments')
 
 @endsection
 @section('script')
