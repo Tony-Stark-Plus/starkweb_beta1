@@ -3,8 +3,8 @@ import vueRouter from 'vue-router'
 
 let routes=[
     {
-    path:'/video-list',
-    component:require('./components/pages/video/video-list')
+    // path:'/video-list',
+    // component:require('')
     }
     // ,
     // {
