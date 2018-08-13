@@ -232,7 +232,7 @@
             </div>
             <div class="footer-bottom mobile pad">
                 <div class="footer-bottom-left">Developed By stark,Powered By Laravel</div>
-                <div class="footer-bottom-right">© Stark IT 2018. All rights reserved. 京ICP备17021114号</div>
+                <div class="footer-bottom-right">© Stark IT 2018. All rights reserved. 皖ICP备18007296号-1</div>
                 <div class="clear"></div>
             </div>
         </div>

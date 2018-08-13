@@ -23,7 +23,6 @@
                             <input type="text" class="form-control" id="" placeholder="写回复..."
                                    name="body_reply">
                             <div class="reply_btn" id="">回复</div>
-
                         </div>
                     </div>
                     {{--渲染子评论--}}

@@ -18,6 +18,9 @@
 
 html{
   font-size:20px;
+  ::-webkit-scrollbar{
+    display:none;
+  }
 }
 .navbar-laravel {
   background-color: white;
@@ -34,7 +37,7 @@ html{
 }
 body{
   font-family:myFont, Microsoft YaHei, sans-serif;
-  overflow: scroll;
+
 }
 .clear{
   clear: both;
