@@ -16027,6 +16027,10 @@ video::-webkit-media-text-track-display {
   text-align: center;
 }
 
+html {
+  font-size: 20px;
+}
+
 .navbar-laravel {
   background-color: white;
 }

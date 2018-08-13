@@ -13,10 +13,10 @@
                 <video id="my-player" style="width:100%; height:100%;" 
                 class="video-js vjs-big-play-centered vjs-play-progress vjs-slider-bar .vjs-volume-level vjs-load-progress" 
                 controls preload="auto" poster="img/video.jpg"
-                    data-setup='{ "aspectRatio":"640:267", "playbackRates": [0.5,1, 1.5, 2] }'>
-                        <source src="http://ozz0bm6k3.bkt.clouddn.com/zzxzyxgl.mp4" type="video/mp4"></source>
-                        <source src="http://ozz0bm6k3.bkt.clouddn.com/zzxzyxgl.mp4" type="video/webm"></source>
-                        <source src="http://ozz0bm6k3.bkt.clouddn.com/zzxzyxgl.mp4" type="video/ogg"></source>
+                    data-setup='{ "aspectRatio":"860:500", "playbackRates": [0.5,1, 1.5, 2] }'>
+                        <source src={{ $data['discussion']['videoUrl']}} type="video/mp4"></source>
+                        <source src={{ $data['discussion']['videoUrl']}} type="video/webm"></source>
+                        <source src={{ $data['discussion']['videoUrl']}} type="video/ogg"></source>
                         <p class="vjs-no-js">
                         To view this video please enable JavaScript, and consider upgrading to a
                         web browser that

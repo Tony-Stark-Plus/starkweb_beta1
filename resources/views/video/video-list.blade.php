@@ -29,7 +29,7 @@
                                 <span class="select-like"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
                             </div>
                             <div class="item-main col-md-9 item-main-mobile-adjust">
-                                <a href="">
+                                <a href={{"/video/".$item->id}}>
                                     <span class="camera"><i class="fa fa-video-camera" aria-hidden="true"></i></span>
                                     <span class="video-name">{{$item->vname}}</span>
                                     <span class="duihao"><i class="fa fa-check-square" aria-hidden="true"></i></span>
