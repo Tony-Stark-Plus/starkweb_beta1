@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c479e8ab-fd4b-405d-898d-a64bb1c5b2cb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/webController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/webController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,7 +72,7 @@
           <entry key="dummy" value="26" />
           <entry key="env" value="11" />
           <entry key="js" value="498" />
-          <entry key="php" value="21006" />
+          <entry key="php" value="21016" />
           <entry key="scss" value="5277" />
           <entry key="vue" value="211" />
         </counts>
@@ -82,7 +81,7 @@
         <counts>
           <entry key="Blade" value="10064" />
           <entry key="JavaScript" value="498" />
-          <entry key="PHP" value="10942" />
+          <entry key="PHP" value="10952" />
           <entry key="PLAIN_TEXT" value="37" />
           <entry key="SCSS" value="5277" />
           <entry key="Vue.js" value="211" />
@@ -110,8 +109,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/webController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="129" column="5" lean-forward="true" selection-start-line="129" selection-start-column="5" selection-end-line="129" selection-end-column="5" />
+            <state relative-caret-position="424">
+              <caret line="74" column="61" selection-start-line="74" selection-start-column="61" selection-end-line="74" selection-end-column="61" />
               <folding>
                 <element signature="e#40#51#0#PHP" expanded="true" />
               </folding>
@@ -700,12 +699,12 @@
       <workItem from="1534237152289" duration="40000" />
       <workItem from="1534256818370" duration="4137000" />
       <workItem from="1534327605692" duration="7602000" />
-      <workItem from="1534338046307" duration="183000" />
+      <workItem from="1534338046307" duration="440000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="235471000" />
+    <option name="totallyTimeSpent" value="235728000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1043,8 +1042,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/webController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="129" column="5" lean-forward="true" selection-start-line="129" selection-start-column="5" selection-end-line="129" selection-end-column="5" />
+        <state relative-caret-position="424">
+          <caret line="74" column="61" selection-start-line="74" selection-start-column="61" selection-end-line="74" selection-end-column="61" />
           <folding>
             <element signature="e#40#51#0#PHP" expanded="true" />
           </folding>

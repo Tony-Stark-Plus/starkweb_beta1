@@ -72,7 +72,7 @@ class webController extends Controller
 
     public function articleList(Request $request)
     {
-        $articleList = articleList::paginate(12);
+        $articleList = articleList::orderBy('created_at', 'desc')->paginate(12);
         $this->data_with_cookie($data);
         return view('article/articles-list', compact('articleList', $articleList))->with('data', $data);
     }
