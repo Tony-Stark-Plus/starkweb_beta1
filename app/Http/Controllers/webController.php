@@ -128,7 +128,7 @@ class webController extends Controller
 
     public function articleContent($discussion_id)
     {
-        $discussion = videoList::find($discussion_id);
+        $discussion = articleList::find($discussion_id);
         //获取该页面的评论及处理
         $comments= comments::where(['discussion_id' => $discussion_id, 'type'=>'a'])->orderBy('created_at', 'asc')->get();
         $comments = $this->changeArray($comments);
