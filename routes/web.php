@@ -49,3 +49,5 @@ Route::get('/discuss_community/content/{discussion_id}','webController@discuss_c
 
 Route::get('/comment/store','commentController@store');
 Route::get('/comment/reply','commentController@reply');
+Route::get('/test','webController@p');
+Route::get('/test1','webController@p1');

@@ -241,6 +241,7 @@
 </body>
 <script src="/js/app.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+@include('sweetalert::cdn')
     @yield("script")
 <script>
         $('.ml11 .letters').each(function(){

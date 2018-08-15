@@ -1,5 +1,9 @@
 @extends('layouts/layout')
+@section('css')
+    <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+@endsection
 @section('header-change')
+
 <div class="user-mes">
     <div class="message mobile pad">
         <img src="/img/message.png" alt="">
@@ -47,18 +51,12 @@
         {{ $videoList->links() }}
     </div>
 @endsection
+@section('script')
 
-@if(Session::get('data')['alert']=='register')
-@section('script')
-<script>
-    swal("注册成功", "Welcome to STARKWEB", "success");
-</script>
+    @include('sweetalert::cdn')
+    @if (Session::has('data.alert'))
+    <script>
+        swal({!! Session::pull('data.alert') !!});
+    </script>
+    @endif
 @endsection
-@endif
-@if(Session::get('data')['alert']=='login')
-@section('script')
-<script>
-    swal("登录成功", "Welcome Back", "success");
-</script>
-@endsection
-@endif

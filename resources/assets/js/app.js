@@ -6,13 +6,10 @@ import './form';
 import './main';
 import './learn';
 import './comments';
-window.Vue = require('vue');
-window.swal = require('sweetalert');
-
-import vueRouter from 'vue-router'
-Vue.use(vueRouter)
-
 import router from './routes'
+import vueRouter from 'vue-router';
+window.Vue = require('vue');
+Vue.use(vueRouter);
 
 
 const app = new Vue({

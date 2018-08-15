@@ -10,6 +10,7 @@ use Parsedown;
 use App\discussions;
 use App\comments;
 use App\users;
+use Softon\SweetAlert\Facades\SWAL;
 
 class webController extends Controller
 {
@@ -252,5 +253,14 @@ class webController extends Controller
             $ret[] = $this->change($item);
         }
         return $ret;
+    }
+    public function p(){
+        $jsonp=SWAL::message('Good Job','You have successfully logged In!','info')::getFacadeAccessor();
+//        dd(swal('Your Title','Text'));
+        return $jsonp;
+        return redirect('test1')->with('jsonp',$jsonp);
+    }
+    public function p1(){
+                return view('test');
     }
 }
