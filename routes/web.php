@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layouts/layout');
-});
+
 Route::get('/user/login','webController@login');
 
 Route::get('/user/register','webController@register');

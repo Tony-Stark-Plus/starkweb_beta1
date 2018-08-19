@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c479e8ab-fd4b-405d-898d-a64bb1c5b2cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/errors/404.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/webController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/webController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/learn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/learn.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/video.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/video.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/learn/learn.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/learn/learn.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/video/video.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/video/video.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,7 +46,7 @@
           <entry key="js" value="51" />
           <entry key="json" value="8" />
           <entry key="lock" value="3" />
-          <entry key="php" value="378" />
+          <entry key="php" value="379" />
           <entry key="png" value="2" />
           <entry key="scss" value="67" />
           <entry key="svg" value="3" />
@@ -71,7 +61,7 @@
           <entry key="Image" value="3" />
           <entry key="JSON" value="11" />
           <entry key="JavaScript" value="51" />
-          <entry key="PHP" value="250" />
+          <entry key="PHP" value="251" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="SCSS" value="67" />
           <entry key="SVG" value="3" />
@@ -123,16 +113,25 @@
         <entry file="file://$PROJECT_DIR$/resources/views/learn/learn.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="686">
-              <caret line="35" column="46" lean-forward="true" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+              <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/sass/learn.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/assets/sass/learn.scss">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            <state relative-caret-position="92">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -235,10 +234,10 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/webController.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/video.scss" />
         <option value="$PROJECT_DIR$/resources/views/video/video.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/errors/404.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/learn/learn.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/learn.scss" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
       </list>
     </option>
   </component>
@@ -672,12 +671,12 @@
       <workItem from="1534568316760" duration="8215000" />
       <workItem from="1534594156061" duration="674000" />
       <workItem from="1534602123479" duration="1786000" />
-      <workItem from="1534655324825" duration="6522000" />
+      <workItem from="1534655324825" duration="6702000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="254097000" />
+    <option name="totallyTimeSpent" value="254277000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -995,13 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Debug/ExceptionHandler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-133">
@@ -1040,17 +1032,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/learn/learn.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="35" column="46" lean-forward="true" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/sass/learn.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/learn/learn.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="686">
+          <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
