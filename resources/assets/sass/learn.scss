@@ -5,15 +5,18 @@
       padding:0;
        .row{
          .item{
-           color:#fff;
-            i{
-              padding-top:10px;
-              font-size:50px;
-            }
-            p{
+            a{
+              color:#fff;
+              text-decoration:none;
+              i{
+                padding-top:10px;
+                font-size:50px;
+              }
+              p{
                 padding-top:10px;
                 text-align:center;
                 padding-bottom:20px;
+              }
             }
          }
          div{

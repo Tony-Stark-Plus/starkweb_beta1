@@ -1,5 +1,6 @@
 .side{
     height:300px;
+    background: #222226;
     
 }
 .padding-change{
@@ -11,7 +12,7 @@
         width:100%;
         margin:0;
     }
-        background-color: black;
+        background-color: #222226;
         padding:0;
         margin:0;
 }
@@ -19,11 +20,25 @@
 .vjs-paused.vjs-has-started .vjs-big-play-button {
     display: block;
 }
+//点击屏幕暂停
+.video-js.vjs-playing .vjs-tech {
+    pointer-events: auto;
+}
+//button聚焦时outline消失
+button:focus{
+    outline:none;
+}
+
+.video-js .vjs-big-play-button {
+    background-color: forestgreen;
+}
+
 
 .video-part{
+    background-color: #222226;
     .change-lesson{
         position: absolute;
-        background: #01d18b;
+        background: #1e7e34;
         padding: 8px 15px;
         color: #fff;
         z-index: 2;
@@ -41,6 +56,28 @@
     .previous{
         top:40%;
         left:0;
+    }
+    #my-player{
+        width:100%;
+        padding-bottom: 56.25%;
+        height:0;
+        object-fit: contain;
+    }
+    .video_mes{
+        color:#fff;
+        font-size: 1.1rem;
+        line-height:2em;
+        height:2em;
+        a{
+            color: #fff;
+            float:right;
+            height:100%;
+            line-height:2em;
+            margin-right: .5em;
+        }
+        a:hover{
+            color:#0ea85a;
+        }
     }
 }
 //进度条显示当前时间

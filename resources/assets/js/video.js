@@ -17,3 +17,6 @@ $(document).on('touchend', '.video-part', function(){
     $("body").css("overflow","scroll");  
     $(".change-lesson").css("display","none");
 });
+$(document).ready(function () {
+})
+

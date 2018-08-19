@@ -185,10 +185,12 @@ class webController extends Controller
                 }
             }
         }
+
         $data = [];
         $data['comments']=$arr;
         $data['discussion'] = $discussion;
         $data['type']='v';
+        $data['download_name']=$this->get_download_name($discussion['videoUrl']);
         $this->data_with_cookie($data);
         return view('video/video')->with('data', $data);
     }
@@ -262,5 +264,11 @@ class webController extends Controller
     }
     public function p1(){
                 return view('test');
+    }
+
+    //获取下载文件的文件名 七牛云下载
+    public function get_download_name($url){
+        $name_arr=explode('/',$url);
+        return $name_arr[count($name_arr)-1];
     }
 }
