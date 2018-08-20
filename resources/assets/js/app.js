@@ -8,6 +8,8 @@ import './learn';
 import './comments';
 import router from './routes'
 import vueRouter from 'vue-router';
+
+
 window.Vue = require('vue');
 Vue.use(vueRouter);
 

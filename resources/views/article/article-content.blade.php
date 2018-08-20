@@ -1,6 +1,8 @@
 @extends('layouts/layout')
 @section('css')
-    <link href="https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/androidstudio.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 @endsection
 @section("title")
 <div class="title_wrap">
@@ -74,6 +76,6 @@
                 // $('.show_img > .img_wrap').append($(this));
             })
         })
+
     </script>
-    <script src="https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.js"></script>
     @endsection

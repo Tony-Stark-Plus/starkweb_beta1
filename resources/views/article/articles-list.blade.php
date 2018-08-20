@@ -12,21 +12,26 @@
                     <ul class="article-list-items">
                         @foreach($articleList as $item)
                         <li class="article-list-item">
-                            <span class="item-status">
+                            <div class="item-status">
                                 <i class="fa fa-heart-o" aria-hidden="true"></i>
-                            </span>
-                            <span class="item-link">
+                            </div>
+                            <div class="item-link">
                                 <a href={{"/article-content/".$item->id}}>
                                     <h6>{{$item->aname}}</h6>
                                     <small>{{$item->updated_at}}</small>
                                 </a>
-                            </span>
-                            <span class="item-kind kind-php">php</span>
-                            <div class="clear"></div>
+                            </div>
+                            <div class="item-kind-wrap">
+                                <span class="{{'item-kind kind-'.$item->kind_class}}">
+                                    {{$item->kind}}
+                                </span>
+                            </div>
                         </li>
                         @endforeach
                     </ul>
                 </div>
+            </div>
+            <div class="row">
                 <div class="pages col-md-8 offset-md-2">
                     {{$articleList->links()}}
                 </div>

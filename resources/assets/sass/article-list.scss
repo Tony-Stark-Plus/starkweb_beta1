@@ -30,13 +30,12 @@
             .article-list{
                 padding:0;
                 background: #fff;
-                height:1000px;
                 box-shadow: 5px 5px 19px grey;
                 ul{
                     padding-left:0;
                     li{
-                        height:80px;
-                        padding:10px 0;
+                        display:flex;
+                        justify-content:flex-end;
                         list-style-type:none;
                         border-bottom: 1px solid #f2f2f2;
                         span{
@@ -50,28 +49,42 @@
                             height:60px;
                         }
                         .item-link{
-                            width:70%;
-                            height:60px;
+                            width:65%;
                             padding:10px 0;
                             a{
                                 color:#48466d;
                                 text-decoration-line: none;
-                                h5{
+                                h6{
                                     font-family: myFont,Microsoft YaHei,sans-serif!important;
+                                    font-size:1.2rem;
+                                    @media (max-width: 900px) {
+                                        font-size:.98rem;
+                                    }
                                 }
-                                h5:hover{
+                                h6:hover{
                                     text-decoration-line: underline;
                                 }
                             }
                         }
-                        .item-kind{
-                            font-size:7px;
-                            border-radius: 2px;
-                            color: #fff;
-                            padding: 0 3px;
+                        .item-kind-wrap{
+                            width: 20%;
+                            .item-kind{
+                                float:right;
+                                font-size:.6rem;
+                                border-radius: 2px;
+                                color: #fff;
+                                margin:10px 8px 10px 0;
+                                padding: 0 3px;
+                            }
                         }
                         .kind-database{
                             background-color:#48466d;
+                        }
+                        .kind-recommend{
+                            background-color:#F56663;
+                        }
+                        .kind-markdown{
+                            background-color:#0056b3;
                         }
                         .kind-php{
                             background-color:#32dfb9;
@@ -81,6 +94,10 @@
                         }
                         .kind-html{
                             background-color:rgba(231, 49, 17, 0.966);
+                        }
+                        .kind-laravel{
+                            background-color:rgb(261, 60, 17);
+
                         }
                     }
                 }
