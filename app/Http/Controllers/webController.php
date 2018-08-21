@@ -14,15 +14,10 @@ use Softon\SweetAlert\Facades\SWAL;
 
 class webController extends Controller
 {
-    public function videoList()
+    //将时间改成英文形式
+    public function add_en_str_time($videoList)
     {
-        $data = [];
-        $this->data_with_cookie($data);
-        $videoList = videoList::paginate(12);
-//        $time_created=$videoList[0]['created_at'];
-//        $videoList[0]['year']=substr($time_created,5,2);
-//        return $videoList[0]['year'];
-        for ($i = 0; $i < 12; $i++) {
+        for ($i = 0; $i < count($videoList); $i++) {
             $time_created = $videoList[$i]['created_at'];
             $videoList[$i]['year'] = substr($time_created, 0, 4);
             $videoList[$i]['day'] = substr($time_created, 8, 2);
@@ -67,10 +62,18 @@ class webController extends Controller
             }
             $videoList[$i]['month'] = $month;
         }
+    }
+
+    public function videoList()
+    {
+        $data = [];
+        $this->data_with_cookie($data);
+        $videoList = videoList::paginate(12);
+        self::add_en_str_time($videoList);
         return view('video/video-list', ['videoList' => $videoList])->with('data', $data);
     }
 
-    public function articleList(Request $request)
+    public function articleList()
     {
         $articleList = articleList::orderBy('created_at', 'desc')->paginate(12);
         $this->data_with_cookie($data);
@@ -130,7 +133,7 @@ class webController extends Controller
     {
         $discussion = articleList::find($discussion_id);
         //获取该页面的评论及处理
-        $comments= comments::where(['discussion_id' => $discussion_id, 'type'=>'a'])->orderBy('created_at', 'asc')->get();
+        $comments = comments::where(['discussion_id' => $discussion_id, 'type' => 'a'])->orderBy('created_at', 'asc')->get();
         $comments = $this->changeArray($comments);
         $arr = [];
         foreach ($comments as $item) {
@@ -155,9 +158,9 @@ class webController extends Controller
             ->text($item->content);
         $data = [];
         //comment相关数据
-        $data['comments']=$arr;
+        $data['comments'] = $arr;
         $data['discussion'] = $discussion;
-        $data['type']='a';
+        $data['type'] = 'a';
 
         $data['title'] = $item->aname;
         $data['pre_item'] = $pre_item;
@@ -171,7 +174,7 @@ class webController extends Controller
     {
         $discussion = videoList::find($discussion_id);
         //获取该video页面的评论
-        $comments= comments::where(['discussion_id' => $discussion_id, 'type'=>'v'])->orderBy('created_at', 'asc')->get();
+        $comments = comments::where(['discussion_id' => $discussion_id, 'type' => 'v'])->orderBy('created_at', 'asc')->get();
         $comments = $this->changeArray($comments);
         $arr = [];
         foreach ($comments as $item) {
@@ -187,10 +190,10 @@ class webController extends Controller
         }
 
         $data = [];
-        $data['comments']=$arr;
+        $data['comments'] = $arr;
         $data['discussion'] = $discussion;
-        $data['type']='v';
-        $data['download_name']=$this->get_download_name($discussion['videoUrl']);
+        $data['type'] = 'v';
+        $data['download_name'] = $this->get_download_name($discussion['videoUrl']);
         $this->data_with_cookie($data);
         return view('video/video')->with('data', $data);
     }
@@ -198,7 +201,7 @@ class webController extends Controller
     public function discuss_content($discussion_id)
     {
         $discussion = discussions::find($discussion_id);
-        $comments = comments::where(['discussion_id' => $discussion_id, 'type'=>'d'])->orderBy('created_at', 'asc')->get();
+        $comments = comments::where(['discussion_id' => $discussion_id, 'type' => 'd'])->orderBy('created_at', 'asc')->get();
         $comments = $this->changeArray($comments);
         $arr = [];
         foreach ($comments as $item) {
@@ -213,13 +216,13 @@ class webController extends Controller
             }
         }
         $data = [];
-        $data['comments']=$arr;
+        $data['comments'] = $arr;
         //计算发布多长时间
         $str_gap = $this->time_gap_format($discussion['created_at']);
         $discussion['str_gap'] = $str_gap;
         //将discussion 返回到页面
         $data['discussion'] = $discussion;
-        $data['type']='d';
+        $data['type'] = 'd';
         $this->data_with_cookie($data);
         return view('/discuss/discuss_content')->with('data', $data);
     }
@@ -229,7 +232,7 @@ class webController extends Controller
     {
         $item['uname'] = $item->user->uname;
         $item['imgUrl'] = $item->user->imgUrl;
-        if($item->reply_id != 0){
+        if ($item->reply_id != 0) {
             $item['reply_mes'] = comments::find($item->reply_id)->user;
         }
         return [
@@ -241,10 +244,10 @@ class webController extends Controller
             "updated_at" => $item['updated_at'],
             "parent_id" => $item['parent_id'],
             "uname" => $item['uname'],
-            "str_gap"=>$this->time_gap_format($item['created_at']),
-            "imgUrl"=>$item['imgUrl'],
-            "reply_id"=>$item['reply_mes']['id'],
-            "reply_uname"=>$item['reply_mes']['uname']
+            "str_gap" => $this->time_gap_format($item['created_at']),
+            "imgUrl" => $item['imgUrl'],
+            "reply_id" => $item['reply_mes']['id'],
+            "reply_uname" => $item['reply_mes']['uname']
         ];
     }
 
@@ -256,19 +259,24 @@ class webController extends Controller
         }
         return $ret;
     }
-    public function p(){
-        $jsonp=SWAL::message('Good Job','You have successfully logged In!','info')::getFacadeAccessor();
+
+    public function p()
+    {
+        $jsonp = SWAL::message('Good Job', 'You have successfully logged In!', 'info')::getFacadeAccessor();
 //        dd(swal('Your Title','Text'));
         return $jsonp;
-        return redirect('test1')->with('jsonp',$jsonp);
+        return redirect('test1')->with('jsonp', $jsonp);
     }
-    public function p1(){
-                return view('test');
+
+    public function p1()
+    {
+        return view('test');
     }
 
     //获取下载文件的文件名 七牛云下载
-    public function get_download_name($url){
-        $name_arr=explode('/',$url);
-        return $name_arr[count($name_arr)-1];
+    public function get_download_name($url)
+    {
+        $name_arr = explode('/', $url);
+        return $name_arr[count($name_arr) - 1];
     }
 }

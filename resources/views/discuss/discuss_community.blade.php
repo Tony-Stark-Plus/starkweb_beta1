@@ -24,8 +24,8 @@
             @foreach($data['discussions'] as $item)
                 <div class="media p-2 item">
                     <a href="" class="item-left">
-                        <img src="http://ozz0bm6k3.bkt.clouddn.com/img/head-img/79b6ecc879848cf82cf14becc46f36fc.jpeg"
-                             alt="John Doe" class="mr-2 mt-0 rounded-circle" style="width:45px;border:1.5px solid #339966">
+                        <img src="{{$item->user->imgUrl}}"
+                             alt="" class="mr-2 mt-0 rounded-circle" style="width:45px;border:1.5px solid #339966">
                     </a>
                     <a href={{"/discuss_community/content/".$item->id}} class="item-right">
                         <ul class="item-right">

@@ -1,6 +1,5 @@
 @extends('layouts/layout')
 @section('css')
-    <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
 @endsection
 @section('header-change')
 

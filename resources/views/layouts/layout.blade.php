@@ -6,17 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     @yield("css")
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/app.css">
     <link href="https://cdn.bootcss.com/devicons/1.8.0/css/devicons.min.css" rel="stylesheet">
-
 </head>
 <body>
-    <div class="top-bar"></div>
-    <div class="homeHeader">
-        <div class="logo logo-mobile">
-            <div class="logo-svg mobile" >
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:100%;" x="0px" y="0px" height="60px" viewBox="0 0 486 89" enable-background="new 0 0 486 89" xml:space="preserve">  <image id="image0" width="486" height="89" x="0" y="0"
-                xlink:href="data:image/		png;base64,iVBORw0KGgoAAAANSUhEUgAAAeYAAABZCAMAAADcpnfpAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+<div class="top-bar"></div>
+<div class="homeHeader">
+    <div class="logo logo-mobile">
+        <div class="logo-svg mobile">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" style="width:100%;" x="0px" y="0px" height="60px"
+                 viewBox="0 0 486 89" enable-background="new 0 0 486 89" xml:space="preserve">  <image id="image0"
+                                                                                                       width="486"
+                                                                                                       height="89" x="0"
+                                                                                                       y="0"
+                                                                                                       xlink:href="data:image/		png;base64,iVBORw0KGgoAAAANSUhEUgAAAeYAAABZCAMAAADcpnfpAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
                     AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABgFBMVEX////Q8eav59TJ7+Lj
                     9vDn9/Kx59Xd9e2m5M/U8ujs+fWi481y1bRczqhr0rC+69z9/v7q+PT3/PvE7d9/2LuK3MCs5tLN
                     8OSo5dCJ28Dl9/GQ3cNm0a2O3cK16Ndi0KtBxplp0q/C7N5Ex5tk0Kw7xJYVuYJGx5wuwI+B2byF
@@ -121,24 +126,25 @@
                     Fb5eWlq0OhFeOyd433G2yn3jaf0gq2w2YUYDwJtjl7fgGw+fU7SkmurTl4YfLCvA6Xq2gTj05yly
                     lJMOW5RBKXbIIYcccsghhxxyyCGHHHLIIYcccsghhxxyyCGHHHKIlf4PO4AOjMv0PCAAAAAldEVY
                     dGRhdGU6Y3JlYXRlADIwMTgtMDctMjBUMTY6NDM6NDMrMDg6MDBLKqjhAAAAJXRFWHRkYXRlOm1v
-                    ZGlmeQAyMDE4LTA3LTIwVDE2OjQzOjQzKzA4OjAwOncQXQAAAABJRU5ErkJggg==" />
+                    ZGlmeQAyMDE4LTA3LTIwVDE2OjQzOjQzKzA4OjAwOncQXQAAAABJRU5ErkJggg=="/>
             </svg>
-            </div>
-            <span class="only-mobile-logo">STARKWEB</span>
         </div>
-        <div class="search mobile pad">
-            <form action="" id="search_form">
-                <input type="text" placeholder="请输入你想要学习的..." id="search_name" class="form-control">
-                <button id="buttonSelf" class="btn btn-primary">Find</button>
-            </form>
-        </div>
-        @if(Session::get('data')['cookie']['imgUrl'] || $data['cookie']['imgUrl'] || null)
+        <span class="only-mobile-logo">STARKWEB</span>
+    </div>
+    <div class="search mobile pad">
+        <form action="" id="search_form">
+            <input type="text" placeholder="请输入你想要学习的..." id="search_name" class="form-control">
+            <button id="buttonSelf" class="btn btn-primary">Find</button>
+        </form>
+    </div>
+    @if(Session::get('data')['cookie']['imgUrl'] || $data['cookie']['imgUrl'] || null)
         <div class="user-mes">
             <div class="message mobile pad">
                 <img src="/img/message.png" alt="">
             </div>
             <div class="head-photo">
-                <img src={{ $data['cookie']['imgUrl']}} alt="" style="border:1.5px solid #15b982;" class="img-fluid rounded-circle">
+                <img src={{ $data['cookie']['imgUrl']}} alt="" style="border:1.5px solid #15b982;"
+                     class="img-fluid rounded-circle">
             </div>
             <ul class="dropdown-menu menuList">
                 <li class="item"><a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>个人资料</a></li>
@@ -152,131 +158,131 @@
             </ul>
         </div>
 
-        @else
+    @else
         <div class="user-profile">
             <a href="/user/login" class="button login">登录</a>
             <a href="/user/register" class="button register">注册</a>
         </div>
-        @endif
-    </div> 
-     <div class="nav">
-         <div class="nav-items">
-            <a href="/video-list"><div class="nav-item">全部视频</div></a>
-            <a href="/learn"><div class="nav-item">学习路径</div></a>
-            <a href="/discuss_community"><div class="nav-item">问答社区</div></a>
-            <a href="/articles-list"><div class="nav-item">文章教程</div></a>
-            <a href="/fifth"><div class="nav-item"><span><svg t="1499634215564" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2464" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" class="icon"><path d="M156.181 847.743s277.072 359.221 631.433 52.012c386.442-335.403-322.279-563.866-322.279-563.866L275.76 528.867 156.18 847.743z" fill="#FDB350" p-id="2465"></path><path d="M325.827 982.39c-65.622-136.105-30.624-214.366 19.93-287.766 54.928-80.69 69.51-160.41 69.51-160.41s43.263 56.387 25.764 144.37c76.316-85.067 90.899-221.172 79.233-273.184 173.048 121.037 246.934 383.04 147.285 576.99 529.84-299.432 131.73-748.58 62.22-799.134 23.332 50.554 27.707 136.106-19.444 177.91C631.578 61.247 436.17 0 436.17 0c23.332 154.577-83.608 323.737-186.66 449.634-3.402-61.733-7.29-104.023-39.859-163.326-7.291 111.8-92.843 203.186-116.176 315.473-31.11 152.146 23.333 263.461 232.352 380.61z" fill="#F23921" p-id="2466"></path></svg></span>订阅本站</div></a>
-            <a href="/sixth mobile"><div class="nav-item mobile">签到优惠</div></a>
-         </div>
-     </div>
-     <div class="containerPlus">
-        <div class="head-title">
-            @yield("title")
-         </div>
-         @yield("container")
-         {{--<div id="app">--}}
-            {{--<router-view></router-view>--}}
-        {{--</div>--}}
-     </div>
-     <div class="footer">
-        <div class="container">
-            <div class="row footer-border">
-                <div class="col-md-4">
-                    <div class="ml11 footer-logo-posControl">
-                        <span class="text-wrapper">
-                            <span class="line line1"></span>
-                            <span class="letters">For web fan</span>
-                        </span>
-                    </div>
-                    <p class="footer__site-description">
-                        <em>S</em>tark <em>Web</em><br>
-                        <strong>为 Web 爱好者而生</strong>,<strong>stark</strong> 的愿景是做最好的 web前后端 
-                        中文视频教程和问答社区, 有任何跟 web开发 相关的问题，
-                        都可以在这里得到解决。<br>Today We Hack!
-                    </p>
-                    <ul class="footer_connect">
-                        <li class="qq"><a href=""><i class="fa fa-qq" aria-hidden="true"></i></a></li>
-                        <li class="weixin"><a href=""><i class="fa fa-weixin" aria-hidden="true"></i></a></li>
-                        <li class="weibo"><a href=""><i class="fa fa-weibo" aria-hidden="true"></i></a></li>
-                        <li class="github"><a href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 mobile pad">
-                    <h5 class="posControl">学习资料</h5>
-                    <li><a href="">文章教程</a></li>
-                    <li><a href="">个人博客</a></li>
-                    <li><a href="">推荐书目</a></li>
-                    <li><a href="">QQ群</a></li>
-                </div>
-                <div class="col-md-2 mobile pad">
-                    <h5 class="posControl">laravel讨论</h5>
-                    <li><a href="">学习路径</a></li>
-                    <li><a href="">版本声明</a></li>
-                    <li><a href="">社区规则</a></li>
-                    <li><a href="">EsayWechat</a></li>
-                </div>
-                <div class="col-md-2 mobile pad">
-                    <h5 class="posControl">友情相关</h5>
-                    <li><a href="">vip会员</a></li>
-                    <li><a href="">友情链接</a></li>
-                    <li><a href="">电子货币购买</a></li>
-                    <li><a href="">Stark IT Github</a></li>
-                </div>
-                <div class="col-md-2 mobile pad">
-                    <h5 class="posControl">服务提供商</h5>
-                    <a href="https://www.aliyun.com/">
-                        <img src="" alt="" class="ali-logo">
-                        <img src="" alt="" class="ali-font">
-                    </a>
-                </div>
+    @endif
+</div>
+<div class="nav">
+    <div class="nav-items">
+        <a href="/video-list">
+            <div class="nav-item">全部视频</div>
+        </a>
+        <a href="/learn">
+            <div class="nav-item">学习路径</div>
+        </a>
+        <a href="/discuss_community">
+            <div class="nav-item">问答社区</div>
+        </a>
+        <a href="/articles-list">
+            <div class="nav-item">文章教程</div>
+        </a>
+        <a href="/fifth">
+            <div class="nav-item"><span><svg t="1499634215564" viewBox="0 0 1024 1024" version="1.1"
+                                             xmlns="http://www.w3.org/2000/svg" p-id="2464"
+                                             xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18"
+                                             class="icon"><path
+                                d="M156.181 847.743s277.072 359.221 631.433 52.012c386.442-335.403-322.279-563.866-322.279-563.866L275.76 528.867 156.18 847.743z"
+                                fill="#FDB350" p-id="2465"></path><path
+                                d="M325.827 982.39c-65.622-136.105-30.624-214.366 19.93-287.766 54.928-80.69 69.51-160.41 69.51-160.41s43.263 56.387 25.764 144.37c76.316-85.067 90.899-221.172 79.233-273.184 173.048 121.037 246.934 383.04 147.285 576.99 529.84-299.432 131.73-748.58 62.22-799.134 23.332 50.554 27.707 136.106-19.444 177.91C631.578 61.247 436.17 0 436.17 0c23.332 154.577-83.608 323.737-186.66 449.634-3.402-61.733-7.29-104.023-39.859-163.326-7.291 111.8-92.843 203.186-116.176 315.473-31.11 152.146 23.333 263.461 232.352 380.61z"
+                                fill="#F23921" p-id="2466"></path></svg></span>订阅本站
             </div>
-            <div class="footer-bottom mobile pad">
-                <div class="footer-bottom-left">Developed By stark,Powered By Laravel</div>
-                <div class="footer-bottom-right">© Stark IT 2018. All rights reserved. 皖ICP备18007296号-1</div>
-                <div class="clear"></div>
+        </a>
+        <a href="/sixth mobile">
+            <div class="nav-item mobile">签到优惠</div>
+        </a>
+    </div>
+</div>
+<div class="containerPlus">
+    <div class="head-title">
+        @yield("title")
+    </div>
+    @yield("container")
+    {{--<div id="app">--}}
+    {{--<router-view></router-view>--}}
+    {{--</div>--}}
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row footer-border">
+            <div class="col-md-4">
+                <div class="footer-logo">
+                    <p class="logo_font">Starkweb</p>
+                </div>
+                <p class="footer__site-description">
+                    <em>S</em>tark <em>Web</em><br>
+                    <strong>为 Web 爱好者而生</strong>,<strong>stark</strong> 的愿景是做最好的 web前后端
+                    中文视频教程和问答社区, 有任何跟 web开发 相关的问题，
+                    都可以在这里得到解决。<br>Today We Hack!
+                </p>
+                <ul class="footer_connect">
+                    <li class="qq"><a href=""><i class="fa fa-qq" aria-hidden="true"></i></a></li>
+                    <li class="weixin"><a href=""><i class="fa fa-weixin" aria-hidden="true"></i></a></li>
+                    <li class="weibo"><a href=""><i class="fa fa-weibo" aria-hidden="true"></i></a></li>
+                    <li class="github"><a href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 mobile pad">
+                <h5 class="posControl">学习资料</h5>
+                <li><a href="">文章教程</a></li>
+                <li><a href="">个人博客</a></li>
+                <li><a href="">推荐书目</a></li>
+                <li><a href="">QQ群</a></li>
+            </div>
+            <div class="col-md-2 mobile pad">
+                <h5 class="posControl">laravel讨论</h5>
+                <li><a href="">学习路径</a></li>
+                <li><a href="">版本声明</a></li>
+                <li><a href="">社区规则</a></li>
+                <li><a href="">EsayWechat</a></li>
+            </div>
+            <div class="col-md-2 mobile pad">
+                <h5 class="posControl">友情相关</h5>
+                <li><a href="">vip会员</a></li>
+                <li><a href="">友情链接</a></li>
+                <li><a href="">电子货币购买</a></li>
+                <li><a href="">Stark IT Github</a></li>
+            </div>
+            <div class="col-md-2 mobile pad">
+                <h5 class="posControl">服务提供商</h5>
+                <a href="https://www.aliyun.com/" class="ali-logo" target="_blank">
+                    <img src="https://gw.alicdn.com/tps/TB1xno8OFXXXXXNaFXXXXXXXXXX-338-80.png" alt="" class="">
+                </a>
+                <a href="https://www.qiniu.com/" class="qiniu-logo" target="_blank">
+                    <img src="http://ozz0bm6k3.bkt.clouddn.com/qiniu.png" alt="" class="">
+                </a>
             </div>
         </div>
-     </div>
-     
+        <div class="footer-bottom mobile pad">
+            <div class="footer-bottom-left">Developed By stark,Powered By Laravel</div>
+            <div class="footer-bottom-right">© Stark IT 2018. All rights reserved. 皖ICP备18007296号-1</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
 </body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="/js/app.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-@include('sweetalert::cdn')
-    @yield("script")
 <script>
-        $('.ml11 .letters').each(function(){
-            $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-          });
-          
-          anime.timeline({loop: true})
-            .add({
-              targets: '.ml11 .line',
-              scaleY: [0,1],
-              opacity: [0.5,1],
-              easing: "easeOutExpo",
-              duration: 900
-            })
-            .add({
-              targets: '.ml11 .line',
-              translateX: [0,$(".ml11 .letters").width()],
-              easing: "easeOutExpo",
-              duration: 900,
-              delay: 900
-            }).add({
-              targets: '.ml11 .letter',
-              opacity: [0,1],
-              easing: "easeOutExpo",
-              duration: 600,
-              offset: '-=775',
-              delay: function(el, i) {
-                return 104 * (i+1)
-              }
-            }).add({
-              targets: '.ml11',
-              opacity: 0,
-              duration:1000,
-              easing: "easeOutExpo",
-              delay: 1900
-            });
+    var font_arr = [
+        'Starkweb', 'Starkwe', 'Starkw', 'Stark',
+        'Star', 'Sta', 'St', 'S', '', 'F', 'Fo', 'For',
+        'For w', 'For we', 'For web', 'For web f', 'For web fa', 'For web fan', 'For web fans'
+    ];
+    var $logo_font = $('.logo_font');
+    var index = 0;
+    var timer = setInterval(function () {
+        $logo_font.text(font_arr[index]);
+        index += 1;
+        if (index == font_arr.length) {
+            clearInterval(timer);
+        }
+    }, 190);
 </script>
+@include('sweetalert::cdn')
+@yield("script")
 </html>
