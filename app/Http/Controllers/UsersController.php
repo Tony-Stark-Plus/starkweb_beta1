@@ -38,8 +38,6 @@ class UsersController extends Controller
                 'text'=> 'Welcome to Starkweb!',
                 'showConfirmButton'=>false,
                 'timer'=> '2500',
-                'customClass'=>'animated bounceInDown',
-                'animation'=>false,
             ];
             $data['alert']=json_encode($alert);
             return redirect('video-list')->with('data', $data);
@@ -72,8 +70,6 @@ class UsersController extends Controller
                     'text'=> 'Welcome back!',
                     'showConfirmButton'=>false,
                     'timer'=> '2500',
-                    'customClass'=>'animated bounceInDown',
-                    'animation'=>false,
             ];
             $data['alert']=json_encode($alert);
             return redirect('video-list')->with('data', $data);
