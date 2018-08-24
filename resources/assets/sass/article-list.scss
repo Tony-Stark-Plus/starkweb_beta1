@@ -70,11 +70,14 @@
               width: 20%;
               .item-kind {
                 float: right;
-                font-size: .6rem;
+                font-size: .8rem;
+                @media(max-width:900px){
+                  font-size: .6rem;
+                }
                 border-radius: 2px;
                 color: #fff;
                 margin: 10px 8px 10px 0;
-                padding: 0 3px;
+                padding: 0 .4em;
               }
             }
             .kind-database {
@@ -100,6 +103,9 @@
             }
             .kind-tool {
               background-color: #0ea85a;
+            }
+            .kind-css {
+              background-color: #00adb5;
             }
           }
         }

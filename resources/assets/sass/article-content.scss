@@ -36,14 +36,29 @@
             p{
                 margin:.5em 0;
                 font-size:15px;
-                img{
-                    width:100%;
-                    border:1px solid #0b0b0b;
-                    padding:1px 1px;
-                }
+            }
+            img{
+                width:100%;
+                padding:1px 1px;
             }
             h1,h2,h3,h4,h5,h6{
                 margin:1em 0 .5em 0;
+            }
+            ul li ,table{
+                    font-size:.8rem;
+                    @media(max-width:900px){
+                        font-size:.65rem;
+                    }
+                }
+            table{
+                width:100%;
+                text-align:center;
+                border: 1px solid #3a3a3a;
+                border-collapse:collapse;
+            }
+            table, td, th
+            {
+                border: 1px solid #3a3a3a;
             }
         }
     }
