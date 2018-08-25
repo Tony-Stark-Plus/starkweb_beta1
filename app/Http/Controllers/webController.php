@@ -68,7 +68,7 @@ class webController extends Controller
     {
         $data = [];
         $this->data_with_cookie($data);
-        $videoList = videoList::paginate(12);
+        $videoList = videoList::orderBy('created_at', 'desc')->paginate(12);
         self::add_en_str_time($videoList);
         return view('video/video-list', ['videoList' => $videoList])->with('data', $data);
     }

@@ -10,12 +10,10 @@
             font-family: myFont, Microsoft YaHei, sans-serif;
             word-wrap:break-word;
             code{
-                padding: 2em;
-                font-size:.8em;
+                padding:.7em;
+                font-size:.7em;
                 border-width:1px 1px 1px 5px;
-                border-color:#5bbcdd;
                 line-height:2em;
-                color:#fff;
                 border-radius: 5px;
                 margin:5px 0;
                 display: block;
@@ -24,18 +22,21 @@
             blockquote{
                 background-color:#b3d7ff;
                 padding: 5px;
-                font-size:.8em;
                 border-width:1px 1px 1px 5px;
                 border-color:#5bbcdd;
-                line-height:2em;
+                line-height:1em;
                 color:#fff;
                 border-radius: 1px;
                 margin:5px 0;
                 display: block;
+                p{
+                    font-size:.75rem;
+                    margin:.25em 0;
+                }
             }
             p{
                 margin:.5em 0;
-                font-size:15px;
+                font-size:.8rem;
             }
             img{
                 width:100%;
@@ -69,13 +70,46 @@
         padding:0;
         display:flex;
         justify-content:space-between;
-
         li{
+
+            width:50%;
             list-style-type: none;
+            display: block;
             a{
                 color:#171a1d;
+                display:flex;
+                flex-direction: row;
+                .fa_div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding:0 .5em;
+                    i{
+
+                    }
+                }
+                .arrow-font{
+                    .font-special{
+                        width:100%;
+                        margin:.2em;
+                        color: #0ea85a;
+                    }
+                    p{
+                        text-align:center;
+                    }
+                }
+
+            }
+            a:hover{
+                text-decoration: none;
             }
         }
+        .next{
+            a{
+                float:right;
+            }
+        }
+
     }
 }
 .show_img{

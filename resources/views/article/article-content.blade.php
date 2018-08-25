@@ -1,6 +1,6 @@
 @extends('layouts/layout')
 @section('css')
-    <link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/androidstudio.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/solarized-dark.min.css" rel="stylesheet">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 @endsection
@@ -26,19 +26,30 @@
                @if($data['pre_item'])
                     <li class="previous">
                         <a href={{"/article-content/".$data['pre_item']->id}}>
-                            <i class="fa fa-arrow-left" aria-hidden="true"></i>
-                            <span>{{$data['pre_item']->aname}}</span>
+                            <div class="fa_div">
+                                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="arrow-font">
+                                <p class="font-special">上一篇</p>
+                                <p>{{$data['pre_item']->aname}}</p>
+                            </div>
                         </a>
+                    </li>
                      @else
-                        <li class="next">
+                        <li class="previous">
                             <span>前面没东西</span>
                         </li>
                    @endif
                 @if($data['next_item'])
                        <li class="next">
                            <a href={{"/article-content/".$data['next_item']->id}}>
-                               <span>{{$data['next_item']->aname}}</span>
-                               <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                               <div class="arrow-font">
+                                   <p class="font-special">下一篇</p>
+                                   <p>{{$data['next_item']->aname}}</p>
+                               </div>
+                               <div class="fa_div">
+                                   <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                               </div>
                            </a>
                        </li>
                     @else
@@ -50,7 +61,7 @@
         </div>
     </div>
     <div class="show_img">
-        <h3>点击图片返回</h3>
+        <h4>点击图片返回</h4>
         <div class="img_wrap">
 
         </div>

@@ -150,9 +150,10 @@ body{
     margin:0 auto;
     border-left:1px solid rgba(0,0,0,.12);
     a{
-      color:black;
+      color:#171a1d;
       text-decoration: none;
       cursor: pointer;
+      font-size:.8rem;
       .nav-item{
         float:left;
         width:16.66%;
@@ -361,7 +362,7 @@ body{
           width:20%;
           height:40px;
           line-height: 40px;
-          font-size:12px;
+          font-size:.47rem;
         }
       }
     }
