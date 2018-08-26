@@ -23,29 +23,29 @@
     <div class="row">
         <div class="col-md-8 offset-md-2 arrow-nav">
             <ul>
-               @if($data['pre_item'])
+               @if($data['other_article']['previous_article'])
                     <li class="previous">
-                        <a href={{"/article-content/".$data['pre_item']->id}}>
+                        <a href={{"/article-content/".$data['other_article']['previous_article']->id}}>
                             <div class="fa_div">
                                 <i class="fa fa-arrow-left" aria-hidden="true"></i>
                             </div>
                             <div class="arrow-font">
                                 <p class="font-special">上一篇</p>
-                                <p>{{$data['pre_item']->aname}}</p>
+                                <p>{{$data['other_article']['previous_article']->aname}}</p>
                             </div>
                         </a>
                     </li>
                      @else
                         <li class="previous">
-                            <span>前面没东西</span>
+                            <span>已是最新章节</span>
                         </li>
                    @endif
-                @if($data['next_item'])
+                @if($data['other_article']['next_article'])
                        <li class="next">
-                           <a href={{"/article-content/".$data['next_item']->id}}>
+                           <a href={{"/article-content/".$data['other_article']['next_article']->id}}>
                                <div class="arrow-font">
                                    <p class="font-special">下一篇</p>
-                                   <p>{{$data['next_item']->aname}}</p>
+                                   <p>{{$data['other_article']['next_article']->aname}}</p>
                                </div>
                                <div class="fa_div">
                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>

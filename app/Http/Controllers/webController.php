@@ -131,7 +131,19 @@ class webController extends Controller
 
     public function articleContent($discussion_id)
     {
+        //定义上一篇文章和下一篇文章
+        $previous_article = null;
+        $next_article = null;
         $discussion = articleList::find($discussion_id);
+        $articleList = articleList::orderBy('created_at', 'desc')->get(['id', 'aname']);
+        //在 $articleList 中获取索引值
+        $index = $this->find_arr_index($articleList, $discussion->id);
+        if ($index != 0) {
+            $previous_article = $articleList[$index - 1];
+        }
+        if ($index != count($articleList) - 1) {
+            $next_article = $articleList[$index + 1];
+        }
         //获取该页面的评论及处理
         $comments = comments::where(['discussion_id' => $discussion_id, 'type' => 'a'])->orderBy('created_at', 'asc')->get();
         $comments = $this->changeArray($comments);
@@ -161,11 +173,14 @@ class webController extends Controller
         $data['comments'] = $arr;
         $data['discussion'] = $discussion;
         $data['type'] = 'a';
-
         $data['title'] = $item->aname;
         $data['pre_item'] = $pre_item;
         $data['next_item'] = $next_item;
         $data['time_create'] = $time_create[0];
+        $data['other_article'] = [
+            'previous_article' => $previous_article,
+            'next_article' => $next_article
+        ];
         $this->data_with_cookie($data);
         return view('article/article-content', compact('content', $content))->with('data', $data);
     }

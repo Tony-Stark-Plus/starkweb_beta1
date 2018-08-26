@@ -39,6 +39,13 @@ class Controller extends BaseController
         }
         return $time_gap;
     }
-
+    //找出数组中某个元素索引
+    public function find_arr_index($arr,$find_id){
+        foreach($arr as  $key=>$item){
+            if($item['id']==$find_id){
+                return $key;
+            }
+        }
+    }
 }
 

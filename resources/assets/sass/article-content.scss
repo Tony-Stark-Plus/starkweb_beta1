@@ -71,10 +71,13 @@
         display:flex;
         justify-content:space-between;
         li{
-
             width:50%;
             list-style-type: none;
             display: block;
+            font-size:.9rem;
+            @media (max-width:800px) {
+                font-size:.6rem;
+            }
             a{
                 color:#171a1d;
                 display:flex;

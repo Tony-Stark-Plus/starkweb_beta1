@@ -4,7 +4,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="starkweb icon" href="http://ozz0bm6k3.bkt.clouddn.com/Starkweb/img/stark_web.ico"/>
+    <link rel="starkweb icon" href="http://ozz0bm6k3.bkt.clouddn.com/Starkweb/img/title_img3.ico"/>
     <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
     <title>Stark web</title>
     <style type="text/css">
