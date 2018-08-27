@@ -81,12 +81,12 @@
                 if (status == 'none') {
                     $('.show_img').show()
                     $('.show_img > .img_wrap').append($(this).clone());
-                    $(document.body).css({'overflow':'hidden'});
+                    $('body,html').css({'overflow':'hidden'});
                 }
                 else {
                     $('.show_img').hide();
                     $('.show_img > .img_wrap > img').remove();
-                    $(document.body).css({'overflow':'auto'});
+                    $('html,body').css({'overflow':'auto'});
                 }
             })
         })

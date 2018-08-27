@@ -19,6 +19,10 @@ html{
   ::-webkit-scrollbar{
     display:none;
   }
+  ::-webkit-scrollbar{
+    width:0;
+    height:0；
+  }
 }
 .navbar-laravel {
   background-color: white;
