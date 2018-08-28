@@ -79,7 +79,7 @@
             $(document).on('click', '.mark_img', function () {
                 var status = $('.show_img').css('display');
                 if (status == 'none') {
-                    $('.show_img').show()
+                    $('.show_img').show();
                     $('.show_img > .img_wrap').append($(this).clone());
                     $('body,html').css({'overflow':'hidden'});
                 }
