@@ -135,7 +135,7 @@ class webController extends Controller
         $previous_article = null;
         $next_article = null;
         $discussion = articleList::find($discussion_id);
-        $articleList = articleList::orderBy('created_at', 'desc')->get(['id', 'aname']);
+        $articleList = articleList::latest()->get(['id', 'aname']);
         //在 $articleList 中获取索引值
         $index = $this->find_arr_index($articleList, $discussion->id);
         if ($index != 0) {

@@ -71,7 +71,7 @@
               .item-kind {
                 float: right;
                 font-size: .8rem;
-                @media(max-width:900px){
+                @media(max-width: 900px) {
                   font-size: .6rem;
                 }
                 border-radius: 2px;
@@ -107,16 +107,16 @@
             .kind-css {
               background-color: #00adb5;
             }
-            .kind-nginx{
+            .kind-nginx {
               background-color: #d37176;
             }
-            .kind-provider{
+            .kind-provider {
               background-color: #1e7e34;
             }
-            .kind-javascript{
+            .kind-javascript {
               background-color: #cc5581;
             }
-            .kind-git{
+            .kind-git {
               background-color: #140a0f;
             }
           }

@@ -38,6 +38,10 @@
         margin: .5em 0;
         font-size: .8rem;
       }
+      strong{
+        color:#15b982;
+        font-weight: bolder;
+      }
       img {
         width: 100%;
         padding: 1px 1px;
@@ -56,6 +60,13 @@
         text-align: center;
         border: 1px solid #3a3a3a;
         border-collapse: collapse;
+        th{
+          background-color: #71777c;
+          color:#fff;
+        }
+        td{
+          background-color: #bbbfc3;
+        }
       }
       table, td, th {
         border: 1px solid #3a3a3a;
