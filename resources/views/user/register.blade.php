@@ -24,7 +24,7 @@
                     @foreach($errors->get('uname') as $error)
                     <div class="alert alert-danger">
                         <a class="close" data-dismiss="alert">×</a>
-                        <strong>Error!</strong>{{$error}}
+                       {{$error}}
                     </div>
                     @endforeach
 
@@ -36,7 +36,7 @@
                 @foreach($errors->get('email') as $error)
                 <div class="alert alert-danger">
                     <a class="close" data-dismiss="alert">×</a>
-                    <strong>Error!</strong>{{$error}}
+                    {{$error}}
                 </div>
                 @endforeach
             
@@ -48,7 +48,7 @@
                 @foreach($errors->get('password') as $error)
                 <div class="alert alert-danger">
                     <a class="close" data-dismiss="alert">×</a>
-                    <strong>Error!</strong>{{$error}}
+                    {{$error}}
                 </div>
                 @endforeach
           
@@ -60,7 +60,7 @@
                 @foreach($errors->get('password_confirmation') as $error)
                 <div class="alert alert-danger">
                     <a class="close" data-dismiss="alert">×</a>
-                    <strong>Error!</strong>{{$error}}
+                    {{$error}}
                 </div>
                 @endforeach
             

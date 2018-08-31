@@ -24,18 +24,19 @@ class FormRules extends FormRequest
     public function rules()
     {
         return [ 
-            'uname' => 'required|min:3',
-            'email' => 'required|email',
-            'password'=>'required|between:6,18|confirmed',
+            'uname' => 'required|between:6,12',
+            'email' => 'required|email|unique:users',
+            'password'=>'required|between:6,18|confirmed:',
             'password_confirmation'=>'required'
         ];
     }
     public function messages(){
         return [
             'uname.required' => '用户名不能为空',
-            'uname.min'  => '用户名最少3个字段',
+            'uname.between'  => '用户名长度在6~12个字符之间',
             'email.required'=>'邮箱不能为空',
             'email.email'=>'邮箱不合法',
+            'email.unique'=>'该邮箱已被注册',
             'password.required'=>'密码不能为空',
             'password.between'=>'密码需要6-18个字段',
             'password.confirmed'=>'两次密码不一致',

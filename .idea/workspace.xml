@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c479e8ab-fd4b-405d-898d-a64bb1c5b2cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/article-content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/article-content.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/FormRules.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/FormRules.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/register.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,10 +33,10 @@
     <session id="1333807277">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="55" />
+          <entry key="project.closed" value="57" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="4" />
+          <entry key="project.open.time.11" value="5" />
           <entry key="project.open.time.12" value="10" />
           <entry key="project.open.time.13" value="5" />
           <entry key="project.open.time.14" value="9" />
@@ -54,7 +53,7 @@
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="56" />
+          <entry key="project.opened" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -69,7 +68,7 @@
           <entry key="js" value="64" />
           <entry key="json" value="9" />
           <entry key="lock" value="3" />
-          <entry key="php" value="428" />
+          <entry key="php" value="430" />
           <entry key="png" value="6" />
           <entry key="scss" value="91" />
           <entry key="svg" value="6" />
@@ -80,11 +79,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Blade" value="164" />
+          <entry key="Blade" value="165" />
           <entry key="Image" value="8" />
           <entry key="JSON" value="12" />
           <entry key="JavaScript" value="64" />
-          <entry key="PHP" value="265" />
+          <entry key="PHP" value="266" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="SCSS" value="91" />
           <entry key="SVG" value="6" />
@@ -98,7 +97,7 @@
           <entry key="dummy" value="26" />
           <entry key="env" value="11" />
           <entry key="js" value="680" />
-          <entry key="php" value="24025" />
+          <entry key="php" value="24135" />
           <entry key="scss" value="7370" />
           <entry key="vue" value="211" />
         </counts>
@@ -107,7 +106,7 @@
         <counts>
           <entry key="Blade" value="11947" />
           <entry key="JavaScript" value="680" />
-          <entry key="PHP" value="12078" />
+          <entry key="PHP" value="12188" />
           <entry key="PLAIN_TEXT" value="37" />
           <entry key="SCSS" value="7370" />
           <entry key="Vue.js" value="211" />
@@ -120,38 +119,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1114">
+              <caret line="71" column="37" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/assets/sass/article-content.scss">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/FormRules.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+            <state relative-caret-position="299">
+              <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
+        <entry file="file://$PROJECT_DIR$/resources/views/user/register.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/article/articles-list.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/discuss/discuss_community.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+            <state relative-caret-position="40">
+              <caret line="59" column="53" lean-forward="true" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -213,8 +203,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/discuss/discuss_create.blade.php" />
-        <option value="$PROJECT_DIR$/app/comment.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_08_09_145403_create_comments_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/postCommentRequest.php" />
         <option value="$PROJECT_DIR$/resources/assets/js/ajax_comment.js" />
@@ -264,6 +252,8 @@
         <option value="$PROJECT_DIR$/resources/assets/sass/article-list.scss" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/webController.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/article-content.scss" />
+        <option value="$PROJECT_DIR$/resources/views/user/register.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/FormRules.php" />
       </list>
     </option>
   </component>
@@ -367,8 +357,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="96" />
-    <option name="y" value="23" />
+    <option name="x" value="148" />
+    <option name="y" value="85" />
     <option name="width" value="1280" />
     <option name="height" value="733" />
   </component>
@@ -538,6 +528,13 @@
             <path>
               <item name="stark" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Http" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Requests" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="stark" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="database" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -656,7 +653,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="com.chrisrm.idea.config" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -735,12 +732,13 @@
       <workItem from="1535469074836" duration="361000" />
       <workItem from="1535526206233" duration="858000" />
       <workItem from="1535556293777" duration="1210000" />
-      <workItem from="1535640960907" duration="554000" />
+      <workItem from="1535640960907" duration="891000" />
+      <workItem from="1535683199874" duration="1219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="290821000" />
+    <option name="totallyTimeSpent" value="292377000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -752,13 +750,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="96" y="23" width="1280" height="733" extended-state="0" />
+    <frame x="148" y="85" width="1280" height="733" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.50104386" side_tool="true" weight="0.21486267" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32956383" />
-      <window_info active="true" x="0" y="22" width="310" height="778" id="Project" order="3" sideWeight="0.49895614" visible="true" weight="0.28594506" />
+      <window_info active="true" x="0" y="22" width="310" height="778" id="Project" order="3" sideWeight="0.49895614" visible="true" weight="0.2907916" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32913166" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -820,7 +818,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/highlight.js/package.json" />
     <entry file="file://$PROJECT_DIR$/resources/views/test.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -925,13 +922,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="71" column="37" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/vendor/sweetalert/cdn.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -998,11 +988,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/user/register.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-687" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/video/video-list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
@@ -1037,6 +1022,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/article-content.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/article/articles-list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1051,17 +1050,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        <state relative-caret-position="1114">
+          <caret line="71" column="37" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/article-content.scss">
+    <entry file="file://$PROJECT_DIR$/resources/views/user/register.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+        <state relative-caret-position="40">
+          <caret line="59" column="53" lean-forward="true" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/FormRules.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
         </state>
       </provider>
     </entry>
