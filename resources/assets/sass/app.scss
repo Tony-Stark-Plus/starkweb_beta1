@@ -135,10 +135,13 @@ body{
     }
     .login{
       background:linear-gradient(90deg,#58a8e9,#d41f4d);
+      border-radius:.3em;
       margin-right:5px;
     }
     .register{
-      background:linear-gradient(90deg,#15b982,#01d18b);
+      background:linear-gradient(180deg,#3C8CE7,#00EAFF);
+      border-radius:.3em;
+      color:#f5f8fa;
     }
   }
 }

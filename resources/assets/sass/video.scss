@@ -8,13 +8,16 @@
 }
 .video{
     max-width:2000px;
+    background-color: #222226;
+    padding:0;
+    margin:0;
     .row{
         width:100%;
         margin:0;
+        .video-part{
+            font-size:.8rem;
+        }
     }
-        background-color: #222226;
-        padding:0;
-        margin:0;
 }
 .vjs-paused .vjs-big-play-button,
 .vjs-paused.vjs-has-started .vjs-big-play-button {
@@ -30,7 +33,7 @@ button:focus{
 }
 
 .video-js .vjs-big-play-button {
-    background-color: forestgreen;
+    background-color: #00CCFF;
 }
 
 

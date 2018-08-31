@@ -26,16 +26,19 @@
 
                     <!-- content goes here -->
                     @foreach($videoList as $item)
-                    <li v-for="(item,index) in items" @click="onItemClick(index, item)" class="video-list-item">
+                    <li class="video-list-item">
                         <div class="row">
                             <div class="item-front col-md-1 un-watch">
                                 <span class="select-like"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
                             </div>
                             <div class="item-main col-md-9 item-main-mobile-adjust">
                                 <a href={{"/video/".$item->id}}>
-                                    <span class="camera"><i class="fa fa-video-camera" aria-hidden="true"></i></span>
-                                    <span class="video-name">{{$item->vname}}</span>
-                                    <span class="duihao"><i class="fa fa-check-square" aria-hidden="true"></i></span>
+                                    <div class="camera"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></div>
+                                    <div class="video-name">
+                                        {{$item->vname}}
+                                        <div class="mobile-show-date">{{$item->month}} {{$item->day}}， {{$item->year}}</div>
+                                    </div>
+                                    {{--<span class="duihao"><i class="fa fa-check-square" aria-hidden="true"></i></span>--}}
                                 </a>
                             </div>
                             <div class="item-behind col-md-2 un-watch">
