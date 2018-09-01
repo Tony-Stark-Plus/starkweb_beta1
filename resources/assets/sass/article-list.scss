@@ -56,7 +56,7 @@
                 text-decoration-line: none;
                 h6 {
                   font-family: myFont, Microsoft YaHei, sans-serif !important;
-                  font-size: 1.2rem;
+                  font-size: 1.1rem;
                   @media (max-width: 900px) {
                     font-size: .98rem;
                   }
@@ -70,7 +70,7 @@
               width: 20%;
               .item-kind {
                 float: right;
-                font-size: .8rem;
+                font-size: .72rem;
                 @media(max-width: 900px) {
                   font-size: .6rem;
                 }
@@ -118,6 +118,9 @@
             }
             .kind-git {
               background-color: #140a0f;
+            }
+            .kind-middleware{
+              background-color: #a86c66;
             }
           }
         }

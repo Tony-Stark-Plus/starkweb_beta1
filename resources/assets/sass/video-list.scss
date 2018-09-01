@@ -27,9 +27,8 @@
         border-bottom: 1px solid #f2f2f2;
         .row{
             .item-front{
-                padding:15px 0;
                 font-size:20px;
-                line-height: 30px;
+                line-height: 60px;
                 .select-like{
                     width: 100%;
                     display: block;
@@ -42,14 +41,17 @@
             .item-main{  
                 padding:.2em 8px .2em 0;
                 font-size:.8rem;
-                line-height: 30px;
                 a{
                     color:#3a3a3a;
                     font-family:myFont, Microsoft YaHei, sans-serif;
                     display:flex;
                     flex-direction:row;
+                    height:100%;
                     .camera{
-
+                        line-height:36px;
+                        @media(min-width:768px){
+                            line-height:60px;
+                        }
                         .fa-youtube-play{
                             color:#00adb5;
                         }
@@ -57,6 +59,9 @@
                     .video-name{
                         padding-left:.6em;
                         font-weight: 800;
+                        @media(min-width:768px){
+                            line-height:60px;
+                        }
                         .mobile-show-date{
                             display:none;
                             font-size:.5rem;
