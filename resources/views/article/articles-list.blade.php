@@ -13,7 +13,7 @@
                         @foreach($articleList as $item)
                         <li class="article-list-item">
                             <div class="item-status">
-                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <i class="fa fa-book" aria-hidden="true"></i>
                             </div>
                             <div class="item-link">
                                 <a href={{"/article-content/".$item->id}}>

@@ -42,14 +42,26 @@
               float: left;
             }
             .item-status {
-              width: 15%;
-              font-size: 25px;
+              width: 10%;
+              font-size: 1.7rem;
+              @media (max-width:767px) {
+                font-size: 1.4rem;
+                width: 15%;
+              }
               text-align: center;
-              padding: 10px 0;
               height: 60px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              i{
+                color:#3097D1;
+              }
             }
             .item-link {
-              width: 65%;
+              width: 70%;
+              @media (max-width:767px) {
+                width: 60%;
+              }
               padding: 10px 0;
               a {
                 color: #48466d;
