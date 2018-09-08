@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c479e8ab-fd4b-405d-898d-a64bb1c5b2cb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/article-content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/article-content.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/assets/sass/article-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/article-list.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/article/articles-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/article/articles-list.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +98,7 @@
           <entry key="env" value="11" />
           <entry key="js" value="680" />
           <entry key="php" value="24230" />
-          <entry key="scss" value="8049" />
+          <entry key="scss" value="8050" />
           <entry key="vue" value="211" />
         </counts>
       </usages-collector>
@@ -113,7 +108,7 @@
           <entry key="JavaScript" value="680" />
           <entry key="PHP" value="12188" />
           <entry key="PLAIN_TEXT" value="37" />
-          <entry key="SCSS" value="8049" />
+          <entry key="SCSS" value="8050" />
           <entry key="Vue.js" value="211" />
         </counts>
       </usages-collector>
@@ -186,8 +181,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/assets/sass/article-list.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="60" column="25" lean-forward="true" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+            <state relative-caret-position="377">
+              <caret line="59" column="24" lean-forward="true" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -775,12 +770,12 @@
       <workItem from="1535723486048" duration="3729000" />
       <workItem from="1535816157319" duration="1675000" />
       <workItem from="1535903168330" duration="473000" />
-      <workItem from="1536416442723" duration="2324000" />
+      <workItem from="1536416442723" duration="2438000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="302120000" />
+    <option name="totallyTimeSpent" value="302234000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1088,8 +1083,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/sass/article-list.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="60" column="25" lean-forward="true" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+        <state relative-caret-position="377">
+          <caret line="59" column="24" lean-forward="true" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
         </state>
       </provider>
     </entry>
