@@ -47,5 +47,55 @@ class Controller extends BaseController
             }
         }
     }
+    
+    //日期转化为英文
+    public function date_to_en(&$videoList)
+    {
+        for ($i = 0; $i < count($videoList); $i++) {
+            $time_created = $videoList[$i]['created_at'];
+            $year = substr($time_created, 0, 4);
+            $day = substr($time_created, 8, 2);
+            $month = substr($time_created, 5, 2);
+            switch ($month) {
+                case "01":
+                    $month = "Jan";
+                    break;
+                case "02":
+                    $month = "Feb";
+                    break;
+                case "03":
+                    $month = "Mar";
+                    break;
+                case "04":
+                    $month = "Apr";
+                    break;
+                case "05":
+                    $month = "Mar";
+                    break;
+                case "06":
+                    $month = "Jun";
+                    break;
+                case "07":
+                    $month = "Jul";
+                    break;
+                case "08":
+                    $month = "Agu";
+                    break;
+                case "09":
+                    $month = "Sep";
+                    break;
+                case "10":
+                    $month = "Oct";
+                    break;
+                case "11":
+                    $month = "Nov";
+                    break;
+                case "12":
+                    $month = "Dec";
+                    break;
+            }
+            $videoList[$i]['date_en']=$month.' '.$day.'，'.$year;
+        }
+    }
 }
 

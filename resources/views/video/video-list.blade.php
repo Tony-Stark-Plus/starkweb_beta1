@@ -42,7 +42,7 @@
                                 </a>
                             </div>
                             <div class="item-behind col-md-3 un-watch">
-                                <span>{{$item->month}} {{$item->day}}， {{$item->year}}</span>
+                                <span>{{$item->date_en}}</span>
                             </div>
                         </div>
                     </li>
