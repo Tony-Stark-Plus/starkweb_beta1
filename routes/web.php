@@ -53,4 +53,4 @@ Route::get('/404',function(){
 Route::get('/hljs',function(){
     return view('title');
 });
-Route::get('/weixin','weixinController@index');
+Route::get('/weixin/articleList/{page}','weixinController@index');
