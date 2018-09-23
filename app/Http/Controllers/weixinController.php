@@ -21,4 +21,8 @@ class weixinController extends Controller
         $data['articleList']=$articleList;
         return $data;
     }
+    public function articleContent($id){
+        $articleContent=articleList::where('id',$id)->get(['id', 'aname','content','created_at']);
+        return $articleContent;
+    }
 }
