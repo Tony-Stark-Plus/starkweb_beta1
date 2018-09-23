@@ -27,5 +27,6 @@ class weixinController extends Controller
         $articleContent['content']=Parsedown::instance()
             ->setMarkupEscaped(true)
             ->text($articleContent['content']);
+        return $articleContent;
     }
 }
