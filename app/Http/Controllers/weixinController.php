@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\articleList;
+use Parsedown;
 
 class weixinController extends Controller
 {
@@ -22,7 +23,9 @@ class weixinController extends Controller
         return $data;
     }
     public function articleContent($id){
-        $articleContent=articleList::where('id',$id)->get(['id', 'aname','content','created_at']);
-        return $articleContent;
+        $articleContent=articleList::where('id',$id)->first(['id', 'aname','content','created_at']);
+        $articleContent['content']=Parsedown::instance()
+            ->setMarkupEscaped(true)
+            ->text($articleContent['content']);
     }
 }
