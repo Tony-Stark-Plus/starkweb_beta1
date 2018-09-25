@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c479e8ab-fd4b-405d-898d-a64bb1c5b2cb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/weixinController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/weixinController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,7 +32,7 @@
     <session id="1333807277">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="69" />
+          <entry key="project.closed" value="71" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="5" />
@@ -42,7 +43,9 @@
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="2" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="5" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="2" />
@@ -51,7 +54,7 @@
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="70" />
+          <entry key="project.opened" value="72" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -67,9 +70,9 @@
           <entry key="js" value="64" />
           <entry key="json" value="9" />
           <entry key="lock" value="3" />
-          <entry key="php" value="452" />
+          <entry key="php" value="453" />
           <entry key="png" value="9" />
-          <entry key="scss" value="110" />
+          <entry key="scss" value="111" />
           <entry key="svg" value="7" />
           <entry key="twig" value="2" />
           <entry key="vue" value="13" />
@@ -78,14 +81,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Blade" value="174" />
+          <entry key="Blade" value="175" />
           <entry key="CSS" value="2" />
           <entry key="Image" value="13" />
           <entry key="JSON" value="12" />
           <entry key="JavaScript" value="64" />
           <entry key="PHP" value="279" />
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="SCSS" value="110" />
+          <entry key="SCSS" value="111" />
           <entry key="SVG" value="7" />
           <entry key="Twig" value="2" />
           <entry key="Vue.js" value="13" />
@@ -97,8 +100,8 @@
           <entry key="dummy" value="26" />
           <entry key="env" value="11" />
           <entry key="js" value="680" />
-          <entry key="php" value="25201" />
-          <entry key="scss" value="8088" />
+          <entry key="php" value="25564" />
+          <entry key="scss" value="8089" />
           <entry key="vue" value="211" />
         </counts>
       </usages-collector>
@@ -106,9 +109,9 @@
         <counts>
           <entry key="Blade" value="12052" />
           <entry key="JavaScript" value="680" />
-          <entry key="PHP" value="13149" />
+          <entry key="PHP" value="13512" />
           <entry key="PLAIN_TEXT" value="37" />
-          <entry key="SCSS" value="8088" />
+          <entry key="SCSS" value="8089" />
           <entry key="Vue.js" value="211" />
         </counts>
       </usages-collector>
@@ -119,23 +122,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/weixinController.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/sass/article-content.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-              <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="504">
+              <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/weixinController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+            <state relative-caret-position="539">
+              <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+              <folding>
+                <element signature="e#40#68#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,8 +151,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/webController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="14" />
+            <state relative-caret-position="488">
+              <caret line="103" column="42" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
+              <folding>
+                <element signature="e#40#51#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -211,8 +217,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>main</find>
-      <find>head-title</find>
       <find>head-t</find>
       <find>changeArray</find>
       <find>create</find>
@@ -241,6 +245,8 @@
       <find>video-list-item</find>
       <find>container</find>
       <find>nav-item</find>
+      <find>return $articleContent;</find>
+      <find>return $previous_article;</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -300,13 +306,13 @@
         <option value="$PROJECT_DIR$/resources/assets/sass/video-list.scss" />
         <option value="$PROJECT_DIR$/resources/views/article/articles-list.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
-        <option value="$PROJECT_DIR$/resources/assets/sass/article-content.scss" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
         <option value="$PROJECT_DIR$/resources/views/video/video-list.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/webController.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/article-list.scss" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/article-content.scss" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/weixinController.php" />
       </list>
     </option>
@@ -802,12 +808,14 @@
       <workItem from="1537439560236" duration="468000" />
       <workItem from="1537449541298" duration="2845000" />
       <workItem from="1537618054950" duration="2425000" />
-      <workItem from="1537711621983" duration="2648000" />
+      <workItem from="1537711621983" duration="2849000" />
+      <workItem from="1537755837463" duration="745000" />
+      <workItem from="1537875343995" duration="2541000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="311575000" />
+    <option name="totallyTimeSpent" value="315062000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -918,13 +926,6 @@
     <entry file="file://$PROJECT_DIR$/resources/views/user/login.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/article/article-content.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="81" column="42" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/discuss/discuss_community.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="518">
@@ -1021,13 +1022,6 @@
     <entry file="file://$PROJECT_DIR$/resources/assets/sass/comment.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/article-content.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1491">
-          <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -1053,13 +1047,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/commentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1067,6 +1055,23 @@
           <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/article/article-content.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1701">
+          <caret line="81" column="42" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/articleList.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DicussionController.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1102,27 +1107,27 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CaptchaController.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/articleList.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/article-content.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+        <state relative-caret-position="504">
+          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/webController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="14" />
+        <state relative-caret-position="488">
+          <caret line="103" column="42" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
+          <folding>
+            <element signature="e#40#51#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/weixinController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        <state relative-caret-position="539">
+          <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
