@@ -27,9 +27,9 @@ class weixinController extends Controller
     public function articleContent($id)
     {
         $articleContent = articleList::where('id', $id)->first(['id', 'aname', 'content', 'created_at']);
-//        $articleContent['content'] = Parsedown::instance()
-//            ->setMarkupEscaped(true)
-//            ->text($articleContent['content']);
+        $articleContent['content'] = Parsedown::instance()
+            ->setMarkupEscaped(true)
+            ->text($articleContent['content']);
         $articleAllList = articleList::latest()->get(['id', 'aname']);
         //声明前、后一篇文章
         $previous_article=null;
