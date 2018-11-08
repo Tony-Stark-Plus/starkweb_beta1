@@ -36,7 +36,7 @@
                                     <div class="camera"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></div>
                                     <div class="video-name">
                                         {{$item->vname}}
-                                        <div class="mobile-show-date">{{$item->month}} {{$item->day}}， {{$item->year}}</div>
+                                        <div class="mobile-show-date">{{$item->date_en}}</div>
                                     </div>
                                     {{--<span class="duihao"><i class="fa fa-check-square" aria-hidden="true"></i></span>--}}
                                 </a>
