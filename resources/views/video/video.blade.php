@@ -12,7 +12,7 @@
                 <div class="next change-lesson"><i class="fa fa-forward" aria-hidden="true"></i></div>   
                 <video id="my-player" style=""
                 class="video-js vjs-big-play-centered vjs-play-progress vjs-slider-bar .vjs-volume-level vjs-load-progress"
-                controls preload="auto" poster="http://ozz0bm6k3.bkt.clouddn.com/img/fantastic/video.jpg"
+                controls preload="auto" poster="http://xsy-cdn.xyz/img/fantastic/video.jpg"
                     data-setup='{"playbackRates": [0.5,1, 1.5, 2] }'>
                         <source src={{ $data['discussion']['videoUrl']}} type="video/mp4"></source>
                         <p class="vjs-no-js">
