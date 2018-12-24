@@ -1,6 +1,6 @@
 <template>
    <div>
-        <!-- <div class="top-bar"></div>
+         <div class="top-bar"></div>
         <div class="homeHeader">
             <div class="logo">
                 <img src="/img/logo.png" alt="">
@@ -86,7 +86,7 @@
                     <div class="footer-bottom-right">© Stark IT 2018. All rights reserved. 京ICP备17021114号</div>
                 </div>
             </div>
-         </div> -->
+         </div>
     </div>  
 </template>
 

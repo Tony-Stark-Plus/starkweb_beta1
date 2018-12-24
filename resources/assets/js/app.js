@@ -6,15 +6,14 @@ import './form';
 import './main';
 import './learn';
 import './comments';
-import router from './routes'
-import vueRouter from 'vue-router';
+import Vue from 'vue'
+import VueRouter from 'vue-router';
+import router from './router';
 
+window.Vue = require('vue');
+Vue.use(VueRouter);
 
-// window.Vue = require('vue');
-// Vue.use(vueRouter);
-//
-//
-// const app = new Vue({
-//     el: '#app',
-//     router:router
-// });
+new Vue({
+    el:"#app",
+    router
+});
