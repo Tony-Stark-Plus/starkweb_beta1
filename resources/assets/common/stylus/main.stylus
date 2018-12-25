@@ -1,0 +1,68 @@
+.header_wrapper
+    width 100%
+    .top-bar
+        width 100%
+        height 5px
+        bg-image('/img/top-bar.png',100%,5px)
+    .main_header
+        width 100%
+        height 80px
+        display flex
+        padding-left 30px
+        .logo_wrapper
+            flex 3
+            .logo
+                width 200px
+                height 50px
+                margin 5px auto
+                bg-image('/img/logo.svg',200px,50px)
+        .searcher
+            flex 8
+            height 40px
+            margin-top 15px
+            .searcher_form
+                width 100%
+                .form-wrapper
+                    display flex
+                    padding-left 10px
+                    border 1px solid rgba(175,189,207,.5)
+                    border-radius 7px
+                    .search-input
+                        flex 100
+                        outline: none
+                        height 30px
+                        border none
+                        font-size 16px
+                        &::-webkit-input-placeholder
+                            color: rgba(175,189,207,.8)
+                            font-size: 1px
+                    .search_go
+                        flex 1 0 25px
+                        height 30px
+                        margin-right 4px
+                        border none
+        .user-profile
+            flex 3
+            display flex
+            margin-top 10px
+            justify-content center
+            height 40px
+            .button
+                height 40px
+                line-height 40px
+                padding 0 17px
+                color #f5f5f1
+                font-family myFont
+                font-size 16px
+                font-weight 400
+                text-decoration-line none
+            .login
+                background linear-gradient(90deg,#58a8e9,#d41f4d)
+                border-radius .3em
+                margin-right 6%
+            .register
+                background:linear-gradient(180deg,#3C8CE7,#00EAFF)
+                border-radius .3em
+                color:#f5f8fa
+
+

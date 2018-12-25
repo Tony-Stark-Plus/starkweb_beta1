@@ -1,10 +1,9 @@
 import VueRouter from 'vue-router'
 
-
 const routes = [
     {
-        path:'/home',
-        component: require('./components/test.vue')
+        path:'/',
+        component: require('../components/App.vue')
     }
 ];
 

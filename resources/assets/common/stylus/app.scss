@@ -2,10 +2,10 @@
 @import "variables";
 // Bootstrap
 //@import '~bootstrap/scss/bootstrap';
-@import "~video.js/src/css/vjs";
+@import "../../../../node_modules/video.js/src/css/vjs";
 @import "video";
 @import "article-list";
-@import "~font-awesome/css/font-awesome";
+@import "../../../../node_modules/font-awesome/css/font-awesome.css";
 @import "article-content";
 @import "video-list";
 @import "css-adjust";
