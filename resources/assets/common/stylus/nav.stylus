@@ -1,0 +1,22 @@
+.navigation
+  width 100%
+  border-top 1px solid rgba(0,0,0,.12)
+  border-bottom 1px solid rgba(0,0,0,.12)
+  .nav-items
+    width 100%
+    max-width 1070px
+    display flex
+    margin 0 auto
+    .nav-item
+      flex 1
+      border-left 1px solid rgba(0,0,0,.12)
+      font-size 15px
+      font-weight 600
+      line-height 15px
+      padding 10px 0
+      text-align center
+      &:last-child
+        border-right 1px solid rgba(0,0,0,.12)
+        span
+          vertical-align:text-bottom
+

@@ -1,15 +1,23 @@
 <template>
-    <vheader v-bind:seller="seller"></vheader>
+   <div>
+       <v-header></v-header>
+       <navigation></navigation>
+       <v-foot></v-foot>
+   </div>
 </template>
 <style lang="stylus">
 @import "../common/stylus/mixin.stylus"
 @import '../common/stylus/main.stylus'
 </style>
 <script>
-    import vheader from './vheader/v-header'
+    import header from './vheader/v-header'
+    import navigation from './navigation/navigation'
+    import foot from './vfoot/v-foot'
     export default {
         components :{
-            vheader
+            'v-header': header,
+            navigation,
+            'v-foot' : foot
         },
         mounted() {
             console.log('Component mounted.')

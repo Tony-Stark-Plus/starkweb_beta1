@@ -222,7 +222,7 @@
                     <li class="qq"><a href=""><i class="fa fa-qq" aria-hidden="true"></i></a></li>
                     <li class="weixin"><a href=""><i class="fa fa-weixin" aria-hidden="true"></i></a></li>
                     <li class="weibo"><a href=""><i class="fa fa-weibo" aria-hidden="true"></i></a></li>
-                    <li class="github"><a href=""><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li class="github"><a href="https://github.com/Tony-Stark-Plus/starkweb_beta1"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
             <div class="col-md-2 mobile pad">
@@ -252,13 +252,13 @@
                     <img src="https://gw.alicdn.com/tps/TB1xno8OFXXXXXNaFXXXXXXXXXX-338-80.png" alt="" class="">
                 </a>
                 <a href="https://www.qiniu.com/" class="qiniu-logo" target="_blank">
-                    <img src="http://ozz0bm6k3.bkt.clouddn.com/qiniu.png" alt="" class="">
+                    <img src="http://xsy-cdn.xyz/qiniu.png" alt="" class="">
                 </a>
             </div>
         </div>
         <div class="footer-bottom mobile pad">
             <div class="footer-bottom-left">Developed By stark,Powered By Laravel</div>
-            <div class="footer-bottom-right">© Stark IT 2018. All rights reserved. 皖ICP备18007296号-1</div>
+            <div class="footer-bottom-right">© Stark Web 2018. All rights reserved. 皖ICP备18007296号-1</div>
             <div class="clear"></div>
         </div>
     </div>
