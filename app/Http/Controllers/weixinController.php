@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\articleList;
+use App\videoList;
 use Parsedown;
 use phpDocumentor\Reflection\Types\Object_;
 
