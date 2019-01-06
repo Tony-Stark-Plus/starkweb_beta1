@@ -9,11 +9,13 @@ import './comments';
 import Vue from 'vue'
 import VueRouter from 'vue-router';
 import router from './router';
+import App from '../components/App'
 
 window.Vue = require('vue');
 Vue.use(VueRouter);
-
+const axios = require('axios');
 new Vue({
-    el:"#app",
-    router
-});
+    router,
+    template: '<App/>',
+    components: {App}
+}).$mount('#app');

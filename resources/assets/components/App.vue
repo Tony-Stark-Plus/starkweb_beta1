@@ -2,6 +2,7 @@
    <div>
        <v-header></v-header>
        <navigation></navigation>
+       <router-view></router-view>
        <v-foot></v-foot>
    </div>
 </template>
@@ -14,6 +15,7 @@
     import navigation from './navigation/navigation'
     import foot from './vfoot/v-foot'
     export default {
+        name:'App',
         components :{
             'v-header': header,
             navigation,

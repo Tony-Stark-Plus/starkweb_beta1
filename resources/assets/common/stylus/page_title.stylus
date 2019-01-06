@@ -1,0 +1,14 @@
+.container
+  width 100%
+  .row
+    width 100%
+    .page_title
+      height 100px
+      background linear-gradient(to right, rgb(35, 37, 38), rgb(65, 67, 69))
+      color #FFFFFF
+      box-shadow 0 12px 24px 0 rgba(7, 17, 27, 0.2)
+      border-radius 10px
+      font-size 30px
+      line-height 100px
+      text-align center
+      margin 10px 0

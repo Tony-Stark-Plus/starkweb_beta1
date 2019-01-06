@@ -2,8 +2,8 @@ import VueRouter from 'vue-router'
 
 const routes = [
     {
-        path:'/',
-        component: require('../components/App.vue')
+        path:'/videoList',
+        component: require('../components/videoList/videoList.vue')
     }
 ];
 
