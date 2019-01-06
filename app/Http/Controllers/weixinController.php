@@ -50,12 +50,9 @@ class weixinController extends Controller
         $articleContent['next_article']=$next_article;
         return $articleContent;
     }
-    public function videoList()
+    public function videoList(Request $request)
     {
-        $data = [];
-        $this->data_with_cookie($data);
-        $videoList = videoList::orderBy('created_at', 'desc')->paginate(12);
-        $this->date_to_en($videoList);
-        return $data;
+        $videoList = videoList::latest()->get();
+        return $videoList;
     }
 }
