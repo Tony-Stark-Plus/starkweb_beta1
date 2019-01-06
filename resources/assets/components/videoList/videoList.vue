@@ -18,12 +18,19 @@
         },
         data(){
             return{
-                page_title:'web开发视频更新，All in here!'
+                page_title:'web开发视频更新，All in here!',
+                videoList: null
             }
         },
         created() {
-            axios.get('https://api.coindesk.com/v1/bpi/currentprice.json')
-                .then(response => (this.info = response))
+            const axios = require('axios');
+            axios.get('/weixin/videoList/1')
+                .then(response => (
+                    this.videoList = response.data
+                )).catch(function (error) {
+                console.log(error);
+            });
+
         }
     }
 </script>

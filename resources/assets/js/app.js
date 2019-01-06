@@ -13,7 +13,7 @@ import App from '../components/App'
 
 window.Vue = require('vue');
 Vue.use(VueRouter);
-const axios = require('axios');
+
 new Vue({
     router,
     template: '<App/>',
