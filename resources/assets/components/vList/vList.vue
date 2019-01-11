@@ -1,0 +1,30 @@
+<template>
+    <div class="List-wrapper row">
+        <ul class="List col-md-8 offset-md-2">
+            <li v-for="item in listData.videoList" class="item" v-if="listData['videoList']">
+                <span class="video_name"><span class="iconfont icon-video"></span>{{item.vname}}</span>
+                <span class="date">{{item.date_en}}</span>
+            </li>
+        </ul>
+    </div>
+</template>
+
+<script>
+    export default {
+        name: "vList",
+        data(){
+            return {
+                listData: null
+            }
+        },
+        props:{
+            listData: {
+                type: Object
+            }
+        }
+    }
+</script>
+
+<style scoped lang="stylus">
+    @import "../../common/stylus/vList.stylus";
+</style>

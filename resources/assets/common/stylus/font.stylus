@@ -1,10 +1,11 @@
 @font-face {
   font-family: 'iconfont';  /* project id 984404 */
-  src: url('//at.alicdn.com/t/font_984404_g4ucc6cn3f.eot');
-  src: url('//at.alicdn.com/t/font_984404_g4ucc6cn3f.eot?#iefix') format('embedded-opentype'),
-          url('//at.alicdn.com/t/font_984404_g4ucc6cn3f.woff') format('woff'),
-          url('//at.alicdn.com/t/font_984404_g4ucc6cn3f.ttf') format('truetype'),
-          url('//at.alicdn.com/t/font_984404_g4ucc6cn3f.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_984404_1eyeng01v0n.eot');
+  src: url('//at.alicdn.com/t/font_984404_1eyeng01v0n.eot?#iefix') format('embedded-opentype'),
+          url('//at.alicdn.com/t/font_984404_1eyeng01v0n.woff2') format('woff2'),
+          url('//at.alicdn.com/t/font_984404_1eyeng01v0n.woff') format('woff'),
+          url('//at.alicdn.com/t/font_984404_1eyeng01v0n.ttf') format('truetype'),
+          url('//at.alicdn.com/t/font_984404_1eyeng01v0n.svg#iconfont') format('svg');
 }
 @font-face
   font-family: myFont
@@ -28,3 +29,9 @@
   font-size 15px
   font-weight 700
   color #d81e06
+.icon-video:before
+  content: "\e6bf"
+  font-size 16px
+  font-weight 700
+
+

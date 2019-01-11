@@ -57,4 +57,4 @@ Route::get('/hljs',function(){
 });
 Route::get('/weixin/articleList/{page}','weixinController@index');
 Route::get('/weixin/articleContent/{id}','weixinController@articleContent');
-Route::get('/weixin/videoList/{id}','weixinController@videoList');
+Route::get('/weixin/videoList/{page}','weixinController@videoList');
