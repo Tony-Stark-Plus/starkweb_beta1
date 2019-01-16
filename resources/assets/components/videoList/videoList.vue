@@ -17,7 +17,7 @@
         components :{
             page_title,
             vList,
-            pagination
+            pagination,
         },
         mounted() {
             console.log('Component mounted.')
@@ -26,7 +26,7 @@
             return{
                 page_title:'web开发视频更新，All in here!',
                 videoList: null,
-                page_index: 1
+                page_index: 1,
             }
         },
         created() {

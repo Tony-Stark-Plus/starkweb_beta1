@@ -53,7 +53,7 @@ class weixinController extends Controller
     public function videoList(Request $request)
     {
         //视频总数
-        $video_num = articleList::count();
+        $video_num = videoList::count();
         //分页需要的页数
         $page_num = ceil($video_num / 10);
         $videoList = videoList::latest()->skip(($request['page'] - 1) * 10)->take(10)->get();

@@ -1,0 +1,36 @@
+.pagination
+  display flex
+  height 50px
+  .wrapper_page
+    display flex
+    justify-content center
+    flex 1
+    .previous_page,.next_page
+      width: 30%
+      padding 8px 0px
+      background-color #06A7E0
+      text-align center
+      color #FFFFFF
+      border-radius 5px
+      font-size 15px
+      line-height 15px
+      height 31px
+  .skip_page
+    flex 2
+    .skip_wrapper
+      display: flex
+      width: 60%
+      justify-content center
+      margin 0 auto
+      font-size 16px
+      .skip_input
+        width 30px
+      .skip_button
+        width 60px
+        font-size 16px
+        margin-left 10px
+        text-align center
+        padding 0
+      span
+        line-height 30px
+
