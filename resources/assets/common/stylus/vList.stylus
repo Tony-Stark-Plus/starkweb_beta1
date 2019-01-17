@@ -15,11 +15,15 @@
       border-bottom 1px solid #999999
       &:last-child
         border-bottom none
-      .video_name
-        flex 2
-        span
-          padding-right 10px
-      .date
-        flex 1
-        text-align center
-
+      a
+        width 100%
+        display flex
+        color: #3a3a3a
+        text-decoration none
+        .video_name
+          flex 2
+          span
+            padding-right 10px
+        .date
+          flex 1
+          text-align center

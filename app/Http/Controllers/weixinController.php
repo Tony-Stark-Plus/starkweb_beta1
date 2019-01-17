@@ -63,4 +63,10 @@ class weixinController extends Controller
         $data['page_index'] = (int)$request['page'];
         return $data;
     }
+    public function find_video_mes(Request $request){
+        $data = videoList::find($request['id']);
+        $data['created_time'] = substr($data['created_at'],0,10);
+        unset($data->created_at,$data->updated_at);
+        return $data;
+    }
 }

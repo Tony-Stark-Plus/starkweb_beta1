@@ -58,3 +58,4 @@ Route::get('/hljs',function(){
 Route::get('/weixin/articleList/{page}','weixinController@index');
 Route::get('/weixin/articleContent/{id}','weixinController@articleContent');
 Route::get('/weixin/videoList/{page}','weixinController@videoList');
+Route::get('/weixin/find_video_mes/{id}','weixinController@find_video_mes');

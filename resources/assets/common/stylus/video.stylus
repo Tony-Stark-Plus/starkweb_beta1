@@ -1,0 +1,7 @@
+.video_wrapper
+  .video_player
+    width 100%
+    min-height 500px
+    background-color #000
+  .video_mes
+    width 100%
