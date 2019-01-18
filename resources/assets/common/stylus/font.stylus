@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'iconfont';  /* project id 984404 */
-  src: url('//at.alicdn.com/t/font_984404_1eyeng01v0n.eot');
-  src: url('//at.alicdn.com/t/font_984404_1eyeng01v0n.eot?#iefix') format('embedded-opentype'),
-          url('//at.alicdn.com/t/font_984404_1eyeng01v0n.woff2') format('woff2'),
-          url('//at.alicdn.com/t/font_984404_1eyeng01v0n.woff') format('woff'),
-          url('//at.alicdn.com/t/font_984404_1eyeng01v0n.ttf') format('truetype'),
-          url('//at.alicdn.com/t/font_984404_1eyeng01v0n.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_984404_3b09lifkj1n.eot');
+  src: url('//at.alicdn.com/t/font_984404_3b09lifkj1n.eot?#iefix') format('embedded-opentype'),
+          url('//at.alicdn.com/t/font_984404_3b09lifkj1n.woff2') format('woff2'),
+          url('//at.alicdn.com/t/font_984404_3b09lifkj1n.woff') format('woff'),
+          url('//at.alicdn.com/t/font_984404_3b09lifkj1n.ttf') format('truetype'),
+          url('//at.alicdn.com/t/font_984404_3b09lifkj1n.svg#iconfont') format('svg');
 }
 @font-face
   font-family: myFont
@@ -33,5 +33,9 @@
   content: "\e6bf"
   font-size 16px
   font-weight 700
+.icon-download:before
+  content: "\e688"
+  font-weight 700
+
 
 

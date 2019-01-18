@@ -20,6 +20,8 @@
         display flex
         color: #3a3a3a
         text-decoration none
+        &:hover
+          color: $common_color
         .video_name
           flex 2
           span

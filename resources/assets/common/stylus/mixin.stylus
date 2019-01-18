@@ -3,3 +3,5 @@
 bg-image($url,$w,$h)
   background-image url($url)
   background-size $w $h
+
+$common_color = #14B982;

@@ -1,7 +1,35 @@
 .video_wrapper
   .video_player
     width 100%
-    min-height 500px
+    min-height 400px
     background-color #000
-  .video_mes
+    padding 0 5%
+  .video_mes_wrapper
     width 100%
+    padding 0 5%
+    .video_mes
+      height 50px
+      span
+        display inline-block
+      .video_name
+        font-size 18px
+        font-weight 700
+        line-height 50px
+        margin-right 5px
+      .video_download
+        display inline-block
+        font-size 15px
+        line-height 25px
+        height 25px
+        padding 0 7px
+        background-color #e7e7e7
+        margin-right 5px
+        color #000
+        text-decoration none
+        &:hover
+          background-color #06A7E0
+          color #fff
+      .video_date
+        font-size 12px
+        height 20px
+        margin-top 15px

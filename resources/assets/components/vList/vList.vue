@@ -28,5 +28,6 @@
 </script>
 
 <style scoped lang="stylus">
+    @import "../../common/stylus/mixin.stylus";
     @import "../../common/stylus/vList.stylus";
 </style>

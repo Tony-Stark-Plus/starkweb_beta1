@@ -240,10 +240,4 @@ class webController extends Controller
         return view('test');
     }
 
-    //获取下载文件的文件名 七牛云下载
-    public function get_download_name($url)
-    {
-        $name_arr = explode('/', $url);
-        return $name_arr[count($name_arr) - 1];
-    }
 }

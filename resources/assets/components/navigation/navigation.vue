@@ -1,12 +1,15 @@
 <template>
     <div class="navigation">
         <div class="nav-items">
-            <div class="nav-item">全部视频</div>
-            <div class="nav-item">学习路径</div>
-            <div class="nav-item">问答社区</div>
-            <div class="nav-item">文章教程</div>
-            <div class="nav-item"><span class="iconfont icon-hot">&nbsp;</span>订阅本站</div>
-            <div class="nav-item">签到优惠</div>
+            <div class="nav-item">
+                <router-link to="/videoList">全部视频</router-link>
+            </div>
+            <div class="nav-item">
+                <router-link to="/videoList">学习路径</router-link></div>
+            <div class="nav-item"><router-link to="/videoList">问答社区</router-link></div>
+            <div class="nav-item"><router-link to="/videoList">文章教程</router-link></div>
+            <div class="nav-item"><span class="iconfont icon-hot">&nbsp;</span><router-link to="/videoList">订阅本站</router-link></div>
+            <div class="nav-item"><router-link to="/videoList">签到优惠</router-link></div>
         </div>
     </div>
 </template>
@@ -18,5 +21,6 @@
 </script>
 
 <style scoped lang="stylus">
-@import "../../common/stylus/nav.stylus"
+    @import "../../common/stylus/mixin.stylus"
+    @import "../../common/stylus/nav.stylus"
 </style>

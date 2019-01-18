@@ -66,6 +66,8 @@ class weixinController extends Controller
     public function find_video_mes(Request $request){
         $data = videoList::find($request['id']);
         $data['created_time'] = substr($data['created_at'],0,10);
+        $url = $data['videoUrl'];
+        $data['download_name'] = $this->get_download_name($url);
         unset($data->created_at,$data->updated_at);
         return $data;
     }
