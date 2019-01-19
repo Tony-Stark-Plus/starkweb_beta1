@@ -7,7 +7,7 @@
             <div class="nav-item">
                 <router-link to="/videoList">学习路径</router-link></div>
             <div class="nav-item"><router-link to="/videoList">问答社区</router-link></div>
-            <div class="nav-item"><router-link to="/videoList">文章教程</router-link></div>
+            <div class="nav-item"><router-link to="/articleList">文章教程</router-link></div>
             <div class="nav-item"><span class="iconfont icon-hot">&nbsp;</span><router-link to="/videoList">订阅本站</router-link></div>
             <div class="nav-item"><router-link to="/videoList">签到优惠</router-link></div>
         </div>

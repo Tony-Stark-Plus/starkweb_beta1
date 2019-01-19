@@ -1,8 +1,6 @@
-.container
+.title_wrapper
   width 100%
-  .row
-    width 100%
-    .page_title
+  .page_title
       height 70px
       background linear-gradient(to right, rgb(35, 37, 38), rgb(65, 67, 69))
       color #FFFFFF
@@ -11,4 +9,4 @@
       font-size 25px
       line-height 70px
       text-align center
-      margin 10px 0
+      margin-top 10px

@@ -9,7 +9,11 @@ const routes = [
         path:'/video/:video_id',
         component: require('../components/video/video.vue'),
         props: true
-    }
+    },
+    {
+        path:'/articleList',
+        component: require('../components/articleList/articleList.vue')
+    },
 ];
 
 export default new VueRouter({

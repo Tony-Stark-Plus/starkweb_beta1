@@ -4375,6 +4375,10 @@ button:focus {
   background-color: #336B9A;
 }
 
+.article-list .wrap .row .article-list ul li .kind-plugins {
+  background-color: #ffcc66;
+}
+
 .main-content {
   padding: 0;
   background: #fff;

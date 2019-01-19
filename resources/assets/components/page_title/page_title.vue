@@ -1,10 +1,6 @@
 <template>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-10 page_title">{{page_title}}</div>
-            <div class="col-md-1"></div>
-        </div>
+    <div class="title_wrapper">
+            <div class="col-md-10 offset-md-1 page_title">{{page_title}}</div>
     </div>
 </template>
 

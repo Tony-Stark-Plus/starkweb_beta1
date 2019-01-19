@@ -39,7 +39,7 @@
             },
             previous_page() {
                 if(this.page_index <= 1){
-                    this.page_index = 0;
+                    this.page_index = 1;
                 }else{
                     this.page_index = this.paginationData.page_index - 1;
                     this.changePage();

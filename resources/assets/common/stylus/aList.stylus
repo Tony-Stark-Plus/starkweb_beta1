@@ -1,0 +1,49 @@
+.List-wrapper
+  width 90%
+  margin 25px auto
+  height 730px
+  .aList
+    background-color #ffffff
+    box-shadow 0 -2px 6px rgba(0, 0, 0, 0.36)
+    border-radius 5px
+    padding 0
+    cursor pointer
+    .item
+      display flex
+      border-bottom 1px solid #f2f2f2
+      &:last-child
+        border-bottom none
+      .number_icon
+        flex 3
+        text-align center
+        font-size 26px
+        line-height 26px
+        padding 22px 0
+        color $common_color
+      .main_mes
+        flex 20
+        padding 10px 0px 10px 0
+        color #505B6A
+        .article_name
+          display block
+          font-size 20px
+          &:hover
+            color $common_color
+            text-decoration $common_color
+        .date
+          display block
+          font-size 12px
+          margin-top 2px
+      .a_kind
+        display flex
+        justify-content: flex-end
+        flex 4
+        .common_kind
+          display inline-block
+          margin 20px 15px 30px 0px
+          font-size 14px
+          line-height 14px
+          padding 3px 5px
+          background-color #3097D1
+          border-radius 2px
+          color #fff
