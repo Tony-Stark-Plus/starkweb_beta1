@@ -25,6 +25,7 @@ class weixinController extends Controller
         return $data;
     }
 
+    //vue也用了
     public function articleContent($id)
     {
         $articleContent = articleList::where('id', $id)->first(['id', 'aname', 'content', 'created_at']);

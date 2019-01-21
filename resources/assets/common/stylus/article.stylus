@@ -1,0 +1,14 @@
+.all_part
+  width: 100%
+  padding-top 30px
+  padding-bottom 30px
+  background-color #F5F5F1
+  .article_part
+    width 70%
+    margin 30px auto
+    .article_wrapper
+      padding 10px 15px
+      background-color #ffffff
+      box-shadow 0 -1px 3px rgba(0, 0, 0, 0.20)
+      border-radius 2px
+      markdown()

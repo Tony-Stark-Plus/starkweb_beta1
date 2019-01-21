@@ -4,7 +4,7 @@
             <li class="item" v-for="item in listData.articleList" v-if="listData['articleList']">
                 <span class="number_icon">{{Math.floor(Math.random()*100)}}</span>
                 <span class="main_mes">
-                    <span class="article_name">{{item.aname}}</span>
+                    <router-link :to="'article/'+item.id"><span class="article_name">{{item.aname}}</span></router-link>
                     <span class="date">发表于{{item.created_at.substr(0,10)}}</span>
                 </span>
                 <div class="a_kind"><span :class="'common_kind '+item.kind_class">{{item.kind}}</span></div>

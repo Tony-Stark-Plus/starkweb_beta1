@@ -14,6 +14,11 @@ const routes = [
         path:'/articleList',
         component: require('../components/articleList/articleList.vue')
     },
+    {
+        path:'/article/:article_id',
+        component: require('../components/article/article.vue'),
+        props: true
+    },
 ];
 
 export default new VueRouter({

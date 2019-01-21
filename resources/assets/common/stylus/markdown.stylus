@@ -1,0 +1,29 @@
+markdown()
+  p
+    font-size 16px
+    margin 5px auto
+  blockquote
+    background-color: #d37176
+    padding: 5px 10px
+    border-color: #5bbcdd
+    font-size 17px
+    color: #fff
+    border-radius: 1px
+    margin 20px auto
+    p
+      margin 0
+  em
+    color #3097D1
+    font-size 15px
+  strong
+    color $common_color
+    font-weight 700
+    padding 0 5px
+  pre
+    code
+      font-size 15px
+  ul
+    font-size 14px
+    font-weight 200
+    li
+      list-style-type square

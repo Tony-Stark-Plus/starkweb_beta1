@@ -23,14 +23,17 @@
       .main_mes
         flex 20
         padding 10px 0px 10px 0
-        color #505B6A
-        .article_name
-          display block
-          font-size 20px
-          &:hover
-            color $common_color
-            text-decoration $common_color
+        a
+          color #505B6A
+          .article_name
+            display block
+            font-size 20px
+            &:hover
+              color $common_color
+              text-decoration $common_color
+              text-decoration-color $common_color
         .date
+          color #505B6A
           display block
           font-size 12px
           margin-top 2px
