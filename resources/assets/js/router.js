@@ -17,7 +17,8 @@ const routes = [
     {
         path:'/article/:article_id',
         component: require('../components/article/article.vue'),
-        props: true
+        props: true,
+        name: 'article'
     },
 ];
 

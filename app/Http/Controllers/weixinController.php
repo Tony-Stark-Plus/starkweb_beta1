@@ -45,6 +45,7 @@ class weixinController extends Controller
                 if($key<=count($articleAllList)-2){
                     $next_article = $articleAllList[$key+1];
                 }
+                break;
             }
         }
         $articleContent['previous_article']=$previous_article;
