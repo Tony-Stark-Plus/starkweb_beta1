@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c479e8ab-fd4b-405d-898d-a64bb1c5b2cb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/assets/common/stylus/list_kind.stylus" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/weixinController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/weixinController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/common/stylus/aList.stylus" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/common/stylus/aList.stylus" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/assets/common/stylus/article.stylus" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/common/stylus/article.stylus" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/common/stylus/font.stylus" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/common/stylus/font.stylus" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/assets/common/stylus/main.stylus" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/common/stylus/main.stylus" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/common/stylus/markdown.stylus" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/common/stylus/markdown.stylus" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/components/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/components/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/components/aList/aList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/components/aList/aList.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/assets/components/article/article.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/components/article/article.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/components/pagination/pagination.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/components/pagination/pagination.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/assets/js/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/router.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,11 +43,11 @@
     <session id="1333807277">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="95" />
+          <entry key="project.closed" value="96" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="7" />
-          <entry key="project.open.time.12" value="17" />
+          <entry key="project.open.time.12" value="18" />
           <entry key="project.open.time.13" value="11" />
           <entry key="project.open.time.14" value="18" />
           <entry key="project.open.time.15" value="4" />
@@ -60,7 +65,7 @@
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="5" />
-          <entry key="project.opened" value="96" />
+          <entry key="project.opened" value="97" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -73,18 +78,18 @@
           <entry key="gitignore" value="3" />
           <entry key="ico" value="3" />
           <entry key="jpg" value="1" />
-          <entry key="js" value="102" />
+          <entry key="js" value="105" />
           <entry key="json" value="18" />
           <entry key="lock" value="3" />
           <entry key="navigation" value="1" />
-          <entry key="php" value="506" />
+          <entry key="php" value="507" />
           <entry key="png" value="11" />
-          <entry key="scss" value="128" />
+          <entry key="scss" value="130" />
           <entry key="sql" value="1" />
-          <entry key="stylus" value="52" />
+          <entry key="stylus" value="57" />
           <entry key="svg" value="8" />
           <entry key="twig" value="2" />
-          <entry key="vue" value="89" />
+          <entry key="vue" value="92" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -94,15 +99,15 @@
           <entry key="CSS" value="2" />
           <entry key="Image" value="15" />
           <entry key="JSON" value="21" />
-          <entry key="JavaScript" value="102" />
-          <entry key="PHP" value="306" />
+          <entry key="JavaScript" value="105" />
+          <entry key="PHP" value="307" />
           <entry key="PLAIN_TEXT" value="12" />
-          <entry key="SCSS" value="128" />
+          <entry key="SCSS" value="130" />
           <entry key="SVG" value="8" />
           <entry key="Scratch" value="1" />
-          <entry key="Stylus" value="51" />
+          <entry key="Stylus" value="56" />
           <entry key="Twig" value="2" />
-          <entry key="Vue.js" value="86" />
+          <entry key="Vue.js" value="89" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -110,23 +115,23 @@
         <counts>
           <entry key="dummy" value="26" />
           <entry key="env" value="11" />
-          <entry key="js" value="1301" />
-          <entry key="php" value="26642" />
+          <entry key="js" value="1311" />
+          <entry key="php" value="26645" />
           <entry key="scss" value="8127" />
           <entry key="styl" value="4" />
-          <entry key="stylus" value="6625" />
-          <entry key="vue" value="7812" />
+          <entry key="stylus" value="6808" />
+          <entry key="vue" value="8013" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Blade" value="12204" />
-          <entry key="JavaScript" value="1301" />
-          <entry key="PHP" value="14438" />
+          <entry key="JavaScript" value="1311" />
+          <entry key="PHP" value="14441" />
           <entry key="PLAIN_TEXT" value="106" />
           <entry key="SCSS" value="8127" />
-          <entry key="Stylus" value="6619" />
-          <entry key="Vue.js" value="7753" />
+          <entry key="Stylus" value="6802" />
+          <entry key="Vue.js" value="7954" />
         </counts>
       </usages-collector>
     </session>
@@ -136,50 +141,88 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/article.stylus">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="44" column="25" lean-forward="true" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/assets/components/article/article.vue">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1012">
+              <caret line="44" column="42" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/markdown.stylus">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="805">
+              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/article-content.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1063">
+              <caret line="85" column="34" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/aList.stylus">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/list_kind.stylus">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/components/aList/aList.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="644">
+              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/article-list.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3312">
+              <caret line="144" column="13" lean-forward="true" selection-start-line="144" selection-start-column="13" selection-end-line="144" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/js/learn.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/js/router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="667">
+              <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/weixinController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
-              <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="58" column="39" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/components/articleList/articleList.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-42">
-              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -196,7 +239,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>'SWAL' =&gt; Softon\SweetAlert\Facades\SWAL::class</find>
       <find>redirect</find>
       <find>video-list</find>
       <find>ba</find>
@@ -226,6 +268,7 @@
       <find>get_</find>
       <find>stylusOptions</find>
       <find>cu</find>
+      <find>table</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -242,7 +285,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/resources/assets/js/video-list.js" />
         <option value="$PROJECT_DIR$/resources/assets/js/components/test.vue" />
         <option value="$PROJECT_DIR$/resources/assets/js/video.js" />
@@ -260,7 +302,6 @@
         <option value="$PROJECT_DIR$/resources/assets/components/vfooter/vfooter.vue" />
         <option value="$PROJECT_DIR$/resources/assets/components/vfooter/v-footer.vue" />
         <option value="$PROJECT_DIR$/resources/assets/components/title/title.vue" />
-        <option value="$PROJECT_DIR$/resources/assets/components/App.vue" />
         <option value="$PROJECT_DIR$/node_modules/laravel-mix/src/builder/webpack-rules.js" />
         <option value="$PROJECT_DIR$/resources/assets/common/stylus/app.scss" />
         <option value="$PROJECT_DIR$/resources/assets/components/videoList.vue" />
@@ -280,19 +321,21 @@
         <option value="$PROJECT_DIR$/resources/assets/components/videoList/videoList.vue" />
         <option value="$PROJECT_DIR$/resources/assets/components/vList/vList.vue" />
         <option value="$PROJECT_DIR$/resources/assets/components/articleList/articleList.vue" />
-        <option value="$PROJECT_DIR$/resources/assets/components/pagination/pagination.vue" />
         <option value="$PROJECT_DIR$/resources/assets/common/stylus/pagination.stylus" />
-        <option value="$PROJECT_DIR$/resources/assets/components/aList/aList.vue" />
-        <option value="$PROJECT_DIR$/resources/assets/common/stylus/aList.stylus" />
         <option value="$PROJECT_DIR$/resources/assets/js/app.js" />
         <option value="$PROJECT_DIR$/resources/views/layouts/master.blade.php" />
-        <option value="$PROJECT_DIR$/resources/assets/common/stylus/markdown.stylus" />
-        <option value="$PROJECT_DIR$/resources/assets/common/stylus/main.stylus" />
         <option value="$PROJECT_DIR$/resources/assets/common/stylus/font.stylus" />
-        <option value="$PROJECT_DIR$/resources/assets/js/router.js" />
+        <option value="$PROJECT_DIR$/resources/assets/components/App.vue" />
+        <option value="$PROJECT_DIR$/resources/assets/common/stylus/main.stylus" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/weixinController.php" />
-        <option value="$PROJECT_DIR$/resources/assets/components/article/article.vue" />
+        <option value="$PROJECT_DIR$/resources/assets/components/pagination/pagination.vue" />
         <option value="$PROJECT_DIR$/resources/assets/common/stylus/article.stylus" />
+        <option value="$PROJECT_DIR$/resources/assets/components/article/article.vue" />
+        <option value="$PROJECT_DIR$/resources/assets/js/router.js" />
+        <option value="$PROJECT_DIR$/resources/assets/common/stylus/markdown.stylus" />
+        <option value="$PROJECT_DIR$/resources/assets/components/aList/aList.vue" />
+        <option value="$PROJECT_DIR$/resources/assets/common/stylus/list_kind.stylus" />
+        <option value="$PROJECT_DIR$/resources/assets/common/stylus/aList.stylus" />
       </list>
     </option>
   </component>
@@ -401,7 +444,7 @@
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
@@ -429,6 +472,134 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Requests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Illuminate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Illuminate" type="462c0819:PsiDirectoryNode" />
+              <item name="Foundation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Illuminate" type="462c0819:PsiDirectoryNode" />
+              <item name="Foundation" type="462c0819:PsiDirectoryNode" />
+              <item name="Validation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Illuminate" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -648,134 +819,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stark" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stark" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stark" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stark" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stark" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stark" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Requests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stark" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stark" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stark" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stark" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stark" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stark" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stark" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stark" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Illuminate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stark" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Illuminate" type="462c0819:PsiDirectoryNode" />
-              <item name="Foundation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stark" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Illuminate" type="462c0819:PsiDirectoryNode" />
-              <item name="Foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="Validation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stark" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Illuminate" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -908,12 +951,13 @@
       <workItem from="1547881117581" duration="182000" />
       <workItem from="1547888925169" duration="11161000" />
       <workItem from="1548078227423" duration="7122000" />
-      <workItem from="1548161857636" duration="8557000" />
+      <workItem from="1548161857636" duration="8773000" />
+      <workItem from="1548256116321" duration="4950000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="430800000" />
+    <option name="totallyTimeSpent" value="435966000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -931,7 +975,7 @@
       <window_info id="Structure" order="0" sideWeight="0.50104386" side_tool="true" weight="0.21486267" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32956383" />
-      <window_info active="true" x="0" y="22" width="310" height="778" id="Project" order="3" sideWeight="0.49895614" visible="true" weight="0.25444266" />
+      <window_info active="true" x="0" y="22" width="310" height="778" id="Project" order="3" sideWeight="0.49895614" visible="true" weight="0.2584814" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32913166" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -993,20 +1037,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/laravel-mix/setup/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/laravel-mix/src/builder/WebpackConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/laravel-mix/src/builder/webpack-rules.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -1035,13 +1065,6 @@
     <entry file="file://$PROJECT_DIR$/resources/views/video/video.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-297" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/webController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="38" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/components/vheader/v-header.vue">
@@ -1097,13 +1120,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/article-list.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3358">
-          <caret line="146" column="40" selection-start-line="146" selection-start-column="40" selection-end-line="146" selection-end-column="40" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/components/vfoot/v-foot.vue">
       <provider selected="true" editor-type-id="text-editor">
@@ -1161,27 +1177,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/components/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/article-content.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -1197,13 +1192,6 @@
     <entry file="file://$PROJECT_DIR$/resources/views/user/login.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/markdown.stylus">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/user-profile.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1211,41 +1199,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/main.stylus">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-938">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/aList.stylus">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/components/aList/aList.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="45" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/components/articleList/articleList.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1260,13 +1213,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1081">
           <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/components/pagination/pagination.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="61" selection-start-line="61" selection-end-line="62" />
         </state>
       </provider>
     </entry>
@@ -1287,34 +1233,128 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/components/articleList/articleList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="58" column="39" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="39" />
+        <state relative-caret-position="463">
+          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/weixinController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+        <state relative-caret-position="1817">
+          <caret line="79" column="35" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="35" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/components/article/article.vue">
+    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/main.stylus">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        <state relative-caret-position="92">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/webController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/components/pagination/pagination.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/article.stylus">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="44" column="25" lean-forward="true" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+        <state relative-caret-position="1656">
+          <caret line="72" column="6" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/components/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/learn.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/article-list.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3312">
+          <caret line="144" column="13" lean-forward="true" selection-start-line="144" selection-start-column="13" selection-end-line="144" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/article-content.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1063">
+          <caret line="85" column="34" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/components/article/article.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="44" column="42" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/markdown.stylus">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="805">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/components/aList/aList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/list_kind.stylus">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/aList.stylus">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
         </state>
       </provider>
     </entry>

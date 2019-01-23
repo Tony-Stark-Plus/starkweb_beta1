@@ -37,11 +37,12 @@
             return{
                 article_content: null,
                 mes1: '上一章',
-                mes2: '下一章'
+                mes2: '下一章',
+                classA: 'not_loaded'
             }
         },
         created(){
-           this.get_data(this.article_id)
+           this.get_data(this.article_id);
         },
         props:['article_id'],
         methods: {
@@ -53,6 +54,7 @@
                     )).catch(function (error) {
                     console.log(error);
                 }).finally(() => {
+
                 })
             },
             previous(){

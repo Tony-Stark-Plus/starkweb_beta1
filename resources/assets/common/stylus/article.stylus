@@ -1,8 +1,6 @@
 .all_part
+  display inline
   width: 100%
-  padding-top 30px
-  padding-bottom 30px
-  background-color #F5F5F1
   min-height 600px
   .title_part
     width 70%
@@ -71,3 +69,6 @@
       box-shadow 0 -1px 3px rgba(0, 0, 0, 0.20)
       border-radius 2px
       markdown()
+    .not_loaded
+      height 1000px
+

@@ -2,6 +2,10 @@ import VueRouter from 'vue-router'
 
 const routes = [
     {
+        path: '/',
+        redirect: '/videoList'
+    },
+    {
         path:'/videoList',
         component: require('../components/videoList/videoList.vue')
     },
@@ -23,5 +27,5 @@ const routes = [
 ];
 
 export default new VueRouter({
-    routes
+    routes,
 });

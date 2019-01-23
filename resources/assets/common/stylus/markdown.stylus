@@ -27,3 +27,10 @@ markdown()
     font-weight 200
     li
       list-style-type square
+  p
+    img
+      width 100%
+  table, td, th
+    border 1px solid #3a3a3a
+  table
+    margin 15px auto

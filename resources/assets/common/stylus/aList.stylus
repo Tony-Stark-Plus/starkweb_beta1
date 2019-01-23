@@ -47,6 +47,6 @@
           font-size 14px
           line-height 14px
           padding 3px 5px
-          background-color #3097D1
           border-radius 2px
           color #fff
+        list_kind()

@@ -11,8 +11,8 @@
             </div>
         </div>
         <div class="wrapper_page">
-            <div class="btn btn-primary next_page" v-on:click="next_page" v-show="page_index < this.paginationData.page_num">下一页</div>
-            <div class="btn btn-primary next_page" v-show="page_index >= this.paginationData.page_num">{{mes2}}</div>
+            <div class="btn btn-primary next_page" v-on:click="next_page" v-show="this.paginationData.page_index < this.paginationData.page_num">下一页</div>
+            <div class="btn btn-primary next_page" v-show="this.paginationData.page_index >= this.paginationData.page_num">{{mes2}}</div>
         </div>
     </div>
 </template>
@@ -25,7 +25,8 @@
                 page_index: 1,
                 mes1: '已是首页',
                 mes2: '已是尾页',
-                page_num : null
+                page_num : null,
+                page_true_index: null
             }
         },
         props:{
@@ -38,7 +39,7 @@
                 this.$emit('listenToPagination',this.page_index);
             },
             previous_page() {
-                if(this.page_index <= 1){
+                if(this.paginationData.page_index <= 1){
                     this.page_index = 1;
                 }else{
                     this.page_index = this.paginationData.page_index - 1;
@@ -46,7 +47,7 @@
                 }
             },
             next_page() {
-                if(this.page_index >= this.paginationData.page_num){
+                if(this.paginationData.page_index >= this.paginationData.page_num){
                     this.page_index = this.paginationData.page_num;
                 }else{
                     this.page_index = this.paginationData.page_index + 1;
@@ -57,12 +58,12 @@
                 this.page_index = this.paginationData.page_index;
             }
         },
-        created() {
+        mounted() {
             setTimeout(() => {
                 document.querySelector('.skip_button').onmousedown = function(event){
                     event.preventDefault();
                 };
-            },500)
+            },700)
         }
     }
 </script>

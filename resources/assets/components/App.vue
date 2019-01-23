@@ -2,7 +2,9 @@
    <div>
        <v-header></v-header>
        <navigation></navigation>
-       <router-view></router-view>
+       <div class="back">
+           <router-view></router-view>
+       </div>
        <v-foot></v-foot>
    </div>
 </template>

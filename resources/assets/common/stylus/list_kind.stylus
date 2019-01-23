@@ -1,0 +1,55 @@
+list_kind()
+  .kind-database {
+    background-color: #48466d;
+  }
+  .kind-recommend {
+    background-color: #F56663;
+  }
+  .kind-markdown {
+    background-color: #0056b3;
+  }
+  .kind-php {
+    background-color: #32dfb9;
+  }
+  .kind-vue {
+    background-color: #21c50c;
+  }
+  .kind-html {
+    background-color: rgba(231, 49, 17, 0.966);
+  }
+  .kind-laravel {
+    background-color: rgb(261, 60, 17);
+  }
+  .kind-tool {
+    background-color: #0ea85a;
+  }
+  .kind-css {
+    background-color: #00adb5;
+  }
+  .kind-nginx {
+    background-color: #d37176;
+  }
+  .kind-provider {
+    background-color: #1e7e34;
+  }
+  .kind-javascript {
+    background-color: #cc5581;
+  }
+  .kind-git {
+    background-color: #140a0f;
+  }
+  .kind-middleware{
+    background-color: #a86c66;
+  }
+  .kind-regex{
+    background-color: #d41f4d;
+  }
+  .kind-weixin{
+    background-color: #51AF51;
+  }
+  .kind-python{
+    background-color: #336B9A;
+  }
+  .kind-plugins{
+    background-color: #ffcc66;
+  }
