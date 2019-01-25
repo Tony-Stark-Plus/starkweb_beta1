@@ -24,6 +24,10 @@ const routes = [
         props: true,
         name: 'article'
     },
+    {
+        path:'/studyRouter',
+        component: require('../components/studyRouter/studyRouter.vue')
+    }
 ];
 
 export default new VueRouter({
