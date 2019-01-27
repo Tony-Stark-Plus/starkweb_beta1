@@ -1,0 +1,37 @@
+.discuss_list
+  margin-top 20px
+  .discuss_item
+    margin-top 20px
+    .media-left
+      margin-right 10px
+      img
+        width 38px
+        height 38px
+        border-radius 50%
+        box-shadow: 0 0 0 2px #fff, 0 0 1px 2px #000;
+    .media-body
+      .discussion_title
+        font-size 18px
+        margin-bottom 5px
+      .sub_mes
+        color rgb(112, 137, 169)
+        font-weight 600
+        font-size 12px
+        margin-bottom 5px
+      .discussion_content
+        font-size 14px
+        margin-bottom 5px
+        color rgb(155, 166, 181)
+    .media-right
+      .state
+        display inline-block
+        margin-top 10%
+        background-color rgb(245, 104, 87)
+        font-size 14px
+        line-height 14px
+        height 20px
+        padding 3px 5px
+        margin-right 2px
+        color: #fff
+        border-radius 2px
+        font-weight 900

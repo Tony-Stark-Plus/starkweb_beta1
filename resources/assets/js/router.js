@@ -27,7 +27,11 @@ const routes = [
     {
         path:'/studyRouter',
         component: require('../components/studyRouter/studyRouter.vue')
-    }
+    },
+    {
+        path:'/discuss',
+        component: require('../components/discuss/discuss.vue')
+    },
 ];
 
 export default new VueRouter({

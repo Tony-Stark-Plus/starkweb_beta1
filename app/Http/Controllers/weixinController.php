@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 use App\articleList;
 use App\videoList;
 use Parsedown;
-use phpDocumentor\Reflection\Types\Object_;
+use App\discussions;
+use App\users;
 
 class weixinController extends Controller
 {
@@ -85,5 +86,21 @@ class weixinController extends Controller
         $data['articleList'] = $articleList;
         $data['page_index'] = (int)$request['page'];
         return $data;
+    }
+    public function discuss_list()
+    {
+        $dicussions = discussions::all();
+        foreach ($dicussions as $item) {
+            $item['states'] = explode(',', $item['states']);
+            $str_gap = $this->time_gap_format($item['created_at']);
+            $item['str_gap'] = $str_gap;
+            //获取dicussion关联的user信息
+            $item_p = $item;
+            $user_info['uname'] = $item_p->user->uname;
+            $user_info['imgUrl'] = $item_p->user->imgUrl;
+            $item['user_info'] = $user_info;
+            unset($item->user,$item->updated_at);
+        }
+        return $dicussions;
     }
 }
