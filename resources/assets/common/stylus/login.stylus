@@ -1,0 +1,55 @@
+@import "mixin.stylus"
+.login_wrapper
+  .login_main
+    margin-top 20px
+    background-color #fff
+    border-radius 10px
+    .form
+      padding 10px 10px 20px 10px
+      .email ,.password
+        display flex
+        height 50px
+        margin-top 30px
+        border-bottom 1px solid $common_color
+        .iconfont
+          flex 1
+          line-height 50px
+        input
+          flex 9
+          border none
+          outline none
+          font-size 16px
+          font-weight 100
+      .verification
+        display flex
+        height 50px
+        margin-top 30px
+        .iconfont
+          flex 1
+          line-height 50px
+          border-bottom 1px solid $common_color
+        .input_verification
+          padding-left 10px
+          flex 4
+          border-bottom 1px solid $common_color
+          border-left none
+          border-top none
+          border-right none
+          outline none
+          font-size 16px
+          font-weight 100
+          margin-right 20px
+        img
+          flex 5
+          height 50px
+          background-color #333
+
+      .btn
+        background-color $common_color
+        margin-top 30px
+        color #fff
+        text-align center
+        font-size 15px
+      //.email
+      //.password
+      //.verification

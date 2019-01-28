@@ -16,8 +16,8 @@
                 </form>
             </div>
             <div class="user-profile">
-                <a href="/user/login" class="button login">登录</a>
-                <a href="/user/register" class="button register">注册</a>
+                <router-link to="/login" class="button login">登录</router-link>
+                <router-link to="/register" class="button register">注册</router-link>
             </div>
         </div>
     </div>

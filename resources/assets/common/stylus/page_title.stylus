@@ -1,5 +1,6 @@
 .title_wrapper
   width 100%
+  padding-top 20px
   .page_title
       height 70px
       background linear-gradient(to right, rgb(35, 37, 38), rgb(65, 67, 69))

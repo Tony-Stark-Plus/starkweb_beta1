@@ -1,0 +1,28 @@
+@import "mixin.stylus"
+.login_wrapper
+  .login_main
+    margin-top 20px
+    background-color #fff
+    border-radius 10px
+    .form
+      padding 10px 10px 20px 10px
+      .email ,.password,.user_name,.password_sure
+        display flex
+        height 50px
+        margin-top 30px
+        border-bottom 1px solid $common_color
+        .iconfont
+          flex 1
+          line-height 50px
+        input
+          flex 9
+          border none
+          outline none
+          font-size 16px
+          font-weight 100
+      .btn
+        background-color $common_color
+        margin-top 30px
+        color #fff
+        text-align center
+        font-size 15px

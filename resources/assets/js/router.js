@@ -32,6 +32,14 @@ const routes = [
         path:'/discuss',
         component: require('../components/discuss/discuss.vue')
     },
+    {
+        path:'/login',
+        component: require('../components/login/login.vue')
+    },
+    {
+        path:'/register',
+        component: require('../components/register/register.vue')
+    }
 ];
 
 export default new VueRouter({
