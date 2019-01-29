@@ -15,6 +15,7 @@ import hljs from 'highlight.js'
 import 'highlight.js/styles/agate.css'
 require('video.js/dist/video-js.css');
 require('vue-video-player/src/custom-theme.css');
+import 'sweetalert2/src/sweetalert2.scss'
 
 window.Vue = require('vue');
 Vue.use(VueRouter);

@@ -7,7 +7,8 @@ const routes = [
     },
     {
         path:'/videoList',
-        component: require('../components/videoList/videoList.vue')
+        component: require('../components/videoList/videoList.vue'),
+        name: 'videoList'
     },
     {
         path:'/video/:video_id',

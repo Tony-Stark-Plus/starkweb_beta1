@@ -12,6 +12,7 @@
     import page_title from '../page_title/page_title'
     import vList from '../vList/vList';
     import pagination from '../pagination/pagination';
+    const Swal = require('sweetalert2')
     export default {
         name :'videoList',
         components :{
@@ -32,6 +33,17 @@
         created() {
             this.paginate()
         },
+        mounted() {
+            if(this.$route.params.login_success == true){
+                Swal.fire({
+                    position: 'center',
+                    type: 'success',
+                    title: 'welcome to Starkweb',
+                    showConfirmButton: true,
+                    timer: 2500
+                })
+            }
+        },
         methods: {
             changePage(data) {
                 this.page_index = data;
@@ -45,6 +57,9 @@
                     )).catch(function (error) {
                     console.log(error);
                 });
+            },
+            sweet_alert() {
+
             }
         }
     }
