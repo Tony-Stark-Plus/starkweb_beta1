@@ -42,6 +42,7 @@
                     showConfirmButton: true,
                     timer: 2500
                 })
+                this.$route.params.login_success = false
             }
         },
         methods: {

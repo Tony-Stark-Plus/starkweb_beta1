@@ -26,6 +26,9 @@ Vue.directive('highlight',function (el) {
         hljs.highlightBlock(block)
     })
 });
+var VueCookie = require('vue-cookie');
+// Tell Vue to use the plugin
+Vue.use(VueCookie);
 new Vue({
     router,
     template: '<App/>',

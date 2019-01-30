@@ -57,12 +57,11 @@
                     });
             },
             get_rand_num() {
-                this.rand_num = Math.floor(Math.random()*10);
+                this.rand_num = Math.floor(Math.random()*100);
             },
 
         },
         created() {
-
         }
     }
 </script>

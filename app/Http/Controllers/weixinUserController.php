@@ -6,13 +6,19 @@ use Illuminate\Http\Request;
 use App\users;
 use Gregwar\Captcha\CaptchaBuilder;
 use Session;
+use Cookie;
 class weixinUserController extends Controller
 {
     public function login(Request $request){
         $input = $request;
         $user = users::where('email','=',$input['email'])->first();
         if ($input['password'] == $user['password'] && Session('starkcaptcha') == $input['verification']){
-            return 'ok';
+            //储存用户cookie
+            Cookie::queue('user_id', $user['id'], 1000);
+            Cookie::queue('imgUrl',$user['imgUrl'],1000);
+        }
+        else{
+            return 'no';
         }
 
     }
@@ -28,5 +34,15 @@ class weixinUserController extends Controller
         header("Cache-Control: no-cache, must-revalidate");
         header('Content-Type: image/jpeg');
         $builder->output();
+    }
+    public function get_cookie(){
+        $user_cookie['user_id'] = Cookie::get('user_id');
+        $user_cookie['imgUrl'] = Cookie::get('imgUrl');
+        return $user_cookie;
+    }
+    public function exit()
+    {
+        Cookie::queue(Cookie::forget('user_id'));
+        Cookie::queue(Cookie::forget('imgUrl'));
     }
 }
