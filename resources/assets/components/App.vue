@@ -1,9 +1,9 @@
 <template>
    <div>
-       <v-header></v-header>
+       <v-header v-bind:refresh="refresh"></v-header>
        <navigation></navigation>
        <div class="back">
-           <router-view></router-view>
+           <router-view v-on:listenToVideoList="refreshVheader"></router-view>
        </div>
        <v-foot></v-foot>
    </div>
@@ -25,6 +25,16 @@
         },
         mounted() {
             console.log('Component mounted.')
+        },
+        methods:{
+            refreshVheader(data) {
+                this.refresh = data
+            }
+        },
+        data(){
+            return {
+                refresh: false
+            }
         }
     }
 </script>

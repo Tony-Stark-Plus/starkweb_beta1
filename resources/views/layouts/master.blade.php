@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/app.css">
     <link rel="starkweb icon" href="/img/title_img3.ico"/>
+    <link href="https://cdn.bootcss.com/animate.css/3.6.2/animate.min.css" rel="stylesheet">
     <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -15,6 +16,8 @@
 
 </div>
 </body>
+<style type="text/css">
+</style>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 
 <script src="/js/app.js"></script>

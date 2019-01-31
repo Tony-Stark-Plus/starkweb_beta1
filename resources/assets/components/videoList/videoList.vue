@@ -9,10 +9,10 @@
 
 </style>
 <script>
-    import page_title from '../page_title/page_title'
+    import page_title from '../page_title/page_title';
     import vList from '../vList/vList';
     import pagination from '../pagination/pagination';
-    const Swal = require('sweetalert2')
+    const Swal = require('sweetalert2');
     export default {
         name :'videoList',
         components :{
@@ -41,8 +41,9 @@
                     title: 'welcome to Starkweb',
                     showConfirmButton: true,
                     timer: 2500
-                })
-                this.$route.params.login_success = false
+                });
+                this.$route.params.login_success = false;
+                this.setMesToApp();
             }
         },
         methods: {
@@ -59,8 +60,9 @@
                     console.log(error);
                 });
             },
-            sweet_alert() {
-
+            setMesToApp() {
+                this.$emit('listenToVideoList',this.$route.params.refresh);
+                this.$route.params.refresh = false
             }
         }
     }

@@ -15644,7 +15644,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(20);
-module.exports = __webpack_require__(350);
+module.exports = __webpack_require__(348);
 
 
 /***/ }),
@@ -15709,9 +15709,7 @@ __WEBPACK_IMPORTED_MODULE_7_vue___default.a.directive('highlight', function (el)
         __WEBPACK_IMPORTED_MODULE_12_highlight_js___default.a.highlightBlock(block);
     });
 });
-var VueCookie = __webpack_require__(348);
 // Tell Vue to use the plugin
-__WEBPACK_IMPORTED_MODULE_7_vue___default.a.use(VueCookie);
 new __WEBPACK_IMPORTED_MODULE_7_vue___default.a({
     router: __WEBPACK_IMPORTED_MODULE_9__router__["a" /* default */],
     template: '<App/>',
@@ -16378,6 +16376,7 @@ var Swal = __webpack_require__(49);
             timer: 2500
         });
         this.$route.params.login_success = false;
+        this.setMesToApp();
     }
 }), _defineProperty(_name$components$moun, 'methods', {
     changePage: function changePage(data) {
@@ -16394,7 +16393,10 @@ var Swal = __webpack_require__(49);
             console.log(error);
         });
     },
-    sweet_alert: function sweet_alert() {}
+    setMesToApp: function setMesToApp() {
+        this.$emit('listenToVideoList', this.$route.params.refresh);
+        this.$route.params.refresh = false;
+    }
 }), _name$components$moun);
 
 /***/ }),
@@ -16568,7 +16570,7 @@ if(false) {
 
 exports = module.exports = __webpack_require__(0)(false);
 // Module
-exports.push([module.i, "\n@font-face {\n  font-family: 'iconfont'; /* project id 984404 */\n  src: url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.eot\");\n  src: url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.eot?#iefix\") format('embedded-opentype'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.woff2\") format('woff2'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.woff\") format('woff'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.ttf\") format('truetype'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.svg#iconfont\") format('svg');\n}\n@font-face {\n  font-family: myFont;\n  src: url(\"/fonts/MG9KbUZFchDs94Tbv9U-pZBw1xU1rKptJj_0jans920.woff2\") format('woff2'), url(\"/fonts/uDssvmXgp7Nj3i336k_dShampu5_7CjHW5spxoeN3Vs.woff2\") format('woff2');\n}\n*[data-v-21d7a6a4] {\n  font-family: myFont;\n}\n.iconfont[data-v-21d7a6a4] {\n  font-family: iconfont !important;\n  font-style: normal;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.icon-search[data-v-21d7a6a4]:before {\n  content: \"\\e621\";\n  font-size: 18px;\n  color: #afbdcf;\n}\n.icon-hot[data-v-21d7a6a4]:before {\n  content: \"\\e757\";\n  font-size: 15px;\n  font-weight: 700;\n  color: #d81e06;\n}\n.icon-video[data-v-21d7a6a4]:before {\n  content: \"\\e6bf\";\n  font-size: 16px;\n  font-weight: 700;\n}\n.icon-download[data-v-21d7a6a4]:before {\n  content: \"\\e688\";\n  font-weight: 700;\n}\n.icon-leftArrow[data-v-21d7a6a4]:before {\n  content: \"\\e633\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-rightArrow[data-v-21d7a6a4]:before {\n  content: \"\\e637\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-laravel[data-v-21d7a6a4]:before {\n  content: \"\\e6f1\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-vue[data-v-21d7a6a4]:before {\n  content: \"\\e600\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-tools[data-v-21d7a6a4]:before {\n  content: \"\\e758\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-life[data-v-21d7a6a4]:before {\n  content: \"\\e837\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-email[data-v-21d7a6a4]:before {\n  content: \"\\e658\";\n  font-weight: 700;\n  font-size: 20px;\n  color: #14b982;\n}\n.icon-password[data-v-21d7a6a4]:before {\n  content: \"\\e66a\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-user_name[data-v-21d7a6a4]:before {\n  content: \"\\e601\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-password_sure[data-v-21d7a6a4]:before {\n  content: \"\\e614\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-verification[data-v-21d7a6a4]:before {\n  content: \"\\e648\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.List-wrapper[data-v-21d7a6a4] {\n  margin-top: 25px;\n  height: 545px;\n}\n.List-wrapper .List[data-v-21d7a6a4] {\n  background-color: #fff;\n  -webkit-box-shadow: 0 -2px 6px rgba(0,0,0,0.36);\n          box-shadow: 0 -2px 6px rgba(0,0,0,0.36);\n  border-radius: 15px;\n}\n.List-wrapper .List .item[data-v-21d7a6a4] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  color: #3a3a3a;\n  font-weight: 700;\n  font-size: 16px;\n  vertical-align: middle;\n  padding: 14px 20px;\n  border-bottom: 1px solid #999;\n}\n.List-wrapper .List .item[data-v-21d7a6a4]:last-child {\n  border-bottom: none;\n}\n.List-wrapper .List .item a[data-v-21d7a6a4] {\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  color: #3a3a3a;\n  text-decoration: none;\n}\n.List-wrapper .List .item a[data-v-21d7a6a4]:hover {\n  color: #14b982;\n}\n.List-wrapper .List .item a .video_name[data-v-21d7a6a4] {\n  -webkit-box-flex: 2;\n      -ms-flex: 2;\n          flex: 2;\n}\n.List-wrapper .List .item a .video_name span[data-v-21d7a6a4] {\n  padding-right: 10px;\n}\n.List-wrapper .List .item a .date[data-v-21d7a6a4] {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  text-align: center;\n}\n", ""]);
+exports.push([module.i, "\n@font-face {\n  font-family: 'iconfont'; /* project id 984404 */\n  src: url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.eot\");\n  src: url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.eot?#iefix\") format('embedded-opentype'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.woff2\") format('woff2'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.woff\") format('woff'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.ttf\") format('truetype'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.svg#iconfont\") format('svg');\n}\n@font-face {\n  font-family: myFont;\n  src: url(\"/fonts/MG9KbUZFchDs94Tbv9U-pZBw1xU1rKptJj_0jans920.woff2\") format('woff2'), url(\"/fonts/uDssvmXgp7Nj3i336k_dShampu5_7CjHW5spxoeN3Vs.woff2\") format('woff2');\n}\n*[data-v-21d7a6a4] {\n  font-family: myFont;\n}\n.iconfont[data-v-21d7a6a4] {\n  font-family: iconfont !important;\n  font-style: normal;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.icon-search[data-v-21d7a6a4]:before {\n  content: \"\\e621\";\n  font-size: 18px;\n  color: #afbdcf;\n}\n.icon-hot[data-v-21d7a6a4]:before {\n  content: \"\\e757\";\n  font-size: 15px;\n  font-weight: 700;\n  color: #d81e06;\n}\n.icon-video[data-v-21d7a6a4]:before {\n  content: \"\\e6bf\";\n  font-size: 16px;\n  font-weight: 700;\n}\n.icon-download[data-v-21d7a6a4]:before {\n  content: \"\\e688\";\n  font-weight: 700;\n}\n.icon-leftArrow[data-v-21d7a6a4]:before {\n  content: \"\\e633\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-rightArrow[data-v-21d7a6a4]:before {\n  content: \"\\e637\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-laravel[data-v-21d7a6a4]:before {\n  content: \"\\e6f1\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-vue[data-v-21d7a6a4]:before {\n  content: \"\\e600\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-tools[data-v-21d7a6a4]:before {\n  content: \"\\e758\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-life[data-v-21d7a6a4]:before {\n  content: \"\\e837\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-email[data-v-21d7a6a4]:before {\n  content: \"\\e658\";\n  font-weight: 700;\n  font-size: 20px;\n  color: #14b982;\n}\n.icon-password[data-v-21d7a6a4]:before {\n  content: \"\\e66a\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-user_name[data-v-21d7a6a4]:before {\n  content: \"\\e601\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-password_sure[data-v-21d7a6a4]:before {\n  content: \"\\e614\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-verification[data-v-21d7a6a4]:before {\n  content: \"\\e648\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-exit[data-v-21d7a6a4]:before {\n  content: \"\\e62d\";\n  font-weight: 700;\n}\n.List-wrapper[data-v-21d7a6a4] {\n  margin-top: 25px;\n  height: 545px;\n}\n.List-wrapper .List[data-v-21d7a6a4] {\n  background-color: #fff;\n  -webkit-box-shadow: 0 -2px 6px rgba(0,0,0,0.36);\n          box-shadow: 0 -2px 6px rgba(0,0,0,0.36);\n  border-radius: 15px;\n}\n.List-wrapper .List .item[data-v-21d7a6a4] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  color: #3a3a3a;\n  font-weight: 700;\n  font-size: 16px;\n  vertical-align: middle;\n  padding: 14px 20px;\n  border-bottom: 1px solid #999;\n}\n.List-wrapper .List .item[data-v-21d7a6a4]:last-child {\n  border-bottom: none;\n}\n.List-wrapper .List .item a[data-v-21d7a6a4] {\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  color: #3a3a3a;\n  text-decoration: none;\n}\n.List-wrapper .List .item a[data-v-21d7a6a4]:hover {\n  color: #14b982;\n}\n.List-wrapper .List .item a .video_name[data-v-21d7a6a4] {\n  -webkit-box-flex: 2;\n      -ms-flex: 2;\n          flex: 2;\n}\n.List-wrapper .List .item a .video_name span[data-v-21d7a6a4] {\n  padding-right: 10px;\n}\n.List-wrapper .List .item a .date[data-v-21d7a6a4] {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  text-align: center;\n}\n", ""]);
 
 
 
@@ -20824,7 +20826,7 @@ if(false) {
 
 exports = module.exports = __webpack_require__(0)(false);
 // Module
-exports.push([module.i, "\n@font-face {\n  font-family: 'iconfont'; /* project id 984404 */\n  src: url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.eot\");\n  src: url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.eot?#iefix\") format('embedded-opentype'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.woff2\") format('woff2'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.woff\") format('woff'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.ttf\") format('truetype'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.svg#iconfont\") format('svg');\n}\n@font-face {\n  font-family: myFont;\n  src: url(\"/fonts/MG9KbUZFchDs94Tbv9U-pZBw1xU1rKptJj_0jans920.woff2\") format('woff2'), url(\"/fonts/uDssvmXgp7Nj3i336k_dShampu5_7CjHW5spxoeN3Vs.woff2\") format('woff2');\n}\n*[data-v-cd8a578c] {\n  font-family: myFont;\n}\n.iconfont[data-v-cd8a578c] {\n  font-family: iconfont !important;\n  font-style: normal;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.icon-search[data-v-cd8a578c]:before {\n  content: \"\\e621\";\n  font-size: 18px;\n  color: #afbdcf;\n}\n.icon-hot[data-v-cd8a578c]:before {\n  content: \"\\e757\";\n  font-size: 15px;\n  font-weight: 700;\n  color: #d81e06;\n}\n.icon-video[data-v-cd8a578c]:before {\n  content: \"\\e6bf\";\n  font-size: 16px;\n  font-weight: 700;\n}\n.icon-download[data-v-cd8a578c]:before {\n  content: \"\\e688\";\n  font-weight: 700;\n}\n.icon-leftArrow[data-v-cd8a578c]:before {\n  content: \"\\e633\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-rightArrow[data-v-cd8a578c]:before {\n  content: \"\\e637\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-laravel[data-v-cd8a578c]:before {\n  content: \"\\e6f1\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-vue[data-v-cd8a578c]:before {\n  content: \"\\e600\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-tools[data-v-cd8a578c]:before {\n  content: \"\\e758\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-life[data-v-cd8a578c]:before {\n  content: \"\\e837\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-email[data-v-cd8a578c]:before {\n  content: \"\\e658\";\n  font-weight: 700;\n  font-size: 20px;\n  color: #14b982;\n}\n.icon-password[data-v-cd8a578c]:before {\n  content: \"\\e66a\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-user_name[data-v-cd8a578c]:before {\n  content: \"\\e601\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-password_sure[data-v-cd8a578c]:before {\n  content: \"\\e614\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-verification[data-v-cd8a578c]:before {\n  content: \"\\e648\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.List-wrapper[data-v-cd8a578c] {\n  width: 90%;\n  margin: 25px auto;\n  height: 730px;\n}\n.List-wrapper .aList[data-v-cd8a578c] {\n  background-color: #fff;\n  -webkit-box-shadow: 0 -2px 6px rgba(0,0,0,0.36);\n          box-shadow: 0 -2px 6px rgba(0,0,0,0.36);\n  border-radius: 5px;\n  padding: 0;\n  cursor: pointer;\n}\n.List-wrapper .aList .item[data-v-cd8a578c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  border-bottom: 1px solid #f2f2f2;\n}\n.List-wrapper .aList .item[data-v-cd8a578c]:last-child {\n  border-bottom: none;\n}\n.List-wrapper .aList .item .number_icon[data-v-cd8a578c] {\n  -webkit-box-flex: 3;\n      -ms-flex: 3;\n          flex: 3;\n  text-align: center;\n  font-size: 26px;\n  line-height: 26px;\n  padding: 22px 0;\n  color: #14b982;\n}\n.List-wrapper .aList .item .main_mes[data-v-cd8a578c] {\n  -webkit-box-flex: 20;\n      -ms-flex: 20;\n          flex: 20;\n  padding: 10px 0px 10px 0;\n}\n.List-wrapper .aList .item .main_mes a[data-v-cd8a578c] {\n  color: #505b6a;\n}\n.List-wrapper .aList .item .main_mes a .article_name[data-v-cd8a578c] {\n  display: block;\n  font-size: 20px;\n}\n.List-wrapper .aList .item .main_mes a .article_name[data-v-cd8a578c]:hover {\n  color: #14b982;\n  -webkit-text-decoration: #14b982;\n          text-decoration: #14b982;\n  -webkit-text-decoration-color: #14b982;\n          text-decoration-color: #14b982;\n}\n.List-wrapper .aList .item .main_mes .date[data-v-cd8a578c] {\n  color: #505b6a;\n  display: block;\n  font-size: 12px;\n  margin-top: 2px;\n}\n.List-wrapper .aList .item .a_kind[data-v-cd8a578c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: end;\n      -ms-flex-pack: end;\n          justify-content: flex-end;\n  -webkit-box-flex: 4;\n      -ms-flex: 4;\n          flex: 4;\n}\n.List-wrapper .aList .item .a_kind .common_kind[data-v-cd8a578c] {\n  display: inline-block;\n  margin: 20px 15px 30px 0px;\n  font-size: 14px;\n  line-height: 14px;\n  padding: 3px 5px;\n  border-radius: 2px;\n  color: #fff;\n}\n.List-wrapper .aList .item .a_kind .kind-database[data-v-cd8a578c] {\n  background-color: #48466d;\n}\n.List-wrapper .aList .item .a_kind .kind-recommend[data-v-cd8a578c] {\n  background-color: #f56663;\n}\n.List-wrapper .aList .item .a_kind .kind-markdown[data-v-cd8a578c] {\n  background-color: #0056b3;\n}\n.List-wrapper .aList .item .a_kind .kind-php[data-v-cd8a578c] {\n  background-color: #32dfb9;\n}\n.List-wrapper .aList .item .a_kind .kind-vue[data-v-cd8a578c] {\n  background-color: #21c50c;\n}\n.List-wrapper .aList .item .a_kind .kind-html[data-v-cd8a578c] {\n  background-color: rgba(231,49,17,0.966);\n}\n.List-wrapper .aList .item .a_kind .kind-laravel[data-v-cd8a578c] {\n  background-color: #ff3c11;\n}\n.List-wrapper .aList .item .a_kind .kind-tool[data-v-cd8a578c] {\n  background-color: #0ea85a;\n}\n.List-wrapper .aList .item .a_kind .kind-css[data-v-cd8a578c] {\n  background-color: #00adb5;\n}\n.List-wrapper .aList .item .a_kind .kind-nginx[data-v-cd8a578c] {\n  background-color: #d37176;\n}\n.List-wrapper .aList .item .a_kind .kind-provider[data-v-cd8a578c] {\n  background-color: #1e7e34;\n}\n.List-wrapper .aList .item .a_kind .kind-javascript[data-v-cd8a578c] {\n  background-color: #cc5581;\n}\n.List-wrapper .aList .item .a_kind .kind-git[data-v-cd8a578c] {\n  background-color: #140a0f;\n}\n.List-wrapper .aList .item .a_kind .kind-middleware[data-v-cd8a578c] {\n  background-color: #a86c66;\n}\n.List-wrapper .aList .item .a_kind .kind-regex[data-v-cd8a578c] {\n  background-color: #d41f4d;\n}\n.List-wrapper .aList .item .a_kind .kind-weixin[data-v-cd8a578c] {\n  background-color: #51af51;\n}\n.List-wrapper .aList .item .a_kind .kind-python[data-v-cd8a578c] {\n  background-color: #336b9a;\n}\n.List-wrapper .aList .item .a_kind .kind-plugins[data-v-cd8a578c] {\n  background-color: #fc6;\n}\n", ""]);
+exports.push([module.i, "\n@font-face {\n  font-family: 'iconfont'; /* project id 984404 */\n  src: url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.eot\");\n  src: url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.eot?#iefix\") format('embedded-opentype'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.woff2\") format('woff2'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.woff\") format('woff'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.ttf\") format('truetype'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.svg#iconfont\") format('svg');\n}\n@font-face {\n  font-family: myFont;\n  src: url(\"/fonts/MG9KbUZFchDs94Tbv9U-pZBw1xU1rKptJj_0jans920.woff2\") format('woff2'), url(\"/fonts/uDssvmXgp7Nj3i336k_dShampu5_7CjHW5spxoeN3Vs.woff2\") format('woff2');\n}\n*[data-v-cd8a578c] {\n  font-family: myFont;\n}\n.iconfont[data-v-cd8a578c] {\n  font-family: iconfont !important;\n  font-style: normal;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.icon-search[data-v-cd8a578c]:before {\n  content: \"\\e621\";\n  font-size: 18px;\n  color: #afbdcf;\n}\n.icon-hot[data-v-cd8a578c]:before {\n  content: \"\\e757\";\n  font-size: 15px;\n  font-weight: 700;\n  color: #d81e06;\n}\n.icon-video[data-v-cd8a578c]:before {\n  content: \"\\e6bf\";\n  font-size: 16px;\n  font-weight: 700;\n}\n.icon-download[data-v-cd8a578c]:before {\n  content: \"\\e688\";\n  font-weight: 700;\n}\n.icon-leftArrow[data-v-cd8a578c]:before {\n  content: \"\\e633\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-rightArrow[data-v-cd8a578c]:before {\n  content: \"\\e637\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-laravel[data-v-cd8a578c]:before {\n  content: \"\\e6f1\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-vue[data-v-cd8a578c]:before {\n  content: \"\\e600\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-tools[data-v-cd8a578c]:before {\n  content: \"\\e758\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-life[data-v-cd8a578c]:before {\n  content: \"\\e837\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-email[data-v-cd8a578c]:before {\n  content: \"\\e658\";\n  font-weight: 700;\n  font-size: 20px;\n  color: #14b982;\n}\n.icon-password[data-v-cd8a578c]:before {\n  content: \"\\e66a\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-user_name[data-v-cd8a578c]:before {\n  content: \"\\e601\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-password_sure[data-v-cd8a578c]:before {\n  content: \"\\e614\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-verification[data-v-cd8a578c]:before {\n  content: \"\\e648\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-exit[data-v-cd8a578c]:before {\n  content: \"\\e62d\";\n  font-weight: 700;\n}\n.List-wrapper[data-v-cd8a578c] {\n  width: 90%;\n  margin: 25px auto;\n  height: 730px;\n}\n.List-wrapper .aList[data-v-cd8a578c] {\n  background-color: #fff;\n  -webkit-box-shadow: 0 -2px 6px rgba(0,0,0,0.36);\n          box-shadow: 0 -2px 6px rgba(0,0,0,0.36);\n  border-radius: 5px;\n  padding: 0;\n  cursor: pointer;\n}\n.List-wrapper .aList .item[data-v-cd8a578c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  border-bottom: 1px solid #f2f2f2;\n}\n.List-wrapper .aList .item[data-v-cd8a578c]:last-child {\n  border-bottom: none;\n}\n.List-wrapper .aList .item .number_icon[data-v-cd8a578c] {\n  -webkit-box-flex: 3;\n      -ms-flex: 3;\n          flex: 3;\n  text-align: center;\n  font-size: 26px;\n  line-height: 26px;\n  padding: 22px 0;\n  color: #14b982;\n}\n.List-wrapper .aList .item .main_mes[data-v-cd8a578c] {\n  -webkit-box-flex: 20;\n      -ms-flex: 20;\n          flex: 20;\n  padding: 10px 0px 10px 0;\n}\n.List-wrapper .aList .item .main_mes a[data-v-cd8a578c] {\n  color: #505b6a;\n}\n.List-wrapper .aList .item .main_mes a .article_name[data-v-cd8a578c] {\n  display: block;\n  font-size: 20px;\n}\n.List-wrapper .aList .item .main_mes a .article_name[data-v-cd8a578c]:hover {\n  color: #14b982;\n  -webkit-text-decoration: #14b982;\n          text-decoration: #14b982;\n  -webkit-text-decoration-color: #14b982;\n          text-decoration-color: #14b982;\n}\n.List-wrapper .aList .item .main_mes .date[data-v-cd8a578c] {\n  color: #505b6a;\n  display: block;\n  font-size: 12px;\n  margin-top: 2px;\n}\n.List-wrapper .aList .item .a_kind[data-v-cd8a578c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: end;\n      -ms-flex-pack: end;\n          justify-content: flex-end;\n  -webkit-box-flex: 4;\n      -ms-flex: 4;\n          flex: 4;\n}\n.List-wrapper .aList .item .a_kind .common_kind[data-v-cd8a578c] {\n  display: inline-block;\n  margin: 20px 15px 30px 0px;\n  font-size: 14px;\n  line-height: 14px;\n  padding: 3px 5px;\n  border-radius: 2px;\n  color: #fff;\n}\n.List-wrapper .aList .item .a_kind .kind-database[data-v-cd8a578c] {\n  background-color: #48466d;\n}\n.List-wrapper .aList .item .a_kind .kind-recommend[data-v-cd8a578c] {\n  background-color: #f56663;\n}\n.List-wrapper .aList .item .a_kind .kind-markdown[data-v-cd8a578c] {\n  background-color: #0056b3;\n}\n.List-wrapper .aList .item .a_kind .kind-php[data-v-cd8a578c] {\n  background-color: #32dfb9;\n}\n.List-wrapper .aList .item .a_kind .kind-vue[data-v-cd8a578c] {\n  background-color: #21c50c;\n}\n.List-wrapper .aList .item .a_kind .kind-html[data-v-cd8a578c] {\n  background-color: rgba(231,49,17,0.966);\n}\n.List-wrapper .aList .item .a_kind .kind-laravel[data-v-cd8a578c] {\n  background-color: #ff3c11;\n}\n.List-wrapper .aList .item .a_kind .kind-tool[data-v-cd8a578c] {\n  background-color: #0ea85a;\n}\n.List-wrapper .aList .item .a_kind .kind-css[data-v-cd8a578c] {\n  background-color: #00adb5;\n}\n.List-wrapper .aList .item .a_kind .kind-nginx[data-v-cd8a578c] {\n  background-color: #d37176;\n}\n.List-wrapper .aList .item .a_kind .kind-provider[data-v-cd8a578c] {\n  background-color: #1e7e34;\n}\n.List-wrapper .aList .item .a_kind .kind-javascript[data-v-cd8a578c] {\n  background-color: #cc5581;\n}\n.List-wrapper .aList .item .a_kind .kind-git[data-v-cd8a578c] {\n  background-color: #140a0f;\n}\n.List-wrapper .aList .item .a_kind .kind-middleware[data-v-cd8a578c] {\n  background-color: #a86c66;\n}\n.List-wrapper .aList .item .a_kind .kind-regex[data-v-cd8a578c] {\n  background-color: #d41f4d;\n}\n.List-wrapper .aList .item .a_kind .kind-weixin[data-v-cd8a578c] {\n  background-color: #51af51;\n}\n.List-wrapper .aList .item .a_kind .kind-python[data-v-cd8a578c] {\n  background-color: #336b9a;\n}\n.List-wrapper .aList .item .a_kind .kind-plugins[data-v-cd8a578c] {\n  background-color: #fc6;\n}\n", ""]);
 
 
 
@@ -21040,7 +21042,7 @@ if(false) {
 
 exports = module.exports = __webpack_require__(0)(false);
 // Module
-exports.push([module.i, "\n@font-face {\n  font-family: 'iconfont'; /* project id 984404 */\n  src: url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.eot\");\n  src: url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.eot?#iefix\") format('embedded-opentype'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.woff2\") format('woff2'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.woff\") format('woff'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.ttf\") format('truetype'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.svg#iconfont\") format('svg');\n}\n@font-face {\n  font-family: myFont;\n  src: url(\"/fonts/MG9KbUZFchDs94Tbv9U-pZBw1xU1rKptJj_0jans920.woff2\") format('woff2'), url(\"/fonts/uDssvmXgp7Nj3i336k_dShampu5_7CjHW5spxoeN3Vs.woff2\") format('woff2');\n}\n* {\n  font-family: myFont;\n}\n.iconfont {\n  font-family: iconfont !important;\n  font-style: normal;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.icon-search:before {\n  content: \"\\e621\";\n  font-size: 18px;\n  color: #afbdcf;\n}\n.icon-hot:before {\n  content: \"\\e757\";\n  font-size: 15px;\n  font-weight: 700;\n  color: #d81e06;\n}\n.icon-video:before {\n  content: \"\\e6bf\";\n  font-size: 16px;\n  font-weight: 700;\n}\n.icon-download:before {\n  content: \"\\e688\";\n  font-weight: 700;\n}\n.icon-leftArrow:before {\n  content: \"\\e633\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-rightArrow:before {\n  content: \"\\e637\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-laravel:before {\n  content: \"\\e6f1\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-vue:before {\n  content: \"\\e600\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-tools:before {\n  content: \"\\e758\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-life:before {\n  content: \"\\e837\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-email:before {\n  content: \"\\e658\";\n  font-weight: 700;\n  font-size: 20px;\n  color: #14b982;\n}\n.icon-password:before {\n  content: \"\\e66a\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-user_name:before {\n  content: \"\\e601\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-password_sure:before {\n  content: \"\\e614\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-verification:before {\n  content: \"\\e648\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.all_part {\n  display: inline;\n  width: 100%;\n  min-height: 600px;\n}\n.all_part .title_part {\n  width: 70%;\n  margin: 0 auto;\n}\n.all_part .title_part .title {\n  width: 100%;\n  text-align: center;\n  font-size: 25px;\n  font-weight: 700;\n}\n.all_part .title_part .sub_mes {\n  width: 100%;\n  text-align: center;\n  font-size: 15px;\n}\n.all_part .title_part .sub_mes .avatar {\n  display: inline-block;\n  width: 25px;\n  height: 25px;\n  background-image: url(\"http://xsy-cdn.xyz/head-img/1.jpg\");\n  background-size: 25px 25px;\n  vertical-align: middle;\n  border-radius: 50%;\n  border: 1px solid #000;\n  margin: 0 5px;\n}\n.all_part .skip_part {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  width: 60%;\n  margin: 0 auto;\n  text-align: center;\n}\n.all_part .skip_part .left_skip {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n}\n.all_part .skip_part .left_skip i {\n  left: 20px;\n}\n.all_part .skip_part .right_skip {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n}\n.all_part .skip_part .right_skip i {\n  right: 20px;\n}\n.all_part .skip_part .left_skip,\n.all_part .skip_part .right_skip {\n  position: relative;\n}\n.all_part .skip_part .left_skip .p_alert,\n.all_part .skip_part .right_skip .p_alert {\n  display: inline-block;\n  text-align: center;\n  color: #14b982;\n  font-size: 17px;\n  line-height: 17px;\n  padding: 17px 0;\n}\n.all_part .skip_part .left_skip a,\n.all_part .skip_part .right_skip a {\n  display: block;\n}\n.all_part .skip_part .left_skip a:hover,\n.all_part .skip_part .right_skip a:hover {\n  text-decoration: none;\n}\n.all_part .skip_part .left_skip i,\n.all_part .skip_part .right_skip i {\n  position: absolute;\n  top: 20px;\n}\n.all_part .skip_part .left_skip .title,\n.all_part .skip_part .right_skip .title {\n  color: #14b982;\n  font-size: 15px;\n  font-weight: 600;\n}\n.all_part .skip_part .left_skip .nmsl,\n.all_part .skip_part .right_skip .nmsl {\n  color: #bbb;\n  font-size: 14px;\n}\n.all_part .article_part {\n  width: 70%;\n  margin: 30px auto;\n}\n.all_part .article_part .article_wrapper {\n  padding: 10px 15px;\n  background-color: #fff;\n  -webkit-box-shadow: 0 -1px 3px rgba(0,0,0,0.2);\n          box-shadow: 0 -1px 3px rgba(0,0,0,0.2);\n  border-radius: 2px;\n}\n.all_part .article_part .article_wrapper p {\n  font-size: 16px;\n  margin: 5px auto;\n}\n.all_part .article_part .article_wrapper blockquote {\n  background-color: #d37176;\n  padding: 5px 10px;\n  border-color: #5bbcdd;\n  font-size: 17px;\n  color: #fff;\n  border-radius: 1px;\n  margin: 20px auto;\n}\n.all_part .article_part .article_wrapper blockquote p {\n  margin: 0;\n}\n.all_part .article_part .article_wrapper em {\n  color: #3097d1;\n  font-size: 15px;\n}\n.all_part .article_part .article_wrapper strong {\n  color: #14b982;\n  font-weight: 700;\n  padding: 0 5px;\n}\n.all_part .article_part .article_wrapper pre code {\n  font-size: 15px;\n}\n.all_part .article_part .article_wrapper ul {\n  font-size: 14px;\n  font-weight: 200;\n}\n.all_part .article_part .article_wrapper ul li {\n  list-style-type: square;\n}\n.all_part .article_part .article_wrapper p img {\n  width: 100%;\n}\n.all_part .article_part .article_wrapper table,\n.all_part .article_part .article_wrapper td,\n.all_part .article_part .article_wrapper th {\n  border: 1px solid #3a3a3a;\n}\n.all_part .article_part .article_wrapper table {\n  margin: 15px auto;\n}\n.all_part .article_part .not_loaded {\n  height: 1000px;\n}\n", ""]);
+exports.push([module.i, "\n@font-face {\n  font-family: 'iconfont'; /* project id 984404 */\n  src: url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.eot\");\n  src: url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.eot?#iefix\") format('embedded-opentype'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.woff2\") format('woff2'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.woff\") format('woff'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.ttf\") format('truetype'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.svg#iconfont\") format('svg');\n}\n@font-face {\n  font-family: myFont;\n  src: url(\"/fonts/MG9KbUZFchDs94Tbv9U-pZBw1xU1rKptJj_0jans920.woff2\") format('woff2'), url(\"/fonts/uDssvmXgp7Nj3i336k_dShampu5_7CjHW5spxoeN3Vs.woff2\") format('woff2');\n}\n* {\n  font-family: myFont;\n}\n.iconfont {\n  font-family: iconfont !important;\n  font-style: normal;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.icon-search:before {\n  content: \"\\e621\";\n  font-size: 18px;\n  color: #afbdcf;\n}\n.icon-hot:before {\n  content: \"\\e757\";\n  font-size: 15px;\n  font-weight: 700;\n  color: #d81e06;\n}\n.icon-video:before {\n  content: \"\\e6bf\";\n  font-size: 16px;\n  font-weight: 700;\n}\n.icon-download:before {\n  content: \"\\e688\";\n  font-weight: 700;\n}\n.icon-leftArrow:before {\n  content: \"\\e633\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-rightArrow:before {\n  content: \"\\e637\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-laravel:before {\n  content: \"\\e6f1\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-vue:before {\n  content: \"\\e600\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-tools:before {\n  content: \"\\e758\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-life:before {\n  content: \"\\e837\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-email:before {\n  content: \"\\e658\";\n  font-weight: 700;\n  font-size: 20px;\n  color: #14b982;\n}\n.icon-password:before {\n  content: \"\\e66a\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-user_name:before {\n  content: \"\\e601\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-password_sure:before {\n  content: \"\\e614\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-verification:before {\n  content: \"\\e648\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-exit:before {\n  content: \"\\e62d\";\n  font-weight: 700;\n}\n.all_part {\n  display: inline;\n  width: 100%;\n  min-height: 600px;\n}\n.all_part .title_part {\n  width: 70%;\n  margin: 0 auto;\n}\n.all_part .title_part .title {\n  width: 100%;\n  text-align: center;\n  font-size: 25px;\n  font-weight: 700;\n}\n.all_part .title_part .sub_mes {\n  width: 100%;\n  text-align: center;\n  font-size: 15px;\n}\n.all_part .title_part .sub_mes .avatar {\n  display: inline-block;\n  width: 25px;\n  height: 25px;\n  background-image: url(\"http://xsy-cdn.xyz/head-img/1.jpg\");\n  background-size: 25px 25px;\n  vertical-align: middle;\n  border-radius: 50%;\n  border: 1px solid #000;\n  margin: 0 5px;\n}\n.all_part .skip_part {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  width: 60%;\n  margin: 0 auto;\n  text-align: center;\n}\n.all_part .skip_part .left_skip {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n}\n.all_part .skip_part .left_skip i {\n  left: 20px;\n}\n.all_part .skip_part .right_skip {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n}\n.all_part .skip_part .right_skip i {\n  right: 20px;\n}\n.all_part .skip_part .left_skip,\n.all_part .skip_part .right_skip {\n  position: relative;\n}\n.all_part .skip_part .left_skip .p_alert,\n.all_part .skip_part .right_skip .p_alert {\n  display: inline-block;\n  text-align: center;\n  color: #14b982;\n  font-size: 17px;\n  line-height: 17px;\n  padding: 17px 0;\n}\n.all_part .skip_part .left_skip a,\n.all_part .skip_part .right_skip a {\n  display: block;\n}\n.all_part .skip_part .left_skip a:hover,\n.all_part .skip_part .right_skip a:hover {\n  text-decoration: none;\n}\n.all_part .skip_part .left_skip i,\n.all_part .skip_part .right_skip i {\n  position: absolute;\n  top: 20px;\n}\n.all_part .skip_part .left_skip .title,\n.all_part .skip_part .right_skip .title {\n  color: #14b982;\n  font-size: 15px;\n  font-weight: 600;\n}\n.all_part .skip_part .left_skip .nmsl,\n.all_part .skip_part .right_skip .nmsl {\n  color: #bbb;\n  font-size: 14px;\n}\n.all_part .article_part {\n  width: 70%;\n  margin: 30px auto;\n}\n.all_part .article_part .article_wrapper {\n  padding: 10px 15px;\n  background-color: #fff;\n  -webkit-box-shadow: 0 -1px 3px rgba(0,0,0,0.2);\n          box-shadow: 0 -1px 3px rgba(0,0,0,0.2);\n  border-radius: 2px;\n}\n.all_part .article_part .article_wrapper p {\n  font-size: 16px;\n  margin: 5px auto;\n}\n.all_part .article_part .article_wrapper blockquote {\n  background-color: #d37176;\n  padding: 5px 10px;\n  border-color: #5bbcdd;\n  font-size: 17px;\n  color: #fff;\n  border-radius: 1px;\n  margin: 20px auto;\n}\n.all_part .article_part .article_wrapper blockquote p {\n  margin: 0;\n}\n.all_part .article_part .article_wrapper em {\n  color: #3097d1;\n  font-size: 15px;\n}\n.all_part .article_part .article_wrapper strong {\n  color: #14b982;\n  font-weight: 700;\n  padding: 0 5px;\n}\n.all_part .article_part .article_wrapper pre code {\n  font-size: 15px;\n}\n.all_part .article_part .article_wrapper ul {\n  font-size: 14px;\n  font-weight: 200;\n}\n.all_part .article_part .article_wrapper ul li {\n  list-style-type: square;\n}\n.all_part .article_part .article_wrapper p img {\n  width: 100%;\n}\n.all_part .article_part .article_wrapper table,\n.all_part .article_part .article_wrapper td,\n.all_part .article_part .article_wrapper th {\n  border: 1px solid #3a3a3a;\n}\n.all_part .article_part .article_wrapper table {\n  margin: 15px auto;\n}\n.all_part .article_part .not_loaded {\n  height: 1000px;\n}\n", ""]);
 
 
 
@@ -21776,19 +21778,19 @@ if (false) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(105)
+  __webpack_require__(358)
 }
 var normalizeComponent = __webpack_require__(2)
 /* script */
 var __vue_script__ = __webpack_require__(107)
 /* template */
-var __vue_template__ = __webpack_require__(108)
+var __vue_template__ = __webpack_require__(360)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-719e9f64"
+var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -21821,42 +21823,8 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 105 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(106);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(1)("56020d10", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-719e9f64\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/stylus-loader/index.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./login.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-719e9f64\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../node_modules/stylus-loader/index.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./login.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 106 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)(false);
-// Module
-exports.push([module.i, "\n@font-face {\n  font-family: 'iconfont'; /* project id 984404 */\n  src: url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.eot\");\n  src: url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.eot?#iefix\") format('embedded-opentype'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.woff2\") format('woff2'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.woff\") format('woff'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.ttf\") format('truetype'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.svg#iconfont\") format('svg');\n}\n@font-face {\n  font-family: myFont;\n  src: url(\"/fonts/MG9KbUZFchDs94Tbv9U-pZBw1xU1rKptJj_0jans920.woff2\") format('woff2'), url(\"/fonts/uDssvmXgp7Nj3i336k_dShampu5_7CjHW5spxoeN3Vs.woff2\") format('woff2');\n}\n*[data-v-719e9f64] {\n  font-family: myFont;\n}\n.iconfont[data-v-719e9f64] {\n  font-family: iconfont !important;\n  font-style: normal;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.icon-search[data-v-719e9f64]:before {\n  content: \"\\e621\";\n  font-size: 18px;\n  color: #afbdcf;\n}\n.icon-hot[data-v-719e9f64]:before {\n  content: \"\\e757\";\n  font-size: 15px;\n  font-weight: 700;\n  color: #d81e06;\n}\n.icon-video[data-v-719e9f64]:before {\n  content: \"\\e6bf\";\n  font-size: 16px;\n  font-weight: 700;\n}\n.icon-download[data-v-719e9f64]:before {\n  content: \"\\e688\";\n  font-weight: 700;\n}\n.icon-leftArrow[data-v-719e9f64]:before {\n  content: \"\\e633\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-rightArrow[data-v-719e9f64]:before {\n  content: \"\\e637\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-laravel[data-v-719e9f64]:before {\n  content: \"\\e6f1\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-vue[data-v-719e9f64]:before {\n  content: \"\\e600\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-tools[data-v-719e9f64]:before {\n  content: \"\\e758\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-life[data-v-719e9f64]:before {\n  content: \"\\e837\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-email[data-v-719e9f64]:before {\n  content: \"\\e658\";\n  font-weight: 700;\n  font-size: 20px;\n  color: #14b982;\n}\n.icon-password[data-v-719e9f64]:before {\n  content: \"\\e66a\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-user_name[data-v-719e9f64]:before {\n  content: \"\\e601\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-password_sure[data-v-719e9f64]:before {\n  content: \"\\e614\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-verification[data-v-719e9f64]:before {\n  content: \"\\e648\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.login_wrapper .login_main[data-v-719e9f64] {\n  margin-top: 20px;\n  background-color: #fff;\n  border-radius: 10px;\n}\n.login_wrapper .login_main .form[data-v-719e9f64] {\n  padding: 10px 10px 20px 10px;\n}\n.login_wrapper .login_main .form .email[data-v-719e9f64],\n.login_wrapper .login_main .form .password[data-v-719e9f64] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  height: 50px;\n  margin-top: 30px;\n  border-bottom: 1px solid #14b982;\n}\n.login_wrapper .login_main .form .email .iconfont[data-v-719e9f64],\n.login_wrapper .login_main .form .password .iconfont[data-v-719e9f64] {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  line-height: 50px;\n}\n.login_wrapper .login_main .form .email input[data-v-719e9f64],\n.login_wrapper .login_main .form .password input[data-v-719e9f64] {\n  -webkit-box-flex: 9;\n      -ms-flex: 9;\n          flex: 9;\n  border: none;\n  outline: none;\n  font-size: 16px;\n  font-weight: 100;\n}\n.login_wrapper .login_main .form .verification[data-v-719e9f64] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  height: 50px;\n  margin-top: 30px;\n}\n.login_wrapper .login_main .form .verification .iconfont[data-v-719e9f64] {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  line-height: 50px;\n  border-bottom: 1px solid #14b982;\n}\n.login_wrapper .login_main .form .verification .input_verification[data-v-719e9f64] {\n  padding-left: 3px;\n  -webkit-box-flex: 4;\n      -ms-flex: 4;\n          flex: 4;\n  border-bottom: 1px solid #14b982;\n  border-left: none;\n  border-top: none;\n  border-right: none;\n  outline: none;\n  font-size: 16px;\n  font-weight: 100;\n  margin-right: 20px;\n}\n.login_wrapper .login_main .form .verification .img[data-v-719e9f64] {\n  -webkit-box-flex: 6;\n      -ms-flex: 6;\n          flex: 6;\n  height: 50px;\n  background-color: #333;\n}\n.login_wrapper .login_main .form .verification .img img[data-v-719e9f64] {\n  width: 100%;\n  height: 100%;\n}\n.login_wrapper .login_main .form .btn[data-v-719e9f64] {\n  background-color: #14b982;\n  margin-top: 30px;\n  color: #fff;\n  text-align: center;\n  font-size: 15px;\n}\n", ""]);
-
-
-
-/***/ }),
+/* 105 */,
+/* 106 */,
 /* 107 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -21882,9 +21850,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
-
+var Swal = __webpack_require__(49);
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "login",
     components: {
@@ -21894,15 +21871,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         return {
             page_title: '登 录',
             rand_num: 1,
-            login_success: false
-            // email_input: null,
-            // password_input: null,
-            // verification_input: null
+            login_success: false,
+            email_input: '',
+            password_input: '',
+            verification_input: '',
+            email_input_error: false,
+            password_input_error: false,
+            verification_input_error: false
         };
     },
 
     methods: {
         login: function login() {
+            if (!this.email_input_error && !this.password_input_error && !this.verification_input_error && this.email_input && this.password_input && this.verification_input) {
+                this.form_post();
+            } else {
+                this.login_error_animation('拒绝登录', '请按要求填写表单');
+            }
+        },
+        form_post: function form_post() {
             var axios = __webpack_require__(4);
             var this_self = this;
             axios.post('/weixin/login', {
@@ -21910,100 +21897,82 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 password: this.$refs.password_input.value,
                 verification: this.$refs.verification_input.value
             }).then(function (response) {
-                console.log(response);
-                this_self.login_success = true;
-                this_self.$router.push({
-                    name: 'videoList',
-                    params: {
-                        login_success: true
-                    }
-                });
+                if (response.data.success) {
+                    this_self.login_success = true;
+                    this_self.$router.push({
+                        name: 'videoList',
+                        params: {
+                            login_success: true,
+                            refresh: true
+                        }
+                    });
+                } else {
+                    this_self.login_error_animation('拒绝登录', response.data.error);
+                    c;
+                }
             }).catch(function (error) {
                 console.log(error);
             });
         },
         get_rand_num: function get_rand_num() {
             this.rand_num = Math.floor(Math.random() * 100);
+        },
+        verification_focus: function verification_focus() {
+            this.verification_input_error = '验证码不能为空';
+        },
+        login_error_animation: function login_error_animation(title, text) {
+            Swal.fire({
+                type: 'error',
+                title: title,
+                text: text,
+                customClass: 'animated lightSpeedIn',
+                animation: false
+            }).then(function (result) {
+                if (result.value) {
+                    Swal.fire({
+                        type: 'error',
+                        title: title,
+                        text: text,
+                        customClass: 'animated lightSpeedOut',
+                        animation: false
+                    });
+                    $('.swal2-container').css('background-color', 'rgba(0, 0, 0, 0)');
+                }
+            });
         }
     },
-    created: function created() {}
+    created: function created() {
+        this.get_rand_num();
+    },
+
+    watch: {
+        email_input: function email_input() {
+            var reg = /^([a-zA-Z]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/;
+            if (reg.test(this.email_input)) {
+                this.email_input_error = false;
+            } else {
+                this.email_input_error = '邮箱格式不正确';
+            }
+        },
+        password_input: function password_input() {
+            if (this.password_input.length >= 6 && this.password_input.length <= 18) {
+                this.password_input_error = false;
+            } else {
+                this.password_input_error = '密码6~18个字符';
+            }
+        },
+        verification_input: function verification_input() {
+            if (this.verification_input == '') {
+                this.verification_input_error = '验证码不能为空';
+            } else {
+                this.verification_input_error = false;
+            }
+        }
+    }
 });
 
 /***/ }),
-/* 108 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "login_wrapper" },
-    [
-      _c("page_title", { attrs: { page_title: _vm.page_title } }),
-      _vm._v(" "),
-      _c("div", { staticClass: "login_main col-md-4 offset-md-4" }, [
-        _c("form", { staticClass: "form" }, [
-          _c("div", { staticClass: "email" }, [
-            _c("span", { staticClass: "iconfont icon-email" }),
-            _c("input", {
-              ref: "email_input",
-              staticClass: "email_input",
-              attrs: { type: "text", placeholder: "邮箱" }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "password" }, [
-            _c("span", { staticClass: "iconfont icon-password" }),
-            _c("input", {
-              ref: "password_input",
-              staticClass: "password_input",
-              attrs: { type: "password", placeholder: "密码" }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "verification" }, [
-            _c("span", { staticClass: "iconfont icon-verification" }),
-            _vm._v(" "),
-            _c("input", {
-              ref: "verification_input",
-              staticClass: "input_verification",
-              attrs: { type: "text", placeholder: "验证码" }
-            }),
-            _vm._v(" "),
-            _c("div", { staticClass: "img", on: { click: _vm.get_rand_num } }, [
-              _c("img", {
-                attrs: { src: "/weixin/captcha/" + this.rand_num, alt: "" }
-              })
-            ])
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "btn col-md-10 offset-md-1",
-              on: { click: _vm.login }
-            },
-            [_vm._v("登录")]
-          )
-        ])
-      ])
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-719e9f64", module.exports)
-  }
-}
-
-/***/ }),
+/* 108 */,
 /* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22086,7 +22055,7 @@ if(false) {
 
 exports = module.exports = __webpack_require__(0)(false);
 // Module
-exports.push([module.i, "\n@font-face {\n  font-family: 'iconfont'; /* project id 984404 */\n  src: url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.eot\");\n  src: url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.eot?#iefix\") format('embedded-opentype'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.woff2\") format('woff2'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.woff\") format('woff'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.ttf\") format('truetype'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.svg#iconfont\") format('svg');\n}\n@font-face {\n  font-family: myFont;\n  src: url(\"/fonts/MG9KbUZFchDs94Tbv9U-pZBw1xU1rKptJj_0jans920.woff2\") format('woff2'), url(\"/fonts/uDssvmXgp7Nj3i336k_dShampu5_7CjHW5spxoeN3Vs.woff2\") format('woff2');\n}\n*[data-v-e121c14c] {\n  font-family: myFont;\n}\n.iconfont[data-v-e121c14c] {\n  font-family: iconfont !important;\n  font-style: normal;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.icon-search[data-v-e121c14c]:before {\n  content: \"\\e621\";\n  font-size: 18px;\n  color: #afbdcf;\n}\n.icon-hot[data-v-e121c14c]:before {\n  content: \"\\e757\";\n  font-size: 15px;\n  font-weight: 700;\n  color: #d81e06;\n}\n.icon-video[data-v-e121c14c]:before {\n  content: \"\\e6bf\";\n  font-size: 16px;\n  font-weight: 700;\n}\n.icon-download[data-v-e121c14c]:before {\n  content: \"\\e688\";\n  font-weight: 700;\n}\n.icon-leftArrow[data-v-e121c14c]:before {\n  content: \"\\e633\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-rightArrow[data-v-e121c14c]:before {\n  content: \"\\e637\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-laravel[data-v-e121c14c]:before {\n  content: \"\\e6f1\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-vue[data-v-e121c14c]:before {\n  content: \"\\e600\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-tools[data-v-e121c14c]:before {\n  content: \"\\e758\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-life[data-v-e121c14c]:before {\n  content: \"\\e837\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-email[data-v-e121c14c]:before {\n  content: \"\\e658\";\n  font-weight: 700;\n  font-size: 20px;\n  color: #14b982;\n}\n.icon-password[data-v-e121c14c]:before {\n  content: \"\\e66a\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-user_name[data-v-e121c14c]:before {\n  content: \"\\e601\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-password_sure[data-v-e121c14c]:before {\n  content: \"\\e614\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-verification[data-v-e121c14c]:before {\n  content: \"\\e648\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.login_wrapper .login_main[data-v-e121c14c] {\n  margin-top: 20px;\n  background-color: #fff;\n  border-radius: 10px;\n}\n.login_wrapper .login_main .form[data-v-e121c14c] {\n  padding: 10px 10px 20px 10px;\n}\n.login_wrapper .login_main .form .email[data-v-e121c14c],\n.login_wrapper .login_main .form .password[data-v-e121c14c],\n.login_wrapper .login_main .form .user_name[data-v-e121c14c],\n.login_wrapper .login_main .form .password_sure[data-v-e121c14c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  height: 50px;\n  margin-top: 30px;\n  border-bottom: 1px solid #14b982;\n}\n.login_wrapper .login_main .form .email .iconfont[data-v-e121c14c],\n.login_wrapper .login_main .form .password .iconfont[data-v-e121c14c],\n.login_wrapper .login_main .form .user_name .iconfont[data-v-e121c14c],\n.login_wrapper .login_main .form .password_sure .iconfont[data-v-e121c14c] {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  line-height: 50px;\n}\n.login_wrapper .login_main .form .email input[data-v-e121c14c],\n.login_wrapper .login_main .form .password input[data-v-e121c14c],\n.login_wrapper .login_main .form .user_name input[data-v-e121c14c],\n.login_wrapper .login_main .form .password_sure input[data-v-e121c14c] {\n  -webkit-box-flex: 9;\n      -ms-flex: 9;\n          flex: 9;\n  border: none;\n  outline: none;\n  font-size: 16px;\n  font-weight: 100;\n}\n.login_wrapper .login_main .form .btn[data-v-e121c14c] {\n  background-color: #14b982;\n  margin-top: 30px;\n  color: #fff;\n  text-align: center;\n  font-size: 15px;\n}\n", ""]);
+exports.push([module.i, "\n@font-face {\n  font-family: 'iconfont'; /* project id 984404 */\n  src: url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.eot\");\n  src: url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.eot?#iefix\") format('embedded-opentype'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.woff2\") format('woff2'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.woff\") format('woff'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.ttf\") format('truetype'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.svg#iconfont\") format('svg');\n}\n@font-face {\n  font-family: myFont;\n  src: url(\"/fonts/MG9KbUZFchDs94Tbv9U-pZBw1xU1rKptJj_0jans920.woff2\") format('woff2'), url(\"/fonts/uDssvmXgp7Nj3i336k_dShampu5_7CjHW5spxoeN3Vs.woff2\") format('woff2');\n}\n*[data-v-e121c14c] {\n  font-family: myFont;\n}\n.iconfont[data-v-e121c14c] {\n  font-family: iconfont !important;\n  font-style: normal;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.icon-search[data-v-e121c14c]:before {\n  content: \"\\e621\";\n  font-size: 18px;\n  color: #afbdcf;\n}\n.icon-hot[data-v-e121c14c]:before {\n  content: \"\\e757\";\n  font-size: 15px;\n  font-weight: 700;\n  color: #d81e06;\n}\n.icon-video[data-v-e121c14c]:before {\n  content: \"\\e6bf\";\n  font-size: 16px;\n  font-weight: 700;\n}\n.icon-download[data-v-e121c14c]:before {\n  content: \"\\e688\";\n  font-weight: 700;\n}\n.icon-leftArrow[data-v-e121c14c]:before {\n  content: \"\\e633\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-rightArrow[data-v-e121c14c]:before {\n  content: \"\\e637\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-laravel[data-v-e121c14c]:before {\n  content: \"\\e6f1\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-vue[data-v-e121c14c]:before {\n  content: \"\\e600\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-tools[data-v-e121c14c]:before {\n  content: \"\\e758\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-life[data-v-e121c14c]:before {\n  content: \"\\e837\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-email[data-v-e121c14c]:before {\n  content: \"\\e658\";\n  font-weight: 700;\n  font-size: 20px;\n  color: #14b982;\n}\n.icon-password[data-v-e121c14c]:before {\n  content: \"\\e66a\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-user_name[data-v-e121c14c]:before {\n  content: \"\\e601\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-password_sure[data-v-e121c14c]:before {\n  content: \"\\e614\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-verification[data-v-e121c14c]:before {\n  content: \"\\e648\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-exit[data-v-e121c14c]:before {\n  content: \"\\e62d\";\n  font-weight: 700;\n}\n.login_wrapper .login_main[data-v-e121c14c] {\n  margin-top: 20px;\n  background-color: #fff;\n  border-radius: 10px;\n}\n.login_wrapper .login_main .form[data-v-e121c14c] {\n  padding: 10px 10px 20px 10px;\n}\n.login_wrapper .login_main .form .email[data-v-e121c14c],\n.login_wrapper .login_main .form .password[data-v-e121c14c],\n.login_wrapper .login_main .form .user_name[data-v-e121c14c],\n.login_wrapper .login_main .form .password_sure[data-v-e121c14c] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  height: 50px;\n  margin-top: 30px;\n  border-bottom: 1px solid #14b982;\n}\n.login_wrapper .login_main .form .email .iconfont[data-v-e121c14c],\n.login_wrapper .login_main .form .password .iconfont[data-v-e121c14c],\n.login_wrapper .login_main .form .user_name .iconfont[data-v-e121c14c],\n.login_wrapper .login_main .form .password_sure .iconfont[data-v-e121c14c] {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  line-height: 50px;\n}\n.login_wrapper .login_main .form .email input[data-v-e121c14c],\n.login_wrapper .login_main .form .password input[data-v-e121c14c],\n.login_wrapper .login_main .form .user_name input[data-v-e121c14c],\n.login_wrapper .login_main .form .password_sure input[data-v-e121c14c] {\n  -webkit-box-flex: 9;\n      -ms-flex: 9;\n          flex: 9;\n  border: none;\n  outline: none;\n  font-size: 16px;\n  font-weight: 100;\n}\n.login_wrapper .login_main .form .btn[data-v-e121c14c] {\n  background-color: #14b982;\n  margin-top: 30px;\n  color: #fff;\n  text-align: center;\n  font-size: 15px;\n}\n", ""]);
 
 
 
@@ -22284,7 +22253,7 @@ if(false) {
 
 exports = module.exports = __webpack_require__(0)(false);
 // Module
-exports.push([module.i, "\n@font-face {\n  font-family: 'iconfont'; /* project id 984404 */\n  src: url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.eot\");\n  src: url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.eot?#iefix\") format('embedded-opentype'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.woff2\") format('woff2'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.woff\") format('woff'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.ttf\") format('truetype'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.svg#iconfont\") format('svg');\n}\n@font-face {\n  font-family: myFont;\n  src: url(\"/fonts/MG9KbUZFchDs94Tbv9U-pZBw1xU1rKptJj_0jans920.woff2\") format('woff2'), url(\"/fonts/uDssvmXgp7Nj3i336k_dShampu5_7CjHW5spxoeN3Vs.woff2\") format('woff2');\n}\n* {\n  font-family: myFont;\n}\n.iconfont {\n  font-family: iconfont !important;\n  font-style: normal;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.icon-search:before {\n  content: \"\\e621\";\n  font-size: 18px;\n  color: #afbdcf;\n}\n.icon-hot:before {\n  content: \"\\e757\";\n  font-size: 15px;\n  font-weight: 700;\n  color: #d81e06;\n}\n.icon-video:before {\n  content: \"\\e6bf\";\n  font-size: 16px;\n  font-weight: 700;\n}\n.icon-download:before {\n  content: \"\\e688\";\n  font-weight: 700;\n}\n.icon-leftArrow:before {\n  content: \"\\e633\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-rightArrow:before {\n  content: \"\\e637\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-laravel:before {\n  content: \"\\e6f1\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-vue:before {\n  content: \"\\e600\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-tools:before {\n  content: \"\\e758\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-life:before {\n  content: \"\\e837\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-email:before {\n  content: \"\\e658\";\n  font-weight: 700;\n  font-size: 20px;\n  color: #14b982;\n}\n.icon-password:before {\n  content: \"\\e66a\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-user_name:before {\n  content: \"\\e601\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-password_sure:before {\n  content: \"\\e614\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-verification:before {\n  content: \"\\e648\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.back {\n  background-color: #f5f5f1;\n  width: 100%;\n  padding-bottom: 30px;\n}\nli {\n  list-style-type: none;\n}\n.header_wrapper {\n  width: 100%;\n}\n.header_wrapper .top-bar {\n  width: 100%;\n  height: 3px;\n  background-image: url(\"/img/top-bar.png\");\n  background-size: 100% 3px;\n}\n.header_wrapper .main_header {\n  width: 100%;\n  height: 80px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding-left: 30px;\n}\n.header_wrapper .main_header .logo_wrapper {\n  -webkit-box-flex: 3;\n      -ms-flex: 3;\n          flex: 3;\n}\n.header_wrapper .main_header .logo_wrapper .logo {\n  width: 200px;\n  height: 50px;\n  margin: 5px auto;\n  background-image: url(\"/img/logo.svg\");\n  background-size: 200px 50px;\n}\n.header_wrapper .main_header .searcher {\n  -webkit-box-flex: 8;\n      -ms-flex: 8;\n          flex: 8;\n  height: 40px;\n  margin-top: 15px;\n}\n.header_wrapper .main_header .searcher .searcher_form {\n  width: 100%;\n}\n.header_wrapper .main_header .searcher .searcher_form .form-wrapper {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding-left: 10px;\n  border: 1px solid rgba(175,189,207,0.5);\n  border-radius: 7px;\n}\n.header_wrapper .main_header .searcher .searcher_form .form-wrapper .search-input {\n  -webkit-box-flex: 100;\n      -ms-flex: 100;\n          flex: 100;\n  outline: none;\n  height: 30px;\n  border: none;\n  font-size: 16px;\n}\n.header_wrapper .main_header .searcher .searcher_form .form-wrapper .search-input::-webkit-input-placeholder {\n  color: rgba(175,189,207,0.8);\n  font-size: 1px;\n}\n.header_wrapper .main_header .searcher .searcher_form .form-wrapper .search_go {\n  -webkit-box-flex: 1;\n      -ms-flex: 1 0 25px;\n          flex: 1 0 25px;\n  height: 30px;\n  margin-right: 4px;\n  border: none;\n}\n.header_wrapper .main_header .user-profile {\n  -webkit-box-flex: 3;\n      -ms-flex: 3;\n          flex: 3;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-top: 10px;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  height: 40px;\n}\n.header_wrapper .main_header .user-profile .button {\n  height: 40px;\n  line-height: 40px;\n  padding: 0 17px;\n  color: #f5f5f1;\n  font-family: myFont;\n  font-size: 16px;\n  font-weight: 400;\n  -webkit-text-decoration-line: none;\n          text-decoration-line: none;\n}\n.header_wrapper .main_header .user-profile .login {\n  background: -webkit-gradient(linear, left top, right top, from(#58a8e9), to(#d41f4d));\n  background: linear-gradient(90deg, #58a8e9, #d41f4d);\n  border-radius: 0.3em;\n  margin-right: 6%;\n}\n.header_wrapper .main_header .user-profile .register {\n  background: -webkit-gradient(linear, left top, left bottom, from(#3c8ce7), to(#00eaff));\n  background: linear-gradient(180deg, #3c8ce7, #00eaff);\n  border-radius: 0.3em;\n  color: #f5f8fa;\n}\n.header_wrapper .main_header .user-avator {\n  -webkit-box-flex: 2;\n      -ms-flex: 2;\n          flex: 2;\n  height: 40px;\n  margin-top: 10px;\n}\n.header_wrapper .main_header .user-avator .avator {\n  display: block;\n  width: 40px;\n  height: 40px;\n  border-radius: 50%;\n  margin: 0 auto;\n  -webkit-box-shadow: #fff 0px 0px 0px 1px, #000 0px 0px 2px 1px;\n          box-shadow: #fff 0px 0px 0px 1px, #000 0px 0px 2px 1px;\n  background-color: #000;\n}\n", ""]);
+exports.push([module.i, "\n@font-face {\n  font-family: 'iconfont'; /* project id 984404 */\n  src: url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.eot\");\n  src: url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.eot?#iefix\") format('embedded-opentype'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.woff2\") format('woff2'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.woff\") format('woff'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.ttf\") format('truetype'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.svg#iconfont\") format('svg');\n}\n@font-face {\n  font-family: myFont;\n  src: url(\"/fonts/MG9KbUZFchDs94Tbv9U-pZBw1xU1rKptJj_0jans920.woff2\") format('woff2'), url(\"/fonts/uDssvmXgp7Nj3i336k_dShampu5_7CjHW5spxoeN3Vs.woff2\") format('woff2');\n}\n* {\n  font-family: myFont;\n}\n.iconfont {\n  font-family: iconfont !important;\n  font-style: normal;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.icon-search:before {\n  content: \"\\e621\";\n  font-size: 18px;\n  color: #afbdcf;\n}\n.icon-hot:before {\n  content: \"\\e757\";\n  font-size: 15px;\n  font-weight: 700;\n  color: #d81e06;\n}\n.icon-video:before {\n  content: \"\\e6bf\";\n  font-size: 16px;\n  font-weight: 700;\n}\n.icon-download:before {\n  content: \"\\e688\";\n  font-weight: 700;\n}\n.icon-leftArrow:before {\n  content: \"\\e633\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-rightArrow:before {\n  content: \"\\e637\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-laravel:before {\n  content: \"\\e6f1\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-vue:before {\n  content: \"\\e600\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-tools:before {\n  content: \"\\e758\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-life:before {\n  content: \"\\e837\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-email:before {\n  content: \"\\e658\";\n  font-weight: 700;\n  font-size: 20px;\n  color: #14b982;\n}\n.icon-password:before {\n  content: \"\\e66a\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-user_name:before {\n  content: \"\\e601\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-password_sure:before {\n  content: \"\\e614\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-verification:before {\n  content: \"\\e648\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-exit:before {\n  content: \"\\e62d\";\n  font-weight: 700;\n}\n.back {\n  background-color: #f5f5f1;\n  width: 100%;\n  padding-bottom: 30px;\n}\nli {\n  list-style-type: none;\n}\n.header_wrapper {\n  width: 100%;\n  background-color: #f9f9f9;\n}\n.header_wrapper .top-bar {\n  width: 100%;\n  height: 3px;\n  background-image: url(\"/img/top-bar.png\");\n  background-size: 100% 3px;\n}\n.header_wrapper .main_header {\n  width: 100%;\n  height: 80px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding-left: 30px;\n}\n.header_wrapper .main_header .logo_wrapper {\n  -webkit-box-flex: 3;\n      -ms-flex: 3;\n          flex: 3;\n}\n.header_wrapper .main_header .logo_wrapper .logo {\n  width: 200px;\n  height: 50px;\n  margin: 5px auto;\n  background-image: url(\"/img/logo.svg\");\n  background-size: 200px 50px;\n}\n.header_wrapper .main_header .searcher {\n  -webkit-box-flex: 8;\n      -ms-flex: 8;\n          flex: 8;\n  height: 40px;\n  margin-top: 15px;\n}\n.header_wrapper .main_header .searcher .searcher_form {\n  width: 100%;\n}\n.header_wrapper .main_header .searcher .searcher_form .form-wrapper {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding-left: 10px;\n  border: 1px solid rgba(175,189,207,0.5);\n  border-radius: 7px;\n}\n.header_wrapper .main_header .searcher .searcher_form .form-wrapper .search-input {\n  -webkit-box-flex: 100;\n      -ms-flex: 100;\n          flex: 100;\n  outline: none;\n  height: 30px;\n  border: none;\n  font-size: 16px;\n}\n.header_wrapper .main_header .searcher .searcher_form .form-wrapper .search-input::-webkit-input-placeholder {\n  color: rgba(175,189,207,0.8);\n  font-size: 1px;\n}\n.header_wrapper .main_header .searcher .searcher_form .form-wrapper .search_go {\n  -webkit-box-flex: 1;\n      -ms-flex: 1 0 25px;\n          flex: 1 0 25px;\n  height: 30px;\n  margin-right: 4px;\n  border: none;\n}\n.header_wrapper .main_header .user-profile {\n  -webkit-box-flex: 3;\n      -ms-flex: 3;\n          flex: 3;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-top: 10px;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  height: 40px;\n}\n.header_wrapper .main_header .user-profile .button {\n  height: 40px;\n  line-height: 40px;\n  padding: 0 17px;\n  color: #f5f5f1;\n  font-family: myFont;\n  font-size: 16px;\n  font-weight: 400;\n  -webkit-text-decoration-line: none;\n          text-decoration-line: none;\n}\n.header_wrapper .main_header .user-profile .login {\n  background: -webkit-gradient(linear, left top, right top, from(#58a8e9), to(#d41f4d));\n  background: linear-gradient(90deg, #58a8e9, #d41f4d);\n  border-radius: 0.3em;\n  margin-right: 6%;\n}\n.header_wrapper .main_header .user-profile .register {\n  background: -webkit-gradient(linear, left top, left bottom, from(#3c8ce7), to(#00eaff));\n  background: linear-gradient(180deg, #3c8ce7, #00eaff);\n  border-radius: 0.3em;\n  color: #f5f8fa;\n}\n.header_wrapper .main_header .user-avator {\n  -webkit-box-flex: 2;\n      -ms-flex: 2;\n          flex: 2;\n  height: 40px;\n  margin-top: 10px;\n}\n.header_wrapper .main_header .user-avator .avator {\n  display: block;\n  width: 40px;\n  height: 40px;\n  border-radius: 50%;\n  margin: 0 auto;\n  -webkit-box-shadow: #fff 0px 0px 0px 1px, #000 0px 0px 2px 1px;\n          box-shadow: #fff 0px 0px 0px 1px, #000 0px 0px 2px 1px;\n  background-color: #000;\n}\n.header_wrapper .main_header .user-avator .dropDown_menu {\n  background-color: #fff;\n  margin: 0 auto;\n  width: 100px;\n  padding: 10px 0;\n  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);\n          box-shadow: 0 6px 12px rgba(0,0,0,0.175);\n}\n.header_wrapper .main_header .user-avator .dropDown_menu .item:hover {\n  background-color: #14b982;\n}\n.header_wrapper .main_header .user-avator .dropDown_menu .item a {\n  color: #8999ad;\n  padding: 5px 10px;\n  font-size: 14px;\n  text-decoration: none;\n  font-weight: 700;\n}\n.header_wrapper .main_header .user-avator .dropDown_menu .item a:hover {\n  color: #fff;\n  text-decoration: none;\n}\n", ""]);
 
 
 
@@ -22327,6 +22296,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     mounted: function mounted() {
         console.log('Component mounted.');
+    },
+
+    methods: {
+        refreshVheader: function refreshVheader(data) {
+            this.refresh = data;
+        }
+    },
+    data: function data() {
+        return {
+            refresh: false
+        };
     }
 });
 
@@ -22453,21 +22433,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: 'vheader',
     data: function data() {
         return {
-            user_cookie: null
+            user_cookie: {
+                imgUrl: null
+            },
+            menu_show: false
         };
     },
     created: function created() {
         this.get_cookie();
     },
 
-    watch: {
-        user_cookie: user_cookie
-    },
     methods: {
         get_cookie: function get_cookie() {
             var _this = this;
@@ -22478,9 +22461,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }).catch(function (error) {
                 console.log(error);
             });
+        },
+        leave: function leave() {
+            this.menu_show = false;
+        },
+        enter: function enter() {
+            this.menu_show = true;
+        }
+    },
+    props: ['refresh'],
+    watch: {
+        //刷新cookie
+        refresh: function refresh() {
+            this.get_cookie();
         }
     }
-
 });
 
 /***/ }),
@@ -22524,8 +22519,26 @@ var render = function() {
         ? _c("div", { staticClass: "user-avator" }, [
             _c("img", {
               staticClass: "avator",
-              attrs: { src: this.user_cookie.imgUrl, alt: "" }
-            })
+              attrs: { src: this.user_cookie.imgUrl, alt: "" },
+              on: { mouseenter: _vm.enter, mouseleave: _vm.leave }
+            }),
+            _vm._v(" "),
+            _c(
+              "ul",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.menu_show,
+                    expression: "menu_show"
+                  }
+                ],
+                staticClass: "dropDown_menu",
+                on: { mouseenter: _vm.enter, mouseleave: _vm.leave }
+              },
+              [_vm._m(2)]
+            )
           ])
         : _vm._e()
     ])
@@ -22556,6 +22569,16 @@ var staticRenderFns = [
             _c("div", { staticClass: "iconfont icon-search" })
           ])
         ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "item" }, [
+      _c("a", { attrs: { href: "/weixin/exit" } }, [
+        _c("span", { staticClass: "iconfont icon-exit" }, [_vm._v(" 退出登录")])
       ])
     ])
   }
@@ -22652,7 +22675,7 @@ if(false) {
 
 exports = module.exports = __webpack_require__(0)(false);
 // Module
-exports.push([module.i, "\n@font-face {\n  font-family: 'iconfont'; /* project id 984404 */\n  src: url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.eot\");\n  src: url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.eot?#iefix\") format('embedded-opentype'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.woff2\") format('woff2'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.woff\") format('woff'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.ttf\") format('truetype'), url(\"//at.alicdn.com/t/font_984404_1vkeyjxz4xzh.svg#iconfont\") format('svg');\n}\n@font-face {\n  font-family: myFont;\n  src: url(\"/fonts/MG9KbUZFchDs94Tbv9U-pZBw1xU1rKptJj_0jans920.woff2\") format('woff2'), url(\"/fonts/uDssvmXgp7Nj3i336k_dShampu5_7CjHW5spxoeN3Vs.woff2\") format('woff2');\n}\n*[data-v-f4299b8c] {\n  font-family: myFont;\n}\n.iconfont[data-v-f4299b8c] {\n  font-family: iconfont !important;\n  font-style: normal;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.icon-search[data-v-f4299b8c]:before {\n  content: \"\\e621\";\n  font-size: 18px;\n  color: #afbdcf;\n}\n.icon-hot[data-v-f4299b8c]:before {\n  content: \"\\e757\";\n  font-size: 15px;\n  font-weight: 700;\n  color: #d81e06;\n}\n.icon-video[data-v-f4299b8c]:before {\n  content: \"\\e6bf\";\n  font-size: 16px;\n  font-weight: 700;\n}\n.icon-download[data-v-f4299b8c]:before {\n  content: \"\\e688\";\n  font-weight: 700;\n}\n.icon-leftArrow[data-v-f4299b8c]:before {\n  content: \"\\e633\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-rightArrow[data-v-f4299b8c]:before {\n  content: \"\\e637\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-laravel[data-v-f4299b8c]:before {\n  content: \"\\e6f1\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-vue[data-v-f4299b8c]:before {\n  content: \"\\e600\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-tools[data-v-f4299b8c]:before {\n  content: \"\\e758\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-life[data-v-f4299b8c]:before {\n  content: \"\\e837\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-email[data-v-f4299b8c]:before {\n  content: \"\\e658\";\n  font-weight: 700;\n  font-size: 20px;\n  color: #14b982;\n}\n.icon-password[data-v-f4299b8c]:before {\n  content: \"\\e66a\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-user_name[data-v-f4299b8c]:before {\n  content: \"\\e601\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-password_sure[data-v-f4299b8c]:before {\n  content: \"\\e614\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-verification[data-v-f4299b8c]:before {\n  content: \"\\e648\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.navigation[data-v-f4299b8c] {\n  width: 100%;\n  border-top: 1px solid rgba(0,0,0,0.12);\n  border-bottom: 1px solid rgba(0,0,0,0.12);\n}\n.navigation .nav-items[data-v-f4299b8c] {\n  width: 100%;\n  max-width: 1070px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin: 0 auto;\n}\n.navigation .nav-items .nav-item[data-v-f4299b8c] {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  border-left: 1px solid rgba(0,0,0,0.12);\n  font-size: 15px;\n  font-weight: 600;\n  line-height: 15px;\n  padding: 10px 0;\n  text-align: center;\n}\n.navigation .nav-items .nav-item a[data-v-f4299b8c] {\n  color: #000;\n  text-decoration: none;\n}\n.navigation .nav-items .nav-item a[data-v-f4299b8c]:hover {\n  color: #14b982;\n}\n.navigation .nav-items .nav-item[data-v-f4299b8c]:last-child {\n  border-right: 1px solid rgba(0,0,0,0.12);\n}\n.navigation .nav-items .nav-item:last-child span[data-v-f4299b8c] {\n  vertical-align: text-bottom;\n}\n", ""]);
+exports.push([module.i, "\n@font-face {\n  font-family: 'iconfont'; /* project id 984404 */\n  src: url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.eot\");\n  src: url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.eot?#iefix\") format('embedded-opentype'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.woff2\") format('woff2'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.woff\") format('woff'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.ttf\") format('truetype'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.svg#iconfont\") format('svg');\n}\n@font-face {\n  font-family: myFont;\n  src: url(\"/fonts/MG9KbUZFchDs94Tbv9U-pZBw1xU1rKptJj_0jans920.woff2\") format('woff2'), url(\"/fonts/uDssvmXgp7Nj3i336k_dShampu5_7CjHW5spxoeN3Vs.woff2\") format('woff2');\n}\n*[data-v-f4299b8c] {\n  font-family: myFont;\n}\n.iconfont[data-v-f4299b8c] {\n  font-family: iconfont !important;\n  font-style: normal;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.icon-search[data-v-f4299b8c]:before {\n  content: \"\\e621\";\n  font-size: 18px;\n  color: #afbdcf;\n}\n.icon-hot[data-v-f4299b8c]:before {\n  content: \"\\e757\";\n  font-size: 15px;\n  font-weight: 700;\n  color: #d81e06;\n}\n.icon-video[data-v-f4299b8c]:before {\n  content: \"\\e6bf\";\n  font-size: 16px;\n  font-weight: 700;\n}\n.icon-download[data-v-f4299b8c]:before {\n  content: \"\\e688\";\n  font-weight: 700;\n}\n.icon-leftArrow[data-v-f4299b8c]:before {\n  content: \"\\e633\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-rightArrow[data-v-f4299b8c]:before {\n  content: \"\\e637\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-laravel[data-v-f4299b8c]:before {\n  content: \"\\e6f1\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-vue[data-v-f4299b8c]:before {\n  content: \"\\e600\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-tools[data-v-f4299b8c]:before {\n  content: \"\\e758\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-life[data-v-f4299b8c]:before {\n  content: \"\\e837\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-email[data-v-f4299b8c]:before {\n  content: \"\\e658\";\n  font-weight: 700;\n  font-size: 20px;\n  color: #14b982;\n}\n.icon-password[data-v-f4299b8c]:before {\n  content: \"\\e66a\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-user_name[data-v-f4299b8c]:before {\n  content: \"\\e601\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-password_sure[data-v-f4299b8c]:before {\n  content: \"\\e614\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-verification[data-v-f4299b8c]:before {\n  content: \"\\e648\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-exit[data-v-f4299b8c]:before {\n  content: \"\\e62d\";\n  font-weight: 700;\n}\n.navigation[data-v-f4299b8c] {\n  width: 100%;\n  border-top: 1px solid rgba(0,0,0,0.12);\n  border-bottom: 1px solid rgba(0,0,0,0.12);\n  background-color: #f9f9f9;\n}\n.navigation .nav-items[data-v-f4299b8c] {\n  width: 100%;\n  max-width: 1070px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin: 0 auto;\n}\n.navigation .nav-items .nav-item[data-v-f4299b8c] {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  border-left: 1px solid rgba(0,0,0,0.12);\n  font-size: 15px;\n  font-weight: 600;\n  line-height: 15px;\n  padding: 10px 0;\n  text-align: center;\n}\n.navigation .nav-items .nav-item a[data-v-f4299b8c] {\n  color: #000;\n  text-decoration: none;\n}\n.navigation .nav-items .nav-item a[data-v-f4299b8c]:hover {\n  color: #14b982;\n}\n.navigation .nav-items .nav-item[data-v-f4299b8c]:last-child {\n  border-right: 1px solid rgba(0,0,0,0.12);\n}\n.navigation .nav-items .nav-item:last-child span[data-v-f4299b8c] {\n  vertical-align: text-bottom;\n}\n", ""]);
 
 
 
@@ -23199,11 +23222,16 @@ var render = function() {
   return _c(
     "div",
     [
-      _c("v-header"),
+      _c("v-header", { attrs: { refresh: _vm.refresh } }),
       _vm._v(" "),
       _c("navigation"),
       _vm._v(" "),
-      _c("div", { staticClass: "back" }, [_c("router-view")], 1),
+      _c(
+        "div",
+        { staticClass: "back" },
+        [_c("router-view", { on: { listenToVideoList: _vm.refreshVheader } })],
+        1
+      ),
       _vm._v(" "),
       _c("v-foot")
     ],
@@ -74317,222 +74345,230 @@ exports.push([module.i, "@keyframes swal2-show {\n  0% {\n    transform: scale(0
 
 /***/ }),
 /* 348 */
-/***/ (function(module, exports, __webpack_require__) {
-
-(function () {
-    Number.isInteger = Number.isInteger || function (value) {
-        return typeof value === 'number' &&
-            isFinite(value) &&
-            Math.floor(value) === value;
-    };
-    var Cookie = __webpack_require__(349);
-
-    var VueCookie = {
-
-        install: function (Vue) {
-            Vue.prototype.$cookie = this;
-            Vue.cookie = this;
-        },
-        set: function (name, value, daysOrOptions) {
-            var opts = daysOrOptions;
-            if(Number.isInteger(daysOrOptions)) {
-                opts = {expires: daysOrOptions};
-            }
-            return Cookie.set(name, value, opts);
-        },
-
-        get: function (name) {
-            return Cookie.get(name);
-        },
-
-        delete: function (name, options) {
-            var opts = {expires: -1};
-            if(options !== undefined) {
-                opts = Object.assign(options, opts);
-            }
-            this.set(name, '', opts);
-        }
-    };
-
-    if (true) {
-        module.exports = VueCookie;
-    } else if (typeof define == "function" && define.amd) {
-        define([], function(){ return VueCookie; })
-    } else if (window.Vue) {
-        window.VueCookie = VueCookie;
-        Vue.use(VueCookie);
-    }
-
-})();
-
-
-/***/ }),
-/* 349 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
- * tiny-cookie - A tiny cookie manipulation plugin
- * https://github.com/Alex1990/tiny-cookie
- * Under the MIT license | (c) Alex Chao
- */
-
-!(function(root, factory) {
-
-  // Uses CommonJS, AMD or browser global to create a jQuery plugin.
-  // See: https://github.com/umdjs/umd
-  if (true) {
-    // Expose this plugin as an AMD module. Register an anonymous module.
-    !(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
-				__WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-  } else if (typeof exports === 'object') {
-    // Node/CommonJS module
-    module.exports = factory();
-  } else {
-    // Browser globals 
-    root.Cookie = factory();
-  }
-
-}(this, function() {
-
-  'use strict';
-
-  // The public function which can get/set/remove cookie.
-  function Cookie(key, value, opts) {
-    if (value === void 0) {
-      return Cookie.get(key);
-    } else if (value === null) {
-      Cookie.remove(key);
-    } else {
-      Cookie.set(key, value, opts);
-    }
-  }
-
-  // Check if the cookie is enabled.
-  Cookie.enabled = function() {
-    var key = '__test_key';
-    var enabled;
-
-    document.cookie = key + '=1';
-    enabled = !!document.cookie;
-
-    if (enabled) Cookie.remove(key);
-
-    return enabled;
-  };
-
-  // Get the cookie value by the key.
-  Cookie.get = function(key, raw) {
-    if (typeof key !== 'string' || !key) return null;
-
-    key = '(?:^|; )' + escapeRe(key) + '(?:=([^;]*?))?(?:;|$)';
-
-    var reKey = new RegExp(key);
-    var res = reKey.exec(document.cookie);
-
-    return res !== null ? (raw ? res[1] : decodeURIComponent(res[1])) : null;
-  };
-
-  // Get the cookie's value without decoding.
-  Cookie.getRaw = function(key) {
-    return Cookie.get(key, true);
-  };
-
-  // Set a cookie.
-  Cookie.set = function(key, value, raw, opts) {
-    if (raw !== true) {
-      opts = raw;
-      raw = false;
-    }
-    opts = opts ? convert(opts) : convert({});
-    var cookie = key + '=' + (raw ? value : encodeURIComponent(value)) + opts;
-    document.cookie = cookie;
-  };
-
-  // Set a cookie without encoding the value.
-  Cookie.setRaw = function(key, value, opts) {
-    Cookie.set(key, value, true, opts);
-  };
-
-  // Remove a cookie by the specified key.
-  Cookie.remove = function(key) {
-    Cookie.set(key, 'a', { expires: new Date() });
-  };
-
-  // Helper function
-  // ---------------
-
-  // Escape special characters.
-  function escapeRe(str) {
-    return str.replace(/[.*+?^$|[\](){}\\-]/g, '\\$&');
-  }
-
-  // Convert an object to a cookie option string.
-  function convert(opts) {
-    var res = '';
-
-    for (var p in opts) {
-      if (opts.hasOwnProperty(p)) {
-
-        if (p === 'expires') {
-          var expires = opts[p];
-          if (typeof expires !== 'object') {
-            expires += typeof expires === 'number' ? 'D' : '';
-            expires = computeExpires(expires);
-          }
-          opts[p] = expires.toUTCString();
-        }
-
-        if (p === 'secure') {
-          if (opts[p]) {
-            res += ';' + p;
-          }
-
-          continue;
-        }
-
-        res += ';' + p + '=' + opts[p];
-      }
-    }
-
-    if (!opts.hasOwnProperty('path')) {
-      res += ';path=/';
-    }
-
-    return res;
-  }
-
-  // Return a future date by the given string.
-  function computeExpires(str) {
-    var expires = new Date();
-    var lastCh = str.charAt(str.length - 1);
-    var value = parseInt(str, 10);
-
-    switch (lastCh) {
-      case 'Y': expires.setFullYear(expires.getFullYear() + value); break;
-      case 'M': expires.setMonth(expires.getMonth() + value); break;
-      case 'D': expires.setDate(expires.getDate() + value); break;
-      case 'h': expires.setHours(expires.getHours() + value); break;
-      case 'm': expires.setMinutes(expires.getMinutes() + value); break;
-      case 's': expires.setSeconds(expires.getSeconds() + value); break;
-      default: expires = new Date(str);
-    }
-
-    return expires;
-  }
-
-  return Cookie;
-
-}));
-
-
-/***/ }),
-/* 350 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 349 */,
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */,
+/* 355 */,
+/* 356 */,
+/* 357 */,
+/* 358 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(359);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(1)("e4cfe022", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-719e9f64\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/stylus-loader/index.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./login.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-719e9f64\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/stylus-loader/index.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./login.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 359 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// Module
+exports.push([module.i, "\n@font-face {\n  font-family: 'iconfont'; /* project id 984404 */\n  src: url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.eot\");\n  src: url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.eot?#iefix\") format('embedded-opentype'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.woff2\") format('woff2'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.woff\") format('woff'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.ttf\") format('truetype'), url(\"//at.alicdn.com/t/font_984404_j8xxir4sf4.svg#iconfont\") format('svg');\n}\n@font-face {\n  font-family: myFont;\n  src: url(\"/fonts/MG9KbUZFchDs94Tbv9U-pZBw1xU1rKptJj_0jans920.woff2\") format('woff2'), url(\"/fonts/uDssvmXgp7Nj3i336k_dShampu5_7CjHW5spxoeN3Vs.woff2\") format('woff2');\n}\n* {\n  font-family: myFont;\n}\n.iconfont {\n  font-family: iconfont !important;\n  font-style: normal;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.icon-search:before {\n  content: \"\\e621\";\n  font-size: 18px;\n  color: #afbdcf;\n}\n.icon-hot:before {\n  content: \"\\e757\";\n  font-size: 15px;\n  font-weight: 700;\n  color: #d81e06;\n}\n.icon-video:before {\n  content: \"\\e6bf\";\n  font-size: 16px;\n  font-weight: 700;\n}\n.icon-download:before {\n  content: \"\\e688\";\n  font-weight: 700;\n}\n.icon-leftArrow:before {\n  content: \"\\e633\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-rightArrow:before {\n  content: \"\\e637\";\n  font-weight: 700;\n  color: #2b333f;\n}\n.icon-laravel:before {\n  content: \"\\e6f1\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-vue:before {\n  content: \"\\e600\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-tools:before {\n  content: \"\\e758\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-life:before {\n  content: \"\\e837\";\n  font-weight: 700;\n  color: #fff;\n  font-size: 45px;\n}\n.icon-email:before {\n  content: \"\\e658\";\n  font-weight: 700;\n  font-size: 20px;\n  color: #14b982;\n}\n.icon-password:before {\n  content: \"\\e66a\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-user_name:before {\n  content: \"\\e601\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-password_sure:before {\n  content: \"\\e614\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-verification:before {\n  content: \"\\e648\";\n  font-weight: 700;\n  color: #14b982;\n  font-size: 20px;\n}\n.icon-exit:before {\n  content: \"\\e62d\";\n  font-weight: 700;\n}\n.login_wrapper .login_main {\n  margin-top: 20px;\n  background-color: #fff;\n  border-radius: 10px;\n}\n.login_wrapper .login_main .form {\n  padding: 10px 10px 20px 10px;\n}\n.login_wrapper .login_main .form .email,\n.login_wrapper .login_main .form .password {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  position: relative;\n  height: 50px;\n  margin-top: 30px;\n  border-bottom: 1px solid #14b982;\n}\n.login_wrapper .login_main .form .email .iconfont,\n.login_wrapper .login_main .form .password .iconfont {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  line-height: 50px;\n}\n.login_wrapper .login_main .form .email input,\n.login_wrapper .login_main .form .password input {\n  -webkit-box-flex: 9;\n      -ms-flex: 9;\n          flex: 9;\n  border: none;\n  outline: none;\n  font-size: 16px;\n  font-weight: 100;\n}\n.login_wrapper .login_main .form .email .error,\n.login_wrapper .login_main .form .password .error {\n  position: absolute;\n  margin: 0;\n  padding: 0 0 0 10%;\n  bottom: -24px;\n  font-size: 12px;\n  color: #dd0a20;\n  font-style: italic;\n}\n.login_wrapper .login_main .form .verification {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  height: 50px;\n  margin-top: 30px;\n  position: relative;\n}\n.login_wrapper .login_main .form .verification .iconfont {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  line-height: 50px;\n  border-bottom: 1px solid #14b982;\n}\n.login_wrapper .login_main .form .verification .input_verification {\n  padding-left: 4.5%;\n  -webkit-box-flex: 4;\n      -ms-flex: 4;\n          flex: 4;\n  border-bottom: 1px solid #14b982;\n  border-left: none;\n  border-top: none;\n  border-right: none;\n  outline: none;\n  font-size: 16px;\n  font-weight: 100;\n  margin-right: 20px;\n}\n.login_wrapper .login_main .form .verification .img {\n  -webkit-box-flex: 6;\n      -ms-flex: 6;\n          flex: 6;\n  height: 50px;\n  background-color: #333;\n}\n.login_wrapper .login_main .form .verification .img img {\n  width: 100%;\n  height: 100%;\n}\n.login_wrapper .login_main .form .verification .error {\n  position: absolute;\n  margin: 0;\n  padding: 0 0 0 10%;\n  bottom: -24px;\n  font-size: 12px;\n  color: #dd0a20;\n  font-style: italic;\n}\n.login_wrapper .login_main .form .btn {\n  background-color: #14b982;\n  margin-top: 30px;\n  color: #fff;\n  text-align: center;\n  font-size: 15px;\n}\n", ""]);
+
+
+
+/***/ }),
+/* 360 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "login_wrapper" },
+    [
+      _c("page_title", { attrs: { page_title: _vm.page_title } }),
+      _vm._v(" "),
+      _c("div", { staticClass: "login_main col-md-4 offset-md-4" }, [
+        _c("div", { staticClass: "form" }, [
+          _c("div", { staticClass: "email" }, [
+            _c("span", { staticClass: "iconfont icon-email" }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.email_input,
+                  expression: "email_input"
+                }
+              ],
+              ref: "email_input",
+              staticClass: "email_input",
+              attrs: { type: "text", placeholder: "邮箱" },
+              domProps: { value: _vm.email_input },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.email_input = $event.target.value
+                }
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "p",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.email_input_error,
+                    expression: "email_input_error"
+                  }
+                ],
+                staticClass: "error"
+              },
+              [_vm._v(_vm._s(_vm.email_input_error))]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "password" }, [
+            _c("span", { staticClass: "iconfont icon-password" }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.password_input,
+                  expression: "password_input"
+                }
+              ],
+              ref: "password_input",
+              staticClass: "password_input",
+              attrs: { type: "password", placeholder: "密码" },
+              domProps: { value: _vm.password_input },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.password_input = $event.target.value
+                }
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "p",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.password_input_error,
+                    expression: "password_input_error"
+                  }
+                ],
+                staticClass: "error"
+              },
+              [_vm._v(_vm._s(_vm.password_input_error))]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "verification" }, [
+            _c("span", { staticClass: "iconfont icon-verification" }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.verification_input,
+                  expression: "verification_input"
+                }
+              ],
+              ref: "verification_input",
+              staticClass: "input_verification",
+              attrs: { type: "text", placeholder: "验证码" },
+              domProps: { value: _vm.verification_input },
+              on: {
+                focus: _vm.verification_focus,
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.verification_input = $event.target.value
+                }
+              }
+            }),
+            _vm._v(" "),
+            _c("div", { staticClass: "img", on: { click: _vm.get_rand_num } }, [
+              _c("img", {
+                attrs: { src: "/weixin/captcha/" + this.rand_num, alt: "" }
+              })
+            ]),
+            _vm._v(" "),
+            _c(
+              "p",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.verification_input_error,
+                    expression: "verification_input_error"
+                  }
+                ],
+                staticClass: "error"
+              },
+              [_vm._v(_vm._s(_vm.verification_input_error))]
+            )
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "btn col-md-10 offset-md-1",
+              on: { click: _vm.login }
+            },
+            [_vm._v("登录")]
+          )
+        ])
+      ])
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-719e9f64", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

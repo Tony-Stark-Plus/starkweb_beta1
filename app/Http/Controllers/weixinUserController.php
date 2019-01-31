@@ -12,13 +12,28 @@ class weixinUserController extends Controller
     public function login(Request $request){
         $input = $request;
         $user = users::where('email','=',$input['email'])->first();
-        if ($input['password'] == $user['password'] && Session('starkcaptcha') == $input['verification']){
-            //储存用户cookie
-            Cookie::queue('user_id', $user['id'], 1000);
-            Cookie::queue('imgUrl',$user['imgUrl'],1000);
+        if($user){
+            if ($input['password'] == $user['password'] ){
+                if(Session('starkcaptcha') == $input['verification']){
+                    //储存用户cookie
+                    Cookie::queue('user_id', $user['id'], 1000);
+                    Cookie::queue('imgUrl',$user['imgUrl'],1000);
+                    $login_mes['success'] = 'ok';
+                    return $login_mes;
+
+                }else{
+                    $login_mes['error'] = '验证码错误';
+                    return $login_mes;
+                }
+            }
+            else{
+                $login_mes['error'] = '密码错误';
+                return $login_mes;
+            }
         }
         else{
-            return 'no';
+            $login_mes['error'] = '您尚未注册';
+            return $login_mes;
         }
 
     }
@@ -44,5 +59,6 @@ class weixinUserController extends Controller
     {
         Cookie::queue(Cookie::forget('user_id'));
         Cookie::queue(Cookie::forget('imgUrl'));
+        return redirect('/#/videoList');
     }
 }

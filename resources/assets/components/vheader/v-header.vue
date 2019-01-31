@@ -15,12 +15,15 @@
                     </div>
                 </form>
             </div>
-            <div class="user-profile" v-if="!user_cookie.imgUrl">
+            <div class="user-profile" v-if="!user_cookie.imgUrl" >
                 <router-link to="/login" class="button login">登录</router-link>
                 <router-link to="/register" class="button register">注册</router-link>
             </div>
             <div class="user-avator" v-if="user_cookie.imgUrl">
-                <img class="avator" :src="this.user_cookie.imgUrl" alt="">
+                <img class="avator" :src="this.user_cookie.imgUrl" alt="" @mouseenter="enter" @mouseleave="leave">
+                <ul class="dropDown_menu" @mouseenter="enter" @mouseleave="leave" v-show="menu_show">
+                    <li class="item"><a href="/weixin/exit"><span class="iconfont icon-exit">&nbsp;退出登录</span></a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -33,14 +36,14 @@
         name:'vheader',
         data(){
             return {
-                user_cookie: null
+                user_cookie: {
+                    imgUrl: null
+                },
+                menu_show: false
             }
         },
         created() {
-           this.get_cookie()
-        },
-        watch:{
-            user_cookie
+            this.get_cookie();
         },
         methods:{
             get_cookie() {
@@ -51,8 +54,20 @@
                     )).catch(function (error) {
                     console.log(error);
                 });
+            },
+            leave() {
+                this.menu_show = false
+            },
+            enter() {
+                this.menu_show = true
+            }
+        },
+        props: ['refresh'],
+        watch:{
+            //刷新cookie
+            refresh: function(){
+                this.get_cookie();
             }
         }
-
     }
 </script>
