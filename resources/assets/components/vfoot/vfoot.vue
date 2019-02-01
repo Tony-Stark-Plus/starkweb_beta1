@@ -102,5 +102,5 @@
 </script>
 
 <style scoped>
-@import "../../common/stylus/footer.stylus";
+@import "../../common/stylus/vfoot.stylus";
 </style>

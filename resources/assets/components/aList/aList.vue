@@ -18,7 +18,6 @@
         name: "vList",
         data(){
             return {
-                listData: null
             }
         },
         props:{

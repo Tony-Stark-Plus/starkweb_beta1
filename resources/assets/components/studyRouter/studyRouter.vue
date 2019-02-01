@@ -1,6 +1,6 @@
 <template>
     <div class="all_study">
-        <page_title v-bind:page_title="page_title"></page_title>
+        <pageTitle v-bind:pageTitle="pageTitle"></pageTitle>
         <div class="study_wrapper col-md-10 offset-md-1 row">
             <div class="study_part col-md-6 laravel">
                 <div class="main_part">
@@ -31,16 +31,16 @@
 </template>
 
 <script>
-    import page_title from '../page_title/page_title'
+    import pageTitle from '../pageTitle/pageTitle'
     export default {
         name: "studyRouter",
         data() {
             return{
-                page_title: '选择适合自己的学习路径'
+                pageTitle: '选择适合自己的学习路径'
             }
         },
         components: {
-            page_title
+            pageTitle
         },
         created() {
 

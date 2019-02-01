@@ -18,11 +18,9 @@ class UsersController extends Controller
 
     public function store(FormRules $request){
         $input=$request->all();
-        $input['imgUrl']='http://ozz0bm6k3.bkt.clouddn.com/head-img/'.rand(1,10).'.jpg';
-
-        if(users::create($input));
+        $input['imgUrl']='http://xsy-cdn.xyz/head-img/'.rand(1,10).'.jpg';
+        if(users::create($input))
         {
-
             $user = users::where('email','=',$input['email'])->first(['id']);
 
             Cookie::queue('user_id', $user['id'], 1000);

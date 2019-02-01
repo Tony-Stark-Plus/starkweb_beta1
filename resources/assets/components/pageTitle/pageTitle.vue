@@ -1,19 +1,19 @@
 <template>
     <div class="title_wrapper">
-        <div class="col-md-10 offset-md-1 page_title">{{page_title}}</div>
+        <div class="col-md-10 offset-md-1 pageTitle">{{pageTitle}}</div>
     </div>
 </template>
 
 <script>
     export default {
-        name: "page_title.vue",
+        name: "pageTitle.vue",
         data(){
             return {
                 content:''
             }
         },
         props:{
-            page_title: {
+            pageTitle: {
                 type: String
             }
         }
@@ -21,5 +21,5 @@
 </script>
 
 <style scoped lang="stylus">
-@import "../../common/stylus/page_title.stylus";
+@import "../../common/stylus/pageTitle.stylus";
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <page_title v-bind:page_title="page_title"></page_title>
+        <pageTitle v-bind:pageTitle="pageTitle"></pageTitle>
         <vList v-bind:listData="videoList"></vList>
         <pagination v-bind:paginationData="videoList" v-on:listenToPagination="changePage"></pagination>
     </div>
@@ -9,14 +9,14 @@
 
 </style>
 <script>
-    import page_title from '../page_title/page_title';
+    import pageTitle from '../pageTitle/pageTitle';
     import vList from '../vList/vList';
     import pagination from '../pagination/pagination';
     const Swal = require('sweetalert2');
     export default {
         name :'videoList',
         components :{
-            page_title,
+            pageTitle,
             vList,
             pagination,
         },
@@ -25,7 +25,7 @@
         },
         data(){
             return{
-                page_title:'web开发视频更新，All in here!',
+                pageTitle:'web开发视频更新，All in here!',
                 videoList: null,
                 page_index: 1,
             }
@@ -39,7 +39,7 @@
                     position: 'center',
                     type: 'success',
                     title: 'welcome to Starkweb',
-                    showConfirmButton: true,
+                    showConfirmButton: false,
                     timer: 2500
                 });
                 this.$route.params.login_success = false;

@@ -17,6 +17,7 @@ class weixinUserController extends Controller
                 if(Session('starkcaptcha') == $input['verification']){
                     //储存用户cookie
                     Cookie::queue('user_id', $user['id'], 1000);
+                    Cookie::queue('user_name', $user['uname'], 1000);
                     Cookie::queue('imgUrl',$user['imgUrl'],1000);
                     $login_mes['success'] = 'ok';
                     return $login_mes;
@@ -37,6 +38,32 @@ class weixinUserController extends Controller
         }
 
     }
+    public function register(Request $request){
+        $input = $request->all();
+        $user_exist = users::where('email','=',$input['email'])->first();
+        $uname_exist = users::where('uname','=',$input['uname'])->first();
+        if($user_exist){
+            $register_mes['error'] = '该邮箱已被注册';
+            return $register_mes;
+        }elseif ($uname_exist){
+            $register_mes['error'] = '该用户名已被使用';
+            return $register_mes;
+        }else{
+            $input['imgUrl']='http://xsy-cdn.xyz/head-img/'.rand(1,10).'.jpg';
+            $post = new users;
+            $post->uname = $input['uname'];
+            $post->email = $input['email'];
+            $post->password = $input['password'];
+            $post->imgUrl= $input['imgUrl'];
+            $post->save();
+            $user = users::where('email','=',$input['email'])->first();
+            Cookie::queue('user_id', $user['id'], 1000);
+            Cookie::queue('user_name', $user['uname'], 1000);
+            Cookie::queue('imgUrl',$user['imgUrl'],1000);
+            $register_mes['success'] = '注册成功';
+            return $register_mes;
+        }
+    }
     //生成图形验证码
     public function captcha(){
         $builder = new CaptchaBuilder;
@@ -52,12 +79,14 @@ class weixinUserController extends Controller
     }
     public function get_cookie(){
         $user_cookie['user_id'] = Cookie::get('user_id');
+        $user_cookie['user_name'] = Cookie::get('user_name');
         $user_cookie['imgUrl'] = Cookie::get('imgUrl');
         return $user_cookie;
     }
     public function exit()
     {
         Cookie::queue(Cookie::forget('user_id'));
+        Cookie::queue(Cookie::forget('user_name'));
         Cookie::queue(Cookie::forget('imgUrl'));
         return redirect('/#/videoList');
     }

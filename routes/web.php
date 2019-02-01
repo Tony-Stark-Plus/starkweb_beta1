@@ -62,6 +62,7 @@ Route::get('/weixin/articleListVue/{page}','weixinController@articleList');
 Route::get('/weixin/find_video_mes/{id}','weixinController@find_video_mes');
 Route::get('/weixin/discuss_list','weixinController@discuss_list');
 Route::post('/weixin/login','weixinUserController@login');
+Route::post('/weixin/register','weixinUserController@register');
 Route::get('/weixin/captcha/{random}','weixinUserController@captcha');
 Route::get('/weixin/get_cookie','weixinUserController@get_cookie');
 Route::get('/weixin/exit','weixinUserController@exit');

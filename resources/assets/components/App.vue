@@ -5,7 +5,7 @@
        <div class="back">
            <router-view v-on:listenToVideoList="refreshVheader"></router-view>
        </div>
-       <v-foot></v-foot>
+       <vfoot></vfoot>
    </div>
 </template>
 <style lang="stylus">
@@ -15,13 +15,13 @@
 <script>
     import header from './vheader/v-header'
     import navigation from './navigation/navigation'
-    import foot from './vfoot/v-foot'
+    import vfoot from './vfoot/vfoot'
     export default {
         name:'App',
         components :{
             'v-header': header,
             navigation,
-            'v-foot' : foot
+            vfoot,
         },
         mounted() {
             console.log('Component mounted.')

@@ -1,6 +1,6 @@
 <template>
-    <div class="pagination col-md-8 offset-md-2">
-        <div class="wrapper_page" v-if="this.paginationData.page_index">
+    <div class="pagination col-md-8 offset-md-2" v-if="this.paginationData">
+        <div class="wrapper_page">
             <div class="btn btn-primary previous_page" v-on:click="previous_page" v-show="this.paginationData.page_index > 1">上一页</div>
             <div class="btn btn-primary previous_page" v-show="this.paginationData.page_index <= 1">{{mes1}}</div>
         </div>

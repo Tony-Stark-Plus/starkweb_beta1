@@ -8,6 +8,7 @@
       padding 10px 10px 20px 10px
       .email ,.password,.user_name,.password_sure
         display flex
+        position relative
         height 50px
         margin-top 30px
         border-bottom 1px solid $common_color
@@ -20,6 +21,8 @@
           outline none
           font-size 16px
           font-weight 100
+        .error
+          error()
       .btn
         background-color $common_color
         margin-top 30px

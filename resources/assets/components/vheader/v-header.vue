@@ -28,8 +28,7 @@
         </div>
     </div>
 </template>
-<style lang="stylus">
-
+<style lang="stylus" scoped>
 </style>
 <script>
     export default {

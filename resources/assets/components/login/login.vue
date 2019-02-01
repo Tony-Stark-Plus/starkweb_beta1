@@ -1,6 +1,6 @@
 <template>
     <div class="login_wrapper">
-        <page_title v-bind:page_title="page_title"></page_title>
+        <pageTitle v-bind:pageTitle="pageTitle"></pageTitle>
         <div class="login_main col-md-4 offset-md-4">
             <div class="form">
                 <div class="email">
@@ -26,16 +26,16 @@
 </template>
 
 <script>
-    import page_title from '../page_title/page_title'
+    import pageTitle from '../pageTitle/pageTitle'
     const Swal = require('sweetalert2');
     export default {
         name: "login",
         components: {
-            page_title,
+            pageTitle,
         },
         data(){
             return {
-                page_title: '登 录',
+                pageTitle: '登 录',
                 rand_num: 1,
                 login_success: false,
                 email_input: '',
@@ -72,8 +72,7 @@
                            }
                        })
                    }else{
-                       this_self.login_error_animation('拒绝登录',response.data.error)
-                      c;
+                       this_self.login_error_animation('拒绝登录',response.data.error);
                    }
                 }).catch(function (error) {
                     console.log(error);

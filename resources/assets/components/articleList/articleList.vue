@@ -1,26 +1,26 @@
 <template>
     <div class="article_wrapper">
-        <page_title v-bind:page_title="page_title"></page_title>
+        <pageTitle v-bind:pageTitle="pageTitle"></pageTitle>
         <aList v-if="list" :list-data="list"></aList>
         <pagination v-bind:paginationData="list" v-on:listenToPagination="changePage"></pagination>
     </div>
 </template>
 
 <script>
-    import page_title from '../page_title/page_title'
+    import pageTitle from '../pageTitle/pageTitle'
     import aList from '../aList/aList'
     import pagination from '../pagination/pagination';
     export default {
         name: "articleList",
         data() {
             return{
-                page_title: 'Laravel Vuejs 文章，教程，笔录',
+                pageTitle: 'Laravel Vuejs 文章，教程，笔录',
                 list: null,
                 page_index: 1,
             }
         },
         components: {
-            page_title,
+            pageTitle,
             aList,
             pagination
         },
