@@ -34,6 +34,11 @@ const routes = [
         component: require('../components/discuss/discuss.vue')
     },
     {
+        path:'/discussion/:discussion_id',
+        component: require('../components/discussion/discussion.vue'),
+        props: true
+    },
+    {
         path:'/login',
         component: require('../components/login/login.vue')
     },

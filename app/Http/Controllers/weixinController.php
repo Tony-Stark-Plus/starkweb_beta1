@@ -103,4 +103,13 @@ class weixinController extends Controller
         }
         return $dicussions;
     }
+    public function discussion_content(Request $request){
+        $discussion = discussions::find($request['discussion_id']);
+        $discussion['publish_time'] = $this->time_gap_format($discussion['created_at']);
+        unset($discussion['created_at'],$discussion['updated_at'],$discussion['states']);
+        $publish_user_info['uname']= $discussion->user->uname;
+        $publish_user_info['imgUrl']= $discussion->user->imgUrl;
+        $discussion['publish_user_info'] = $publish_user_info;
+        return $discussion;
+    }
 }

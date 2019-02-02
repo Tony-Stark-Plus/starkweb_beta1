@@ -32,7 +32,7 @@ class Controller extends BaseController
             $time_gap=floor($t/86400).'天';
         }
         elseif($t<31104000){
-            $time_gap=floor($t/2592000).'月';
+            $time_gap=floor($t/2592000).'个月';
         }
         else{
             $time_gap=floor($t/31104000).'年';

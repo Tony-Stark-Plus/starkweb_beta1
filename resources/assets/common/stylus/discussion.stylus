@@ -1,0 +1,45 @@
+@import "./mixin.stylus"
+.discussion
+  width 100%
+  .discussion_content
+    padding 20px
+    .discussion_title
+      display flex
+      .offset_title
+        flex 1 1 60px
+      .title
+        flex 10
+        margin-bottom 20px
+        font-family myFont
+    .discussion_main
+      display flex
+      background-color: #e9ecef;
+      padding 10px
+      .img
+        display flex
+        flex 1 1 60px
+        justify-content center
+        img
+          display block
+          width 60px
+          height 60px
+          border-radius 5px
+      .text_part
+        flex 10
+        .sub_title
+          .person
+            color $common_color
+            font-size 16px
+            font-weight 700
+            padding-right 10px
+          .date
+            color $date_color
+            font-size 13px
+            font-weight 600
+        .text
+          padding 10px 10px 10px 0
+          color #111
+          font-size 16px
+          font-wight 400
+
+

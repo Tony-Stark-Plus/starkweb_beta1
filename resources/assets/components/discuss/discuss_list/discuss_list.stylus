@@ -2,6 +2,8 @@
   margin-top 20px
   .discuss_item
     margin-top 20px
+    text-decoration none
+    color #111
     .media-left
       margin-right 10px
       img

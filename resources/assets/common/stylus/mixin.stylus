@@ -5,6 +5,7 @@ bg-image($url,$w,$h)
   background-size $w $h
 
 $common_color = #14B982;
+$date_color = #7089a9;
 
 error()
   position absolute
