@@ -38,7 +38,7 @@
             font-weight 600
         .text
           padding 10px 10px 10px 0
-          color #111
+          color $text_color
           font-size 16px
           font-wight 400
 

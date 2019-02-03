@@ -33,7 +33,7 @@ class commentController extends Controller
     }
 
     //回复储存
-    public function reply (Request $request)
+    public function reply_store (Request $request)
     {
         $request->all();
         $input = $request->all();
@@ -51,6 +51,6 @@ class commentController extends Controller
 
         $array['reply_name'] = $input['reply_uname'];
         $array['comment'] = $result;
-        echo json_encode($array);
+        return json_encode($array);
     }
 }

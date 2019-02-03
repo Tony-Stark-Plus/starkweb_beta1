@@ -45,6 +45,10 @@ const routes = [
     {
         path:'/register',
         component: require('../components/register/register.vue')
+    },
+    {
+        path:'/get_comment',
+        component: require('../components/comment/comment.vue')
     }
 ];
 

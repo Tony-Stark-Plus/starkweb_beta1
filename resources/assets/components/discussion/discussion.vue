@@ -15,15 +15,19 @@
                 </div>
             </div>
         </div>
+        <comment :discussion_id="discussion_id" :type="type"></comment>
     </div>
 </template>
 
 <script>
+    import comment from "../comment/comment"
     export default {
         name: "discussion",
         data() {
             return {
-                discussion_content: null
+                discussion_content: null,
+                type: 'd',
+                discussion_id: this.discussion_id
             }
         },
         props:['discussion_id'],
@@ -37,6 +41,9 @@
             }).finally(() => {
 
             })
+        },
+        components: {
+            comment
         }
     }
 </script>

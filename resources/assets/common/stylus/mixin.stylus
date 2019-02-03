@@ -6,6 +6,8 @@ bg-image($url,$w,$h)
 
 $common_color = #14B982;
 $date_color = #7089a9;
+$text_color = #111;
+$reply_color = rgba(0, 0, 0, 0.4);
 
 error()
   position absolute

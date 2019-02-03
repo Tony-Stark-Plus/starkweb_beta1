@@ -27,10 +27,12 @@
                 <span class="p_alert">后面没有啦</span>
             </div>
         </div>
+        <comment :discussion_id="discussion_id" :type="type"></comment>
     </div>
 </template>
 
 <script>
+    import comment from "../comment/comment"
     export default {
         name: "article",
         data() {
@@ -38,7 +40,9 @@
                 article_content: null,
                 mes1: '上一章',
                 mes2: '下一章',
-                classA: 'not_loaded'
+                classA: 'not_loaded',
+                type: 'a',
+                discussion_id: this.article_id
             }
         },
         created(){
@@ -65,6 +69,9 @@
                 this.$router.push({path: '/article/'+this.article_content.next_article.id});
                 this.$router.go(0);
             }
+        },
+        components: {
+            comment
         }
     }
 </script>
