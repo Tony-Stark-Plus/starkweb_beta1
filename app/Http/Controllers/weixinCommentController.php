@@ -55,24 +55,19 @@ class weixinCommentController extends Controller
         return $array;
     }
     //储存评论回复
-    public function reply (Request $request)
+    public function reply_store (Request $request)
     {
-        $request->all();
         $input = $request->all();
         $comment = [];
-        $comment['body'] = $input['body'];
-        $comment['discussion_id'] = $input['discussion_id'];
-        $comment['user_id'] = $input['user_id'];
-        $comment['parent_id'] = $input['parent_id'];
-        $comment['reply_id'] = $input['reply_id'];
-        $comment['type'] = $input['type'];
+        $comment['body'] = $input['reply_data']['body'];
+        $comment['discussion_id'] = $input['reply_data']['discussion_id'];
+        $comment['user_id'] = $input['reply_data']['user_id'];
+        $comment['parent_id'] = $input['reply_data']['parent_id'];
+        $comment['reply_id'] = $input['reply_data']['reply_id'];
+        $comment['type'] = $input['reply_data']['type'];
         //返回新增的评论数据
         $result = comments::create($comment);
-
-        $array['user']=users::where('id',$input['user_id'])->first(['imgUrl','id','uname']);
-
-        $array['reply_name'] = $input['reply_uname'];
-        $array['comment'] = $result;
-        echo json_encode($array);
+//        return $result;
+        return $input;
     }
 }

@@ -26,6 +26,12 @@ const routes = [
         name: 'article'
     },
     {
+        path:'/createArticle',
+        component: require('../components/createArticle/createArticle'),
+        props: true,
+        name: 'article'
+    },
+    {
         path:'/studyRouter',
         component: require('../components/studyRouter/studyRouter.vue')
     },
