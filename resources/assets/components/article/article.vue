@@ -51,8 +51,7 @@
         props:['article_id'],
         methods: {
             get_data(id) {
-                const axios = require('axios');
-                axios.get('/weixin/articleContent/' + id)
+                this.axios.get('/weixin/articleContent/' + id)
                     .then(response => (
                         this.article_content = response.data
                     )).catch(function (error) {

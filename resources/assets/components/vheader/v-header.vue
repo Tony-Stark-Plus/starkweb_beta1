@@ -46,8 +46,7 @@
         },
         methods:{
             get_cookie() {
-                const axios = require('axios');
-                axios.get('/weixin/get_cookie')
+                this.axios.get('/weixin/get_cookie')
                     .then(response => (
                         this.user_cookie = response.data
                     )).catch(function (error) {

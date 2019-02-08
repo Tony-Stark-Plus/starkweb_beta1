@@ -29,8 +29,7 @@
         },
         methods: {
             paginate() {
-                const axios = require('axios');
-                axios.get('/weixin/articleListVue/'+ this.page_index)
+                this.axios.get('/weixin/articleListVue/'+ this.page_index)
                     .then(response => (
                         this.list = response.data
                     )).catch(function (error) {

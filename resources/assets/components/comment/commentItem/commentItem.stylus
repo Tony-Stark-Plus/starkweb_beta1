@@ -1,0 +1,57 @@
+@import '../../../common/stylus/mixin.stylus'
+.type_reply
+  padding-left 60px
+.comment_item
+  margin-bottom 10px
+  .img_wrapper
+    img
+      width 50px
+      height 50px
+      border-radius 5px
+  .comment_body
+    margin-left 10px
+    .sub_mes
+      line-height 1
+      .comment_user_name , .replyer_name
+        color $common_color
+        font-size 16px
+        font-weight 700
+      .date
+        color $date_color
+        font-size 13px
+        font-weight 600
+        padding-left 5px
+      .reply
+        font-size 13px
+        font-weight 300
+        color $text_color
+    .comment_content
+      padding 10px 10px 5px 0
+      color $text_color
+      font-size 16px
+      font-wight 400
+      margin-bottom 0px
+    .reply_func
+      color $reply_color
+      font-size 13px
+      font-weight 600
+      .replay_btn,.share_btn
+        cursor pointer
+        &:hover
+          text-decoration underline
+          color $text_color
+    .reply_write
+      display none
+      .reply_text
+        width 100%
+        padding 5px
+        font-size 12px
+        outline none
+        border: 1px solid #ccc
+        line-height 1.1
+        border-radius 8px
+      .btns
+        .reply_post,.cancel
+          font-size 13px
+          padding 7px
+          line-height 1

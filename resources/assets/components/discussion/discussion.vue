@@ -32,8 +32,7 @@
         },
         props:['discussion_id'],
         created(){
-            const axios = require('axios');
-            axios.get('/weixin/discussion_content/' + this.discussion_id)
+            this.axios.get('/weixin/discussion_content/' + this.discussion_id)
                 .then(response => (
                     this.discussion_content = response.data
                 )).catch(function (error) {

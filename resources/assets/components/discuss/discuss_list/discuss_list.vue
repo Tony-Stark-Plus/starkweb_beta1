@@ -25,8 +25,7 @@
             }
         },
         created(){
-            const axios = require('axios');
-            axios.get('/weixin/discuss_list')
+            this.axios.get('/weixin/discuss_list')
                 .then(response => (
                     this.discuss_list = response.data
                 )).catch(function (error) {

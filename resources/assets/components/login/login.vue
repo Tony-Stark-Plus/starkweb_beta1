@@ -55,9 +55,8 @@
                 }
             },
             form_post() {
-                const axios = require('axios');
                 const this_self = this;
-                axios.post('/weixin/login', {
+                this.axios.post('/weixin/login', {
                     email: this.$refs.email_input.value,
                     password: this.$refs.password_input.value,
                     verification: this.$refs.verification_input.value

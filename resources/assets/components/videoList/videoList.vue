@@ -52,8 +52,7 @@
                 this.paginate();
             },
             paginate() {
-                const axios = require('axios');
-                axios.get('/weixin/videoList/'+ this.page_index)
+                this.axios.get('/weixin/videoList/'+ this.page_index)
                     .then(response => (
                         this.videoList = response.data
                     )).catch(function (error) {

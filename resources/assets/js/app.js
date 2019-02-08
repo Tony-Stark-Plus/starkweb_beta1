@@ -16,9 +16,12 @@ import 'highlight.js/styles/agate.css'
 require('video.js/dist/video-js.css');
 require('vue-video-player/src/custom-theme.css');
 import 'sweetalert2/src/sweetalert2.scss'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
 window.Vue = require('vue');
 Vue.use(VueRouter);
+Vue.use(VueAxios,axios);
 Vue.use(VueVideoPlayer);
 Vue.directive('highlight',function (el) {
     let blocks = el.querySelectorAll('pre code');

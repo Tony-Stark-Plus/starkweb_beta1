@@ -122,9 +122,8 @@
             },
             //注册表单提交
             register_post() {
-                const axios = require('axios');
                 const this_self = this;
-                axios.post('/weixin/register', {
+                this.axios.post('/weixin/register', {
                     uname: this_self.user_name_input,
                     email: this_self.email_input,
                     password: this_self.password_input,

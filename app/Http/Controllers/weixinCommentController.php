@@ -13,6 +13,7 @@ class weixinCommentController extends Controller
     public function get_comment(Request $request){
         $comment_arr = [];
         $comments = comments::where(['discussion_id' => $request['discussion_id'], 'type' => $request['type']])->orderBy('created_at', 'asc')->get(['id','user_id','body','type','discussion_id','parent_id','reply_id','created_at']);
+        $comment_num = count($comments);
         foreach ($comments as $item){
             array_push($comment_arr,$this->change($item));
         }
@@ -28,7 +29,9 @@ class weixinCommentController extends Controller
                 }
             }
         }
-        return $arr;
+        $data['comment_data'] = $arr;
+        $data['comment_num'] = $comment_num;
+        return $data;
     }
 
     //评论信息完善
