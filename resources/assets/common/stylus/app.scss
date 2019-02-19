@@ -2,17 +2,17 @@
 @import "variables";
 // Bootstrap
 //@import '~bootstrap/scss/bootstrap';
-@import "../../../../node_modules/video.js/src/css/vjs";
-@import "video";
-@import "article-list";
-@import "../../../../node_modules/font-awesome/css/font-awesome.css";
-@import "article-content";
-@import "video-list";
-@import "css-adjust";
-@import "user-profile";
-@import "learn";
-@import "discuss";
-@import "comment";
+//@import "../../../../node_modules/video.js/src/css/vjs";
+//@import "video";
+//@import "article-list";
+//@import "../../../../node_modules/font-awesome/css/font-awesome.css";
+//@import "article-content";
+//@import "video-list";
+//@import "css-adjust";
+//@import "user-profile";
+//@import "learn";
+//@import "discuss";
+//@import "comment";
 
 html{
   font-size:20px;
@@ -21,7 +21,7 @@ html{
   }
   ::-webkit-scrollbar{
     width:0;
-    height:0；
+    height:0;
   }
 }
 .navbar-laravel {

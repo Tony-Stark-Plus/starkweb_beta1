@@ -12,4 +12,5 @@ let mix = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/common/stylus/app.scss', 'public/css');
+    .stylus('resources/assets/common/stylus/app.stylus', 'public/css');
+   // .sass('resources/assets/common/stylus/app.scss', 'public/css');

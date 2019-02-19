@@ -1,11 +1,11 @@
 // import './bootstrap'
-import './video';
-import './video-list';
-import 'video.js/dist/video.min.js';
-import './form';
-import './main';
-import './learn';
-import './comments';
+// import './video';
+// import './video-list';
+// import 'video.js/dist/video.min.js';
+// import './form';
+// import './main';
+// import './learn';
+// import './comments';
 import Vue from 'vue'
 import VueRouter from 'vue-router';
 import router from './router';
@@ -20,6 +20,7 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 
 window.Vue = require('vue');
+window.Swal = require('sweetalert2');
 Vue.use(VueRouter);
 Vue.use(VueAxios,axios);
 Vue.use(VueVideoPlayer);

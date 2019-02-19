@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "ajv": "^6.5.2",
-    "css-loader": "^2.1.0",
+    "css-loader": "^1.0.0",
     "font-awesome": "^4.7.0",
     "highlight.js": "^9.13.1",
     "laravel-mix": "^2.1.14",

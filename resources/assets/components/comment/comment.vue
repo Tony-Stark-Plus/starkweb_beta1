@@ -1,21 +1,24 @@
 <template>
     <div>
-        <router-link to="/login"><div class="btn btn-login col-md-6 offset-md-3" v-if="this.user_cookie">登录并参与讨论</div></router-link>
+        <router-link to="/login"><div class="btn btn-login col-md-6 offset-md-3" v-if="!this.user_cookie.user_id">登录并参与讨论</div></router-link>
         <div class="comment_wrapper col-md-8 offset-md-2 col-sm-12 offset-sm-0">
-            <h5 v-if="comment_num">共 {{comment_num}} 条评论</h5>
+            <h5 v-if="">共 {{comment_num}} 条评论</h5>
             <div class="comment" v-for="(item,key) in data_comment">
                 <commentItem :itemData="item" :indexKey="key" :discussion_id="discussion_id" :type="type" :user_cookie="user_cookie"></commentItem>
             </div>
         </div>
+        <user-reply @getMessage="addMsg" :user_cookie="user_cookie" :discussion_id="discussion_id" :type="type" v-if="user_cookie.user_id"></user-reply>
     </div>
 </template>
 
 <script>
     import commentItem from './commentItem/commentItem'
+    import UserReply from './UserReply/UserReply'
     export default {
         name: "comment",
         components:{
-            commentItem
+            commentItem,
+            UserReply
         },
         data(){
             return {
@@ -48,6 +51,12 @@
                     console.log(error);
                 });
             },
+            addMsg(data) {
+                console.log(data);
+                var add_arr = [data];
+                var length = this.data_comment.length;
+                this.$set(this.data_comment,length,add_arr);
+            }
         },
         created() {
             this.comment_post();

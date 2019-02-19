@@ -1,5 +1,6 @@
 <template>
     <div>
+        <!--父评论-->
         <div class="media comment_item">
             <div class="media-left media-top img_wrapper">
                 <img :src="itemData[0].imgUrl">
@@ -8,7 +9,7 @@
                 <div class="sub_mes"><span class="comment_user_name">{{itemData[0].uname}}</span><span class="date">{{itemData[0].str_gap}}前</span>
                 </div>
                 <p class="comment_content">{{itemData[0].content}}</p>
-                <div class="reply_func">
+                <div class="reply_func" v-if="itemData[0].id">
                     <span class="replay_btn" ref="reply_btn" @click="reply_open">回复</span>
                     |
                     <span class="share_btn" @click="">分享</span>
@@ -26,6 +27,7 @@
                 </div>
             </div>
         </div>
+        <!--子评论-->
         <div class="media comment_item type_reply" v-for="item_reply in itemData" v-if="item_reply.parent_id">
             <div class="media-left media-top img_wrapper">
                 <img :src="item_reply.imgUrl">
@@ -37,10 +39,9 @@
                     <span class="replyer_name">{{item_reply.reply_uname}}</span>
                     <span class="date">{{item_reply.str_gap}}前</span></div>
                 <p class="comment_content">{{item_reply.content}}</p>
-                <div class="reply_func">
-                    <span class="replay_btn" ref="reply_btn" @click="reply_open">回复</span>
-                    |
-                    <span class="share_btn">分享</span>
+                <div class="reply_func" v-if="item_reply.id">
+                    <span class="replay_btn" ref="reply_btn" @click="reply_open" v-if="user_cookie.user_id">回复  |</span>
+                    <span class="share_btn">  分享</span>
                 </div>
                 <div class="reply_write" v-if="item_reply.id">
                         <textarea name="" rows="3" class="reply_text"
