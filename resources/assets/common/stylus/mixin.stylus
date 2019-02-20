@@ -8,7 +8,7 @@ $common_color = #14B982;
 $date_color = #7089a9;
 $text_color = #111;
 $reply_color = rgba(0, 0, 0, 0.4);
-
+$bg_color = #f9f9f9;
 error()
   position absolute
   margin 0

@@ -1,5 +1,5 @@
 <template>
-    <div class="footer">
+    <div class="foot-wrapper">
         <div class="container">
             <div class="row footer-border">
                 <div class="col-md-4">
@@ -13,10 +13,10 @@
                         都可以在这里得到解决。<br>Today We Hack!
                     </p>
                     <ul class="footer_connect">
-                        <li class="qq"><a href=""><i class="fa fa-qq" aria-hidden="true"></i></a></li>
-                        <li class="weixin"><a href=""><i class="fa fa-weixin" aria-hidden="true"></i></a></li>
-                        <li class="weibo"><a href=""><i class="fa fa-weibo" aria-hidden="true"></i></a></li>
-                        <li class="github"><a href="https://github.com/Tony-Stark-Plus/starkweb_beta1"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li class="iconfont icon-qq"></li>
+                        <li class="iconfont icon-weixin"></li>
+                        <li class="iconfont icon-weibo"></li>
+                        <a href="https://github.com/Tony-Stark-Plus/starkweb_beta1"><li class="iconfont icon-github"></li></a>
                     </ul>
                 </div>
                 <div class="col-md-2 mobile pad">
@@ -51,9 +51,8 @@
                 </div>
             </div>
             <div class="footer-bottom mobile pad">
-                <div class="footer-bottom-left">Developed By stark,Powered By Laravel</div>
-                <div class="footer-bottom-right">© Stark Web 2018. All rights reserved. 皖ICP备18007296号-1</div>
-                <div class="clear"></div>
+                <div class="footer-bottom-left">Developed By <a href="">Stark</a>,Powered By <a href="https://laravel.com/">Laravel</a></div>
+                <div class="footer-bottom-right">© Stark Web 2019. All rights reserved. 皖ICP备18007296号-1</div>
             </div>
         </div>
     </div>
@@ -101,6 +100,6 @@
     }
 </script>
 
-<style scoped>
+<style scoped lang="stylus">
 @import "../../common/stylus/vfoot.stylus";
 </style>

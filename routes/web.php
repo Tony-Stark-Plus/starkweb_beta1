@@ -49,9 +49,9 @@ Route::get('/discuss_community/content/{discussion_id}','webController@discuss_c
 
 Route::get('/comment/store','commentController@store');
 Route::get('/comment/reply','commentController@reply');
-Route::get('/404',function(){
-    return view('errors.404');
-});
+//Route::get('/404',function(){
+//    return view('errors.404');
+//});
 Route::get('/hljs',function(){
     return view('title');
 });

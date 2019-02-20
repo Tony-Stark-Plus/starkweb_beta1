@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'iconfont';  /* project id 984404 */
-  src: url('//at.alicdn.com/t/font_984404_j8xxir4sf4.eot');
-  src: url('//at.alicdn.com/t/font_984404_j8xxir4sf4.eot?#iefix') format('embedded-opentype'),
-          url('//at.alicdn.com/t/font_984404_j8xxir4sf4.woff2') format('woff2'),
-          url('//at.alicdn.com/t/font_984404_j8xxir4sf4.woff') format('woff'),
-          url('//at.alicdn.com/t/font_984404_j8xxir4sf4.ttf') format('truetype'),
-          url('//at.alicdn.com/t/font_984404_j8xxir4sf4.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_984404_noq7xk2ngtn.eot');
+  src: url('//at.alicdn.com/t/font_984404_noq7xk2ngtn.eot?#iefix') format('embedded-opentype'),
+          url('//at.alicdn.com/t/font_984404_noq7xk2ngtn.woff2') format('woff2'),
+          url('//at.alicdn.com/t/font_984404_noq7xk2ngtn.woff') format('woff'),
+          url('//at.alicdn.com/t/font_984404_noq7xk2ngtn.ttf') format('truetype'),
+          url('//at.alicdn.com/t/font_984404_noq7xk2ngtn.svg#iconfont') format('svg');
 }
 @font-face
   font-family: myFont
@@ -92,6 +92,24 @@
 .icon-exit:before
   content: "\e62d"
   font-weight 700
+.icon-qq:before
+  content: "\e602"
+  font-weight 700
+  color #fff
+.icon-weixin:before
+  content: "\eb16"
+  font-weight 700
+  color #fff
+.icon-weibo:before
+  content: "\e623"
+  font-weight 700
+  color #fff
+.icon-github:before
+  content: "\e64a"
+  font-weight 700
+  color #fff
+
+
 
 
 
