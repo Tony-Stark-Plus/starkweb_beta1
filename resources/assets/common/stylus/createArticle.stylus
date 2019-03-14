@@ -1,0 +1,26 @@
+.createArticleWrapper
+  padding 0px
+  .main
+    width 90%
+    margin 10px auto
+    .v-note-wrapper
+      z-index 1
+    .article_mes
+      display flex
+      margin-top 30px
+      .article_kind,.article_title
+        flex 2
+        margin 0 5px
+        font-size 14px
+      .article_title
+        outline none
+        border 1px solid rgba(60,60,60,.26)
+        border-radius 4px
+        padding-left 8px
+      .article_kind
+        background-color #fff
+    .btn
+      width 50%
+      margin-left 25%
+      margin-top 20px
+      letter-spacing 10px

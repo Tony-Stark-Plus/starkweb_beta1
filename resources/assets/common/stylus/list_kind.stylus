@@ -44,7 +44,7 @@ list_kind()
   .kind-regex{
     background-color: #d41f4d;
   }
-  .kind-weixin{
+  .kind-Wechat{
     background-color: #51AF51;
   }
   .kind-python{

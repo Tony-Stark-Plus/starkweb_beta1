@@ -1,11 +1,3 @@
-// import './bootstrap'
-// import './video';
-// import './video-list';
-// import 'video.js/dist/video.min.js';
-// import './form';
-// import './main';
-// import './learn';
-// import './comments';
 import Vue from 'vue'
 import VueRouter from 'vue-router';
 import router from './router';
@@ -18,12 +10,17 @@ require('vue-video-player/src/custom-theme.css');
 import 'sweetalert2/src/sweetalert2.scss'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+// markdown编辑器
+import mavonEditor from 'mavon-editor'
+import vSelect from 'vue-select'
 
 window.Vue = require('vue');
 window.Swal = require('sweetalert2');
 Vue.use(VueRouter);
 Vue.use(VueAxios,axios);
 Vue.use(VueVideoPlayer);
+Vue.use(mavonEditor);
+Vue.component('v-select', vSelect);
 Vue.directive('highlight',function (el) {
     let blocks = el.querySelectorAll('pre code');
     blocks.forEach((block)=>{

@@ -28,8 +28,7 @@ const routes = [
     {
         path:'/createArticle',
         component: require('../components/createArticle/createArticle'),
-        props: true,
-        name: 'article'
+        props: true
     },
     {
         path:'/studyRouter',
