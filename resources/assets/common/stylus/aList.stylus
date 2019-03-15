@@ -50,3 +50,21 @@
           border-radius 2px
           color #fff
         list_kind()
+  .create_article_btn
+      display inline-block
+      padding 6px
+      margin-left 10px
+      height 70px
+      width 15%
+      a
+        color #ffffff
+        font-size 20px
+        letter-spacing 5px
+        &:hover
+          text-decoration none
+        span
+          height 23px
+          width 100%
+          text-align center
+          line-height 58px
+          vertical-align middle

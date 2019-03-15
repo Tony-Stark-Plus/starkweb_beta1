@@ -1,1 +1,0 @@
-<script type="text/javascript" src="https://cdn.bootcss.com/sweetalert/2.1.0/sweetalert.min.js"></script>

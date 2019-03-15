@@ -7,7 +7,7 @@
                 <input type="text" placeholder="请输入文章标题" class="article_title" v-model="article_title">
                 <v-select :options="article_kinds" v-model="article_kind" class="article_kind"></v-select>
             </div>
-            <button class="btn btn-success" @click="submit_article">提交文章</button>
+            <button class="btn btn-success" @click="submit_confirm">提交文章</button>
         </div>
 
     </div>
@@ -56,6 +56,28 @@
             PageTitle
         },
         methods: {
+            submit_confirm() {
+                Swal.fire({
+                    title: '确定要提交文章吗？',
+                    text: "提交后不能修改",
+                    type: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: '确认',
+                    cancelButtonText: "取消"
+                }).then((result) => {
+                    if (result.value) {
+                        this.submit_article()
+                    }else{
+                        Swal.fire(
+                            '已取消',
+                            'Your file has been deleted.',
+                            'success'
+                        )
+                    }
+                })
+            },
             submit_article() {
                 var error_arr = ['文章内容要至少50个字符', '标题不少于6个字符', '请选择文章类别'];
                 var error_exist = [];
@@ -82,6 +104,9 @@
                         title: 'Your Article has been saved',
                         showConfirmButton: false,
                         timer: 1500
+                    }).then((result)=>{
+                        this.$router.push({ path: '/articleList' })
+                        console.log('22')
                     })
                 }
             },
