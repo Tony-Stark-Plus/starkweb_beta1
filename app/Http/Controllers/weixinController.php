@@ -114,6 +114,6 @@ class weixinController extends Controller
     }
 //    获取微信openid
     public function getOpenId($request){
-        return $request;
+        return 'tt';
     }
 }
