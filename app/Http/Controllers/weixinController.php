@@ -112,4 +112,8 @@ class weixinController extends Controller
         $discussion['publish_user_info'] = $publish_user_info;
         return $discussion;
     }
+//    获取微信openid
+    public function getOpenId($request){
+        return $request;
+    }
 }
