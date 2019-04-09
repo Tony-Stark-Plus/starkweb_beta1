@@ -113,7 +113,7 @@ class weixinController extends Controller
         return $discussion;
     }
 //    获取微信openid
-    public function getOpenId($request){
-        return 'tt';
+    public function getOpenId(Request $request){
+        return $request;
     }
 }
