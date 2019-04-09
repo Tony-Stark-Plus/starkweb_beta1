@@ -114,6 +114,7 @@ class weixinController extends Controller
     }
 //    获取微信openid
     public function getOpenId(Request $request){
-        return $request;
+        $url = "https://api.weixin.qq.com/sns/jscode2session?appid=wx1e1d18b996c0027e&secret=6e0bae5bc063e7ee1c39deae3b6f39bc&js_code="+$request['data']['code']+"&grant_type=authorization_code";
+        return $url;
     }
 }
