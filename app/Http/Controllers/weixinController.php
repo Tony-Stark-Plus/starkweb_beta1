@@ -129,7 +129,11 @@ class weixinController extends Controller
         $res = curl_exec($curl);
         //关闭URL请求
         curl_close($curl);
-        //显示获得的数据
-        return json_decode($res);
+        //处理字符串
+        $vowels = array('"','}','{');
+        $res = str_replace($vowels,'',$res);
+        $arr = explode(":",$res);
+        return $arr[count($arr)-1];
+
     }
 }
