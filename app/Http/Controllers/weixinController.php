@@ -130,6 +130,6 @@ class weixinController extends Controller
         //关闭URL请求
         curl_close($curl);
         //显示获得的数据
-        return json_encode($res);
+        return json_decode($res);
     }
 }
