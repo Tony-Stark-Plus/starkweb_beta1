@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c479e8ab-fd4b-405d-898d-a64bb1c5b2cb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/weixinController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/weixinController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/videoList.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/videoList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +110,7 @@
           <entry key="gitignore" value="1" />
           <entry key="js" value="1591" />
           <entry key="json" value="27" />
-          <entry key="php" value="30216" />
+          <entry key="php" value="30298" />
           <entry key="scss" value="8128" />
           <entry key="styl" value="4" />
           <entry key="stylus" value="13922" />
@@ -126,7 +123,7 @@
           <entry key="CSS" value="21" />
           <entry key="JSON" value="27" />
           <entry key="JavaScript" value="1591" />
-          <entry key="PHP" value="17951" />
+          <entry key="PHP" value="18033" />
           <entry key="PLAIN_TEXT" value="117" />
           <entry key="SCSS" value="8128" />
           <entry key="Stylus" value="13916" />
@@ -166,8 +163,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="80" column="61" selection-start-line="80" selection-start-column="50" selection-end-line="80" selection-end-column="61" />
+            <state relative-caret-position="511">
+              <caret line="80" column="61" lean-forward="true" selection-start-line="80" selection-start-column="61" selection-end-line="80" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -180,8 +177,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/weixinController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="139" column="24" lean-forward="true" selection-start-line="139" selection-start-column="24" selection-end-line="139" selection-end-column="24" />
+            <state relative-caret-position="488">
+              <caret line="140" column="20" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
@@ -952,12 +949,12 @@
       <workItem from="1552995958623" duration="19000" />
       <workItem from="1554291547053" duration="497000" />
       <workItem from="1554813359338" duration="5137000" />
-      <workItem from="1554981842154" duration="630000" />
+      <workItem from="1554981842154" duration="1903000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="621495000" />
+    <option name="totallyTimeSpent" value="622768000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1307,15 +1304,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="80" column="61" selection-start-line="80" selection-start-column="50" selection-end-line="80" selection-end-column="61" />
+        <state relative-caret-position="511">
+          <caret line="80" column="61" lean-forward="true" selection-start-line="80" selection-start-column="61" selection-end-line="80" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/weixinController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="139" column="24" lean-forward="true" selection-start-line="139" selection-start-column="24" selection-end-line="139" selection-end-column="24" />
+        <state relative-caret-position="488">
+          <caret line="140" column="20" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>

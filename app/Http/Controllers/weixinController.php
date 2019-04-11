@@ -137,6 +137,7 @@ class weixinController extends Controller
     }
 //    储存openId
     public function storeOpenId(Request $request){
-        return $request;
+        $res  = videoList::where('id','=',$request['id'])->update(['likeId' => 'fsdfsvg']);
+        return $res;
     }
 }
