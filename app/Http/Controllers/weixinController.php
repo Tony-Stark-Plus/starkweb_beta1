@@ -134,6 +134,9 @@ class weixinController extends Controller
         $res = str_replace($vowels,'',$res);
         $arr = explode(":",$res);
         return $arr[count($arr)-1];
-
+    }
+//    储存openId
+    public function storeOpenId(Request $request){
+        return $request;
     }
 }
