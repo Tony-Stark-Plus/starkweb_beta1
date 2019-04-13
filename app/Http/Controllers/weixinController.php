@@ -155,6 +155,11 @@ class weixinController extends Controller
     }
     public function getLikedId(Request $request){
         $all_id  = videoList::where('id','=',$request['articleId'])->first(['likedId'])['likedId'];
-        return explode(',',$all_id);
+        if($all_id == null){
+            return [];
+        }
+        else{
+            return explode(',',$all_id);
+        }
     }
 }
