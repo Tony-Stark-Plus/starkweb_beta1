@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c479e8ab-fd4b-405d-898d-a64bb1c5b2cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/weixinController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/weixinController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +72,7 @@
           <entry key="json" value="34" />
           <entry key="lock" value="5" />
           <entry key="navigation" value="1" />
-          <entry key="php" value="625" />
+          <entry key="php" value="626" />
           <entry key="png" value="17" />
           <entry key="scss" value="142" />
           <entry key="sql" value="1" />
@@ -89,7 +90,7 @@
           <entry key="Image" value="25" />
           <entry key="JSON" value="38" />
           <entry key="JavaScript" value="172" />
-          <entry key="PHP" value="400" />
+          <entry key="PHP" value="401" />
           <entry key="PLAIN_TEXT" value="14" />
           <entry key="SCSS" value="142" />
           <entry key="SVG" value="9" />
@@ -110,7 +111,7 @@
           <entry key="gitignore" value="1" />
           <entry key="js" value="1591" />
           <entry key="json" value="27" />
-          <entry key="php" value="30326" />
+          <entry key="php" value="30737" />
           <entry key="scss" value="8128" />
           <entry key="styl" value="4" />
           <entry key="stylus" value="13922" />
@@ -123,7 +124,7 @@
           <entry key="CSS" value="21" />
           <entry key="JSON" value="27" />
           <entry key="JavaScript" value="1591" />
-          <entry key="PHP" value="18061" />
+          <entry key="PHP" value="18472" />
           <entry key="PLAIN_TEXT" value="117" />
           <entry key="SCSS" value="8128" />
           <entry key="Stylus" value="13916" />
@@ -163,8 +164,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1633">
-              <caret line="80" column="61" selection-start-line="80" selection-start-column="61" selection-end-line="80" selection-end-column="61" />
+            <state relative-caret-position="534">
+              <caret line="81" column="29" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -177,11 +178,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/weixinController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="140" column="20" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
+            <state relative-caret-position="540">
+              <caret line="157" column="35" selection-start-line="157" selection-start-column="35" selection-end-line="157" selection-end-column="35" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-777">
+              <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -258,7 +268,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/assets/common/stylus/discussion.stylus" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/commentController.php" />
         <option value="$PROJECT_DIR$/resources/assets/components/comment/vue_html.vue" />
         <option value="$PROJECT_DIR$/resources/assets/components/comment/hujsad.vue" />
@@ -307,6 +316,7 @@
         <option value="$PROJECT_DIR$/resources/assets/components/aList/aList.vue" />
         <option value="$PROJECT_DIR$/resources/assets/common/stylus/aList.stylus" />
         <option value="$PROJECT_DIR$/app/videoList.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/weixinController.php" />
       </list>
@@ -950,12 +960,12 @@
       <workItem from="1554291547053" duration="497000" />
       <workItem from="1554813359338" duration="5137000" />
       <workItem from="1554981842154" duration="2495000" />
-      <workItem from="1555129318946" duration="1241000" />
+      <workItem from="1555129318946" duration="3942000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="624601000" />
+    <option name="totallyTimeSpent" value="627302000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1108,9 +1118,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DicussionController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CaptchaController.php">
@@ -1284,16 +1291,6 @@
     <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1633">
-          <caret line="80" column="61" selection-start-line="80" selection-start-column="61" selection-end-line="80" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/components/discussion/discussion.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/videoList.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -1301,10 +1298,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-777">
+          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="81" column="29" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/components/discussion/discussion.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/weixinController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="140" column="20" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
+        <state relative-caret-position="540">
+          <caret line="157" column="35" selection-start-line="157" selection-start-column="35" selection-end-line="157" selection-end-column="35" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
