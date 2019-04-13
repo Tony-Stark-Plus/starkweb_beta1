@@ -136,22 +136,9 @@ class weixinController extends Controller
     }
 //    储存openId
     public function storeOpenId(Request $request){
-        $store_str = '';
-        $all_id  = videoList::where('id','=',$request['articleId'])->first(['likedId'])['likedId'];
-        if($all_id == null){
-            $store_str = $request['openId'];
-        }
-        else{
-            $arr_str = explode(',',$all_id);
-            array_push($arr_str,$request['openId']);
-            $store_arr = array_unique($arr_str);
-            $store_str = implode(',', $store_arr);
-        }
-        if($store_str){
-            $res  = videoList::where('id','=',$request['articleId'])->update(['likedId' => $store_str]);
-            return $res;
-        }
-
+        $store_str = implode(',', $request['likedId']);
+        $res  = videoList::where('id','=',$request['articleId'])->update(['likedId' => $store_str]);
+        return $res;
     }
     public function getLikedId(Request $request){
         $all_id  = videoList::where('id','=',$request['articleId'])->first(['likedId'])['likedId'];
