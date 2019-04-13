@@ -136,7 +136,7 @@ class weixinController extends Controller
     }
 //    储存openId
     public function storeOpenId(Request $request){
-        $store_str = implode(',', $request['likedId']);
+        $store_str = $request['likedId'];
         $res  = videoList::where('id','=',$request['articleId'])->update(['likedId' => $store_str]);
         return $res;
     }
