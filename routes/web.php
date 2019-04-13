@@ -78,5 +78,5 @@ Route::post('/weixin/getComment','weixinCommentController@get_comment');
 Route::post('/weixin/reply_store','weixinCommentController@reply_store');
 Route::post('/weixin/store_article','weixinCreateArticleController@store_article');
 Route::get('/getWeixinOpenId','weixinController@getOpenId');
-Route::post('/storeWeixinOpenId','weixinController@storeOpenId');
+Route::get('/storeWeixinOpenId','weixinController@storeOpenId');
 Route::get('/getWeixinLikedId','weixinController@getLikedId');

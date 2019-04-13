@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c479e8ab-fd4b-405d-898d-a64bb1c5b2cb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/weixinController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/weixinController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +110,7 @@
           <entry key="gitignore" value="1" />
           <entry key="js" value="1591" />
           <entry key="json" value="27" />
-          <entry key="php" value="30817" />
+          <entry key="php" value="30820" />
           <entry key="scss" value="8128" />
           <entry key="styl" value="4" />
           <entry key="stylus" value="13922" />
@@ -123,7 +123,7 @@
           <entry key="CSS" value="21" />
           <entry key="JSON" value="27" />
           <entry key="JavaScript" value="1591" />
-          <entry key="PHP" value="18552" />
+          <entry key="PHP" value="18555" />
           <entry key="PLAIN_TEXT" value="117" />
           <entry key="SCSS" value="8128" />
           <entry key="Stylus" value="13916" />
@@ -160,11 +160,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="72" column="67" lean-forward="true" selection-start-line="72" selection-start-column="67" selection-end-line="72" selection-end-column="67" />
+            <state relative-caret-position="373">
+              <caret line="74" column="55" lean-forward="true" selection-start-line="74" selection-start-column="55" selection-end-line="74" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -174,7 +174,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/weixinController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="166">
@@ -316,8 +316,8 @@
         <option value="$PROJECT_DIR$/resources/assets/common/stylus/aList.stylus" />
         <option value="$PROJECT_DIR$/app/videoList.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/weixinController.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
       </list>
     </option>
   </component>
@@ -959,12 +959,12 @@
       <workItem from="1554291547053" duration="497000" />
       <workItem from="1554813359338" duration="5137000" />
       <workItem from="1554981842154" duration="2495000" />
-      <workItem from="1555129318946" duration="4952000" />
+      <workItem from="1555129318946" duration="5113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="628312000" />
+    <option name="totallyTimeSpent" value="628473000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1304,16 +1304,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/components/discussion/discussion.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="72" column="67" lean-forward="true" selection-start-line="72" selection-start-column="67" selection-end-line="72" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/weixinController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
@@ -1321,6 +1311,16 @@
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/components/discussion/discussion.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="74" column="55" lean-forward="true" selection-start-line="74" selection-start-column="55" selection-end-line="74" selection-end-column="55" />
         </state>
       </provider>
     </entry>
