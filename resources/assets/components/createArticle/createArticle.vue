@@ -27,7 +27,7 @@
                 article_kind: '请选择文章类别',
                 article_title: null,
                 article_kinds: ['vue', 'plugins', 'python', 'Wechat', 'laravel', 'regex', 'middleware', 'git', 'provider', 'nginx', 'css'
-                    , 'tool', 'markdown', 'javascript'],
+                    , 'tool', 'markdown', 'javascript','php'],
                 toolbars: {
                     bold: true, // 粗体
                     italic: true,// 斜体
