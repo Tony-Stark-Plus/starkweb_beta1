@@ -21277,7 +21277,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             code_style: 'tomorrow-night',
             article_kind: '请选择文章类别',
             article_title: null,
-            article_kinds: ['vue', 'plugins', 'python', 'Wechat', 'laravel', 'regex', 'middleware', 'git', 'provider', 'nginx', 'css', 'tool', 'markdown', 'javascript'],
+            article_kinds: ['vue', 'plugins', 'python', 'Wechat', 'laravel', 'regex', 'middleware', 'git', 'provider', 'nginx', 'css', 'tool', 'markdown', 'javascript', 'php'],
             toolbars: {
                 bold: true, // 粗体
                 italic: true, // 斜体
