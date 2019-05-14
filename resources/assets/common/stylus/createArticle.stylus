@@ -5,6 +5,7 @@
     margin 10px auto
     .v-note-wrapper
       z-index 1
+      height 600px
     .article_mes
       display flex
       margin-top 30px

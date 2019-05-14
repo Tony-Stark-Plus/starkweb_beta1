@@ -10,12 +10,13 @@
                 <div class="a_kind"><span :class="'common_kind kind-'+item.kind_class">{{item.kind}}</span></div>
             </li>
         </ul>
-        <div class="create_article_btn btn btn-success">
-            <router-link to="/createArticle">
+
+            <router-link to="/createArticle" class="alink">
+                <div class="create_article_btn btn btn-success">
                 <span class="iconfont icon-write"></span>
                 <span>创作文章</span>
+                </div>
             </router-link>
-        </div>
     </div>
 </template>
 
