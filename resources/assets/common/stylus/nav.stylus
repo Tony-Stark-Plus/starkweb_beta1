@@ -1,3 +1,8 @@
+@media (max-width: 767px)
+  .md-hidden
+    display none
+  .md-block
+    display block !important
 .navigation
   width 100%
   border-top 1px solid rgba(0,0,0,.12)

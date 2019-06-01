@@ -19,28 +19,28 @@
                         <a href="https://github.com/Tony-Stark-Plus/starkweb_beta1"><li class="iconfont icon-github"></li></a>
                     </ul>
                 </div>
-                <div class="col-md-2 mobile pad">
+                <div class="col-md-2 mobile pad md-hidden">
                     <h5 class="posControl">学习资料</h5>
                     <li><a href="">文章教程</a></li>
                     <li><a href="">个人博客</a></li>
                     <li><a href="">推荐书目</a></li>
                     <li><a href="">QQ群</a></li>
                 </div>
-                <div class="col-md-2 mobile pad">
+                <div class="col-md-2 mobile pad md-hidden">
                     <h5 class="posControl">laravel讨论</h5>
                     <li><a href="">学习路径</a></li>
                     <li><a href="">版本声明</a></li>
                     <li><a href="">社区规则</a></li>
                     <li><a href="">EsayWechat</a></li>
                 </div>
-                <div class="col-md-2 mobile pad">
+                <div class="col-md-2 mobile pad md-hidden">
                     <h5 class="posControl">友情相关</h5>
                     <li><a href="">vip会员</a></li>
                     <li><a href="">友情链接</a></li>
                     <li><a href="">电子货币购买</a></li>
                     <li><a href="">Stark IT Github</a></li>
                 </div>
-                <div class="col-md-2 mobile pad">
+                <div class="col-md-2 mobile pad md-hidden">
                     <h5 class="posControl">服务提供商</h5>
                     <a href="https://www.aliyun.com/" class="ali-logo" target="_blank">
                         <img src="https://gw.alicdn.com/tps/TB1xno8OFXXXXXNaFXXXXXXXXXX-338-80.png" alt="" class="">
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="footer-bottom mobile pad">
-                <div class="footer-bottom-left">Developed By <a href="">Stark</a>,Powered By <a href="https://laravel.com/">Laravel</a></div>
+                <div class="footer-bottom-left md-hidden">Developed By <a href="">Stark</a>,Powered By <a href="https://laravel.com/">Laravel</a></div>
                 <div class="footer-bottom-right">© Stark Web 2019. All rights reserved. 皖ICP备18007296号-1</div>
             </div>
         </div>

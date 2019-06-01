@@ -1,12 +1,13 @@
 .pagination
   display flex
   height 50px
+  padding-right 0px
   .wrapper_page
     display flex
     justify-content center
     flex 1
     .previous_page,.next_page
-      width: 30%
+      width 65px
       padding 8px 0px
       background-color #06A7E0
       text-align center

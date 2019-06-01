@@ -1,6 +1,6 @@
 <template>
     <div class="List-wrapper row">
-        <ul class="aList col-md-8 offset-md-2">
+        <ul class="aList col-md-8 offset-md-2 ">
             <li class="item" v-for="item in listData.articleList" v-if="listData['articleList']">
                 <span class="number_icon">{{Math.floor(Math.random()*100)}}</span>
                 <span class="main_mes">

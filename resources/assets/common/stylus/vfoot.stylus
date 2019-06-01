@@ -1,3 +1,8 @@
+@media (max-width: 767px)
+  .md-hidden
+    display none
+  .md-block
+    display block !important
 a
   color #8e8e8e
   cursor pointer
@@ -71,6 +76,9 @@ a
       font-size 13px
       letter-spacing -.2px
       font-weight 200
+      @media screen and (max-width 767px)
+        margin-top 5px
+        font-size 10px
       .footer-bottom-left
         a
           color: #111

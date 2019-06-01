@@ -3,9 +3,10 @@
         <div class="top-bar"></div>
         <div class="main_header">
             <div class="logo_wrapper">
-                <div class="logo"></div>
+                <div class="logo md-hidden"></div>
+                <div class="fontLogo md-block">StarkWeb</div>
             </div>
-            <div class="searcher">
+            <div class="searcher md-hidden">
                 <form class="searcher_form">
                     <div class="form-wrapper">
                         <input type="text" class="search-input" id="" placeholder="输入你想学习的">

@@ -1,6 +1,6 @@
 <template>
-    <div class="title_wrapper">
-        <div class="col-md-10 offset-md-1 pageTitle">{{pageTitle}}</div>
+    <div class="title_wrapper col-sm-10 offset-sm-1 col-md-10 offset-md-1 ">
+        <div class="pageTitle">{{pageTitle}}</div>
     </div>
 </template>
 

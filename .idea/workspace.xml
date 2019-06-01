@@ -6,15 +6,20 @@
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/common/stylus/aList.stylus" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/common/stylus/aList.stylus" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/common/stylus/createArticle.stylus" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/common/stylus/createArticle.stylus" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/common/stylus/app.stylus" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/common/stylus/app.stylus" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/common/stylus/main.stylus" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/common/stylus/main.stylus" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/common/stylus/nav.stylus" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/common/stylus/nav.stylus" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/common/stylus/pageTitle.stylus" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/common/stylus/pageTitle.stylus" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/common/stylus/pagination.stylus" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/common/stylus/pagination.stylus" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/common/stylus/vList.stylus" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/common/stylus/vList.stylus" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/common/stylus/vfoot.stylus" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/common/stylus/vfoot.stylus" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/assets/components/aList/aList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/components/aList/aList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/comments.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/formValidate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/video-list.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/components/navigation/navigation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/components/navigation/navigation.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/components/pageTitle/pageTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/components/pageTitle/pageTitle.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/components/vfoot/vfoot.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/components/vfoot/vfoot.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/components/vheader/v-header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/components/vheader/v-header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,130 +44,41 @@
     <expand />
     <select />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1333807277">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="137" />
-          <entry key="project.open.time.1" value="6" />
-          <entry key="project.open.time.10" value="4" />
-          <entry key="project.open.time.11" value="12" />
-          <entry key="project.open.time.12" value="23" />
-          <entry key="project.open.time.13" value="20" />
-          <entry key="project.open.time.14" value="23" />
-          <entry key="project.open.time.15" value="10" />
-          <entry key="project.open.time.16" value="4" />
-          <entry key="project.open.time.17" value="2" />
-          <entry key="project.open.time.18" value="3" />
-          <entry key="project.open.time.19" value="3" />
-          <entry key="project.open.time.2" value="8" />
-          <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.26" value="1" />
-          <entry key="project.open.time.3" value="2" />
-          <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.9" value="5" />
-          <entry key="project.opened" value="138" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="LICENSE" value="2" />
-          <entry key="artisan" value="2" />
-          <entry key="css" value="5" />
-          <entry key="env" value="1" />
-          <entry key="example" value="2" />
-          <entry key="gitattributes" value="1" />
-          <entry key="gitignore" value="5" />
-          <entry key="htaccess" value="1" />
-          <entry key="ico" value="8" />
-          <entry key="jpg" value="1" />
-          <entry key="js" value="191" />
-          <entry key="json" value="37" />
-          <entry key="lock" value="5" />
-          <entry key="navigation" value="1" />
-          <entry key="php" value="635" />
-          <entry key="png" value="17" />
-          <entry key="scss" value="144" />
-          <entry key="sql" value="1" />
-          <entry key="stylus" value="148" />
-          <entry key="svg" value="9" />
-          <entry key="twig" value="2" />
-          <entry key="vue" value="232" />
-          <entry key="xml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key=".env file" value="1" />
-          <entry key="Blade" value="234" />
-          <entry key="CSS" value="4" />
-          <entry key="Image" value="26" />
-          <entry key="JSON" value="41" />
-          <entry key="JavaScript" value="191" />
-          <entry key="PHP" value="403" />
-          <entry key="PLAIN_TEXT" value="15" />
-          <entry key="SCSS" value="144" />
-          <entry key="SVG" value="9" />
-          <entry key="Scratch" value="2" />
-          <entry key="Stylus" value="147" />
-          <entry key="Twig" value="2" />
-          <entry key="Vue.js" value="229" />
-          <entry key="XML" value="1" />
-          <entry key="htaccess" value="1" />
-          <entry key="yarn.lock" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="css" value="21" />
-          <entry key="dummy" value="36" />
-          <entry key="env" value="11" />
-          <entry key="gitignore" value="1" />
-          <entry key="js" value="1591" />
-          <entry key="json" value="27" />
-          <entry key="php" value="30821" />
-          <entry key="scss" value="8128" />
-          <entry key="styl" value="4" />
-          <entry key="stylus" value="13984" />
-          <entry key="vue" value="21799" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Blade" value="12265" />
-          <entry key="CSS" value="21" />
-          <entry key="JSON" value="27" />
-          <entry key="JavaScript" value="1591" />
-          <entry key="PHP" value="18556" />
-          <entry key="PLAIN_TEXT" value="117" />
-          <entry key="SCSS" value="8128" />
-          <entry key="Stylus" value="13978" />
-          <entry key="Vue.js" value="21740" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="stark" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index.php">
+        <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/main.stylus">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+            <state relative-caret-position="-1175">
+              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/assets/components/vfoot/vfoot.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpack.mix.js">
+        <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/video.scss">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/vList.stylus">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -171,22 +87,42 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/title.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/assets/components/vList/vList.vue">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/js/app.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/vueTest/test.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-18543" />
+            <state relative-caret-position="45">
+              <caret line="3" column="19" selection-start-line="1" selection-start-column="2" selection-end-line="3" selection-end-column="19" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/vfoot.stylus">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="31" />
+            <state relative-caret-position="498">
+              <caret line="80" column="22" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/components/pagination/pagination.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/pagination.stylus">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -203,8 +139,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>return $articleContent;</find>
-      <find>return $previous_article;</find>
       <find>articleList</find>
       <find>top-</find>
       <find>login</find>
@@ -233,6 +167,8 @@
       <find>user_id</find>
       <find>foot</find>
       <find>height</find>
+      <find>back</find>
+      <find>.back</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -254,18 +190,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/assets/components/comment/vue_html.vue" />
-        <option value="$PROJECT_DIR$/resources/assets/components/comment/hujsad.vue" />
-        <option value="$PROJECT_DIR$/resources/assets/components/comment/replyHtml.vue" />
-        <option value="$PROJECT_DIR$/resources/assets/components/createArticle/createArticel.vue" />
-        <option value="$PROJECT_DIR$/resources/assets/components/comment/item/item.vue" />
-        <option value="$PROJECT_DIR$/resources/assets/components/comment/commentItem/commentItem.stylus" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/weixinCommentController.php" />
         <option value="$PROJECT_DIR$/resources/assets/components/article/article.vue" />
         <option value="$PROJECT_DIR$/resources/assets/components/discuss/discuss_list/discuss_list.vue" />
         <option value="$PROJECT_DIR$/resources/assets/components/discussion/discussion.vue" />
         <option value="$PROJECT_DIR$/resources/assets/components/register/register.vue" />
-        <option value="$PROJECT_DIR$/resources/assets/components/vheader/v-header.vue" />
         <option value="$PROJECT_DIR$/resources/assets/components/video/video.vue" />
         <option value="$PROJECT_DIR$/resources/assets/components/videoList/videoList.vue" />
         <option value="$PROJECT_DIR$/resources/assets/components/pagination/pagination.vue" />
@@ -277,16 +205,10 @@
         <option value="$PROJECT_DIR$/resources/assets/common/stylus/comment.stylus" />
         <option value="$PROJECT_DIR$/resources/assets/components/comment/comment.vue" />
         <option value="$PROJECT_DIR$/resources/assets/common/stylus/app.scss" />
-        <option value="$PROJECT_DIR$/resources/assets/common/stylus/app.stylus" />
-        <option value="$PROJECT_DIR$/webpack.mix.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/resources/views/errors/404.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/common/stylus/mixin.stylus" />
-        <option value="$PROJECT_DIR$/resources/assets/common/stylus/vfoot.stylus" />
         <option value="$PROJECT_DIR$/resources/assets/js/router.js" />
-        <option value="$PROJECT_DIR$/resources/assets/components/vfoot/vfoot.vue" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/master.blade.php" />
-        <option value="$PROJECT_DIR$/resources/assets/common/stylus/pageTitle.stylus" />
         <option value="$PROJECT_DIR$/resources/assets/components/articleList/articleList.vue" />
         <option value="$PROJECT_DIR$/resources/assets/js/app.js" />
         <option value="$PROJECT_DIR$/node_modules/mavon-editor/dist/css/index.css" />
@@ -301,34 +223,32 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/weixinController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/assets/components/createArticle/createArticle.vue" />
-        <option value="$PROJECT_DIR$/resources/assets/components/aList/aList.vue" />
         <option value="$PROJECT_DIR$/resources/assets/common/stylus/aList.stylus" />
         <option value="$PROJECT_DIR$/resources/assets/common/stylus/createArticle.stylus" />
         <option value="$PROJECT_DIR$/public/index.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/comments.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/master.blade.php" />
+        <option value="$PROJECT_DIR$/webpack.mix.js" />
+        <option value="$PROJECT_DIR$/resources/assets/common/stylus/app.stylus" />
+        <option value="$PROJECT_DIR$/resources/assets/components/vheader/v-header.vue" />
+        <option value="$PROJECT_DIR$/resources/assets/common/stylus/nav.stylus" />
+        <option value="$PROJECT_DIR$/resources/assets/components/navigation/navigation.vue" />
+        <option value="$PROJECT_DIR$/resources/assets/common/stylus/pageTitle.stylus" />
+        <option value="$PROJECT_DIR$/resources/assets/components/pageTitle/pageTitle.vue" />
+        <option value="$PROJECT_DIR$/resources/assets/components/aList/aList.vue" />
+        <option value="$PROJECT_DIR$/resources/assets/common/stylus/pagination.stylus" />
+        <option value="$PROJECT_DIR$/resources/assets/common/stylus/vList.stylus" />
+        <option value="$PROJECT_DIR$/resources/assets/common/stylus/main.stylus" />
+        <option value="$PROJECT_DIR$/resources/assets/common/stylus/vfoot.stylus" />
+        <option value="$PROJECT_DIR$/resources/assets/components/vfoot/vfoot.vue" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
-    <package-json value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
-  </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/package.json" />
-    </packageJsonPaths>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -585,6 +505,12 @@
               <item name="stark" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="css" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="stark" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -603,7 +529,78 @@
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="common" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="stark" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="common" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="stylus" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="stark" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="stark" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="aList" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="stark" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="navigation" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="stark" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="pageTitle" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="stark" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="pagination" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="stark" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="vfoot" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="stark" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="vheader" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="stark" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="vList" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="stark" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -640,7 +637,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -805,12 +802,16 @@
       <workItem from="1556208445624" duration="510000" />
       <workItem from="1556382046519" duration="387000" />
       <workItem from="1556896826729" duration="268000" />
-      <workItem from="1557823856206" duration="2053000" />
+      <workItem from="1557823856206" duration="2201000" />
+      <workItem from="1557830152222" duration="168000" />
+      <workItem from="1557843692772" duration="702000" />
+      <workItem from="1557897020603" duration="26000" />
+      <workItem from="1559380810992" duration="5152000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="632031000" />
+    <option name="totallyTimeSpent" value="638227000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -828,7 +829,7 @@
       <window_info id="Structure" order="0" sideWeight="0.50104386" side_tool="true" weight="0.21486267" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32956383" />
-      <window_info active="true" x="0" y="22" width="310" height="778" id="Project" order="3" sideWeight="0.49895614" visible="true" weight="0.21728595" />
+      <window_info active="true" x="0" y="22" width="310" height="778" id="Project" order="3" sideWeight="0.49895614" visible="true" weight="0.23021002" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32913166" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32913166" />
@@ -877,9 +878,6 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -892,104 +890,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/components/vList/vList.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/font.stylus">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2622">
-          <caret line="114" column="14" selection-start-line="114" selection-start-column="14" selection-end-line="114" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/discussions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/article-content.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/articleList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1817">
-          <caret line="79" column="52" selection-start-line="79" selection-start-column="52" selection-end-line="79" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/components/discussion/discussion.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/weixinController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2990">
-          <caret line="135" column="5" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="5" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/components/pageTitle/pageTitle.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/components/videoList/videoList.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/components/video/video.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/components/vheader/v-header.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/videoList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/components/article/article.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1352" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/discuss.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/css-adjust.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/aList.stylus">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1449">
@@ -1014,18 +914,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/video-list.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/video.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/video-list.js" />
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/video.js" />
     <entry file="file://$PROJECT_DIR$/resources/assets/js/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="874">
@@ -1033,37 +923,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/main.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/components/aList/aList.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/formValidate.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/main.js" />
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/formValidate.js" />
     <entry file="file://$PROJECT_DIR$/resources/assets/js/learn.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/js/form.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/comments.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1214">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-            <element signature="e#31#37#0" expanded="true" />
-            <element signature="e#39#45#0" expanded="true" />
-            <element signature="e#25#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/comments.js" />
     <entry file="file://$PROJECT_DIR$/resources/assets/components/createArticle/createArticle.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -1086,19 +954,11 @@
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/components/App.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/bootstrap.js" />
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/layout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6113" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/test.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1107,19 +967,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1306" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/comments.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1133,19 +980,164 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/comments.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="55" column="2" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/title.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
+        <state relative-caret-position="120">
           <caret line="8" column="31" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18543" />
+        <state relative-caret-position="120">
+          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/app.stylus">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/app.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/mixin.stylus">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/nav.stylus">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/components/pageTitle/pageTitle.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="74" selection-start-line="1" selection-start-column="74" selection-end-line="1" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/components/navigation/navigation.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/components/aList/aList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/user-profile.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/studyRouter.stylus">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/pageTitle.stylus">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/vueTest/test.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="19" selection-start-line="1" selection-start-column="2" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/components/vList/vList.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/video.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/components/vheader/v-header.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/components/pagination/pagination.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/pagination.stylus">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/components/App.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/main.stylus">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1175">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/vfoot.stylus">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="80" column="22" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/common/stylus/vList.stylus">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/components/vfoot/vfoot.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+        </state>
       </provider>
     </entry>
   </component>
