@@ -1,8 +1,8 @@
 <template>
     <div class="List-wrapper row">
-        <ul class="aList col-md-8 offset-md-2 ">
+        <ul class="aList col-md-8 offset-md-2">
             <li class="item" v-for="item in listData.articleList" v-if="listData['articleList']">
-                <span class="number_icon">{{Math.floor(Math.random()*100)}}</span>
+                <span class="number_icon md-hidden">{{Math.floor(Math.random()*100)}}</span>
                 <span class="main_mes">
                     <router-link :to="'article/'+item.id"><span class="article_name">{{item.aname}}</span></router-link>
                     <span class="date">发表于{{item.created_at.substr(0,10)}}</span>
@@ -11,7 +11,7 @@
             </li>
         </ul>
 
-            <router-link to="/createArticle" class="alink">
+            <router-link to="/createArticle" class="alink md-hidden">
                 <div class="create_article_btn btn btn-success">
                 <span class="iconfont icon-write"></span>
                 <span>创作文章</span>

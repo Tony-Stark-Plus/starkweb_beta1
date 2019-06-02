@@ -1,7 +1,7 @@
 .all_study
   width 100%
   .study_wrapper
-    margin-top 10px
+    margin 10px auto 0px auto
     .study_part
       height 200px
     .laravel

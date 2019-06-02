@@ -1,7 +1,11 @@
+@media (max-width: 767px)
+  .md-hidden
+    display none
+  .md-block
+    display block !important
 .List-wrapper
   width 90%
   margin 25px auto
-  height 730px
   .aList
     background-color #ffffff
     box-shadow 0 -2px 6px rgba(0, 0, 0, 0.36)
@@ -14,20 +18,27 @@
       &:last-child
         border-bottom none
       .number_icon
-        flex 3
+        flex 2
         text-align center
         font-size 26px
         line-height 26px
         padding 22px 0
         color $common_color
       .main_mes
-        flex 20
+        flex 15
         padding 10px 0px 10px 0
+        @media screen and (max-width: 767px)
+          padding-left 15px
+          flex 10
         a
           color #505B6A
           .article_name
-            display block
             font-size 20px
+            @media screen and (max-width: 767px)
+              font-size 15px
+              text-overflow ellipsis
+              white-space nowrap
+              overflow hidden
             &:hover
               color $common_color
               text-decoration $common_color
@@ -37,13 +48,15 @@
           display block
           font-size 12px
           margin-top 2px
+          @media screen and (max-width: 767px)
+            font-size 9px
       .a_kind
         display flex
         justify-content: flex-end
         flex 4
         .common_kind
           display inline-block
-          margin 20px 15px 30px 0px
+          margin 20px 10px 30px 0px
           font-size 14px
           line-height 14px
           padding 3px 5px
