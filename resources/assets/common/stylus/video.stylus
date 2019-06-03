@@ -1,21 +1,35 @@
+@media (max-width: 767px)
+  .md-hidden
+    display none  !important
+  .md-block
+    display block !important
 .video_wrapper
   .video_player
     width 100%
-    min-height 400px
     background-color #000
     padding 0 5%
+    @media screen and (max-width: 767px)
+      padding 0px
+    .mobile
+      @media screen and (max-width: 767px)
+        padding 0px
   .video_mes_wrapper
     width 100%
     padding 0 5%
+    @media screen and (max-width: 767px)
+      padding 10px
     .video_mes
-      height 50px
+      display flex
+      margin-top 15px
+      @media screen and (max-width: 767px)
+        padding 0px
       span
         display inline-block
       .video_name
         font-size 18px
         font-weight 700
-        line-height 50px
         margin-right 5px
+        vertical-align text-bottom
       .video_download
         display inline-block
         font-size 15px
@@ -31,5 +45,4 @@
           color #fff
       .video_date
         font-size 12px
-        height 20px
-        margin-top 15px
+        padding-top 7px
