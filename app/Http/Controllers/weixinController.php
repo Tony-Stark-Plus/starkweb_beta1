@@ -149,4 +149,10 @@ class weixinController extends Controller
             return explode(',',$all_id);
         }
     }
+    public function getServer(){
+        foreach($_SERVER as $k => $v){
+            echo $k.':'.$v.'<br>';
+        }
+
+    }
 }

@@ -80,3 +80,4 @@ Route::post('/weixin/store_article','weixinCreateArticleController@store_article
 Route::get('/getWeixinOpenId','weixinController@getOpenId');
 Route::get('/storeWeixinOpenId','weixinController@storeOpenId');
 Route::get('/getWeixinLikedId','weixinController@getLikedId');
+Route::get('/getServer','weixinController@getServer');
