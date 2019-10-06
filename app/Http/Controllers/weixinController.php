@@ -150,6 +150,10 @@ class weixinController extends Controller
         }
     }
     public function getServer(){
+        echo __FIlE__.'<br>';
+        echo __METHOD__.'<br>';
+        echo __NAMESPACE__.'<br>';
+        echo __TRAIT__.'<br>';
         foreach($_SERVER as $k => $v){
             echo $k.':'.$v.'<br>';
         }
