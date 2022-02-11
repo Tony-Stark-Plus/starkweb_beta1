@@ -22,7 +22,7 @@
     "vue-router": "3.0.2"
   },
   "dependencies": {
-    "ajv": "6.5.2",
+    "ajv": "6.12.3",
     "css-loader": "1.0.0",
     "font-awesome": "4.7.0",
     "highlight.js": "9.13.1",
